@@ -29,55 +29,8 @@ const numberOfNightsBetweenDates = (startDate, endDate) => {
 
   return dayCount;
 };
-// export default () => {
-//   const [startDate, setStarDate] = useState(new Date());
-//   const [endDate, setEndDate] = useState(new Date());
-//   return (
-//     <div className="date-range-picker-container">
-//       <div>
-//         <label>From:</label>
-//         <DayPickerInput
-//           formatDate={formatDate}
-//           format={format}
-//           value={startDate}
-//           parseDate={parseDate}
-//           placeholder={`${dateFnsFormat(new Date(), format)}`}
-//           dayPickerProps={{
-//             modifiers: {
-//               disabled: {
-//                 before: new Date()
-//               }
-//             }
-//           }}
-//           onDayChange={day => {
-//             setStarDate(day);
-//           }}
-//         />
-//       </div>
-//       <div>
-//         <label>To:</label>
-//         <DayPickerInput
-//           formatDate={formatDate}
-//           format={format}
-//           value={endDate}
-//           parseDate={parseDate}
-//           placeholder={`${dateFnsFormat(new Date(), format)}`}
-//           dayPickerProps={{
-//             modifiers: {
-//               disabled: [
-//                 new Date(),
-//                 {
-//                   before: new Date()
-//                 }
-//               ]
-//             }
-//           }}
-//           onDayChange={day => {
-//             setEndDate(day);
-//           }}
-//         />
-//       </div>
-const DateRangePicker = () => {
+
+export default ({ datesChange }) => {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
 
@@ -100,11 +53,12 @@ const DateRangePicker = () => {
           }}
           onDayChange={day => {
             setStartDate(day);
+            const newEndDate = new Date(day);
             if (numberOfNightsBetweenDates(day, endDate) < 1) {
-              const newEndDate = new Date(day);
               newEndDate.setDate(newEndDate.getDate() + 1);
               setEndDate(newEndDate);
             }
+            datesChange(day, newEndDate);
           }}
         />
       </div>
@@ -128,6 +82,7 @@ const DateRangePicker = () => {
           }}
           onDayChange={day => {
             setEndDate(day);
+            datesChange(startDate, day);
           }}
         />
       </div>
@@ -152,5 +107,3 @@ const DateRangePicker = () => {
     </div>
   );
 };
-
-export default DateRangePicker;

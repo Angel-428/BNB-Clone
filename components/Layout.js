@@ -4,6 +4,7 @@ const Layout = props => {
   return (
     <div>
       <Header />
+
       <main>{props.content}</main>
 
       <style jsx global>{`

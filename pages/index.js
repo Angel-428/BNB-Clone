@@ -1,6 +1,7 @@
 import houses from "./houses.json";
 import House from "../components/House";
 import Layout from "../components/Layout";
+import Router from "next/router";
 
 const content = (
   <div>
