@@ -2,8 +2,25 @@ import houses from "../houses.json";
 import Head from "next/head";
 import Layout from "../../components/Layout";
 import DateRangePicker from "../../components/DateRangePicker";
+import React, { useState } from "react";
 
+const calcNumberOfNightsBetweenDates = (startDate, endDate) => {
+  const start = new Date(startDate); //clone
+  const end = new Date(endDate); //clone
+  let dayCount = 0;
+
+  while (end > start) {
+    dayCount++;
+    start.setDate(start.getDate() + 1);
+  }
+
+  return dayCount;
+};
 const House = props => {
+  const [dateChosen, setDateChosen] = useState(false);
+  const [numberOfNightsBetweenDates, setNumberOfNightsBetweenDates] = useState(
+    0
+  );
   const content = (
     <div className="container">
       <Head>
@@ -20,7 +37,24 @@ const House = props => {
       </article>
       <aside>
         <h2>Add dates for prices</h2>
-        <DateRangePicker />
+        <DateRangePicker
+          datesChange={(startDate, endDate) => {
+            setNumberOfNightsBetweenDates(
+              calcNumberOfNightsBetweenDates(startDate, endDate)
+            );
+            setDateChosen(true);
+          }}
+        />
+        {dateChosen && (
+          <div>
+            <h2>Price per night</h2>
+            <p>${props.house.price}</p>
+            <h2>Total Price for booking</h2>
+            <p>
+              ${(numberOfNightsBetweenDates * props.house.price).toFixed(2)}
+            </p>
+          </div>
+        )}
       </aside>
 
       <style jsx>{`
