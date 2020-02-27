@@ -342,6 +342,250 @@ module.exports = _createClass;
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _assertThisInitialized; });
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _classCallCheck; });
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js ***!
+  \************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _createClass; });
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+
+    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
+/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
+/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__);
+
+function _extends() {
+  _extends = _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default.a || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _getPrototypeOf; });
+/* harmony import */ var _core_js_object_get_prototype_of__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/get-prototype-of */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-prototype-of.js");
+/* harmony import */ var _core_js_object_get_prototype_of__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_prototype_of__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/set-prototype-of */ "./node_modules/@babel/runtime-corejs2/core-js/object/set-prototype-of.js");
+/* harmony import */ var _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_1___default.a ? _core_js_object_get_prototype_of__WEBPACK_IMPORTED_MODULE_0___default.a : function _getPrototypeOf(o) {
+    return o.__proto__ || _core_js_object_get_prototype_of__WEBPACK_IMPORTED_MODULE_0___default()(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _inherits; });
+/* harmony import */ var _core_js_object_create__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/create */ "./node_modules/@babel/runtime-corejs2/core-js/object/create.js");
+/* harmony import */ var _core_js_object_create__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_create__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _setPrototypeOf__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./setPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/setPrototypeOf.js");
+
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = _core_js_object_create__WEBPACK_IMPORTED_MODULE_0___default()(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) Object(_setPrototypeOf__WEBPACK_IMPORTED_MODULE_1__["default"])(subClass, superClass);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _possibleConstructorReturn; });
+/* harmony import */ var _helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../helpers/esm/typeof */ "./node_modules/@babel/runtime-corejs2/helpers/esm/typeof.js");
+/* harmony import */ var _assertThisInitialized__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (Object(_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return Object(_assertThisInitialized__WEBPACK_IMPORTED_MODULE_1__["default"])(self);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/setPrototypeOf.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/setPrototypeOf.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _setPrototypeOf; });
+/* harmony import */ var _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/set-prototype-of */ "./node_modules/@babel/runtime-corejs2/core-js/object/set-prototype-of.js");
+/* harmony import */ var _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_0__);
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_0___default.a || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/typeof.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/typeof.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _typeof; });
+/* harmony import */ var _core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/symbol/iterator */ "./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js");
+/* harmony import */ var _core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_symbol__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/symbol */ "./node_modules/@babel/runtime-corejs2/core-js/symbol.js");
+/* harmony import */ var _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_symbol__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+function _typeof2(obj) { if (typeof _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a === "function" && typeof _core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_0___default.a === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a === "function" && obj.constructor === _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a && obj !== _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a === "function" && _typeof2(_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_0___default.a) === "symbol") {
+    _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a === "function" && obj.constructor === _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a && obj !== _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/extends.js":
 /*!****************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/extends.js ***!
@@ -4220,6 +4464,2907 @@ for (var i = 0; i < DOMIterables.length; i++) {
 
 /***/ }),
 
+/***/ "./node_modules/debounce/index.js":
+/*!****************************************!*\
+  !*** ./node_modules/debounce/index.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * Returns a function, that, as long as it continues to be invoked, will not
+ * be triggered. The function will be called after it stops being called for
+ * N milliseconds. If `immediate` is passed, trigger the function on the
+ * leading edge, instead of the trailing. The function also has a property 'clear' 
+ * that is a function which will clear the timer to prevent previously scheduled executions. 
+ *
+ * @source underscore.js
+ * @see http://unscriptable.com/2009/03/20/debouncing-javascript-methods/
+ * @param {Function} function to wrap
+ * @param {Number} timeout in ms (`100`)
+ * @param {Boolean} whether to execute at the beginning (`false`)
+ * @api public
+ */
+function debounce(func, wait, immediate){
+  var timeout, args, context, timestamp, result;
+  if (null == wait) wait = 100;
+
+  function later() {
+    var last = Date.now() - timestamp;
+
+    if (last < wait && last >= 0) {
+      timeout = setTimeout(later, wait - last);
+    } else {
+      timeout = null;
+      if (!immediate) {
+        result = func.apply(context, args);
+        context = args = null;
+      }
+    }
+  };
+
+  var debounced = function(){
+    context = this;
+    args = arguments;
+    timestamp = Date.now();
+    var callNow = immediate && !timeout;
+    if (!timeout) timeout = setTimeout(later, wait);
+    if (callNow) {
+      result = func.apply(context, args);
+      context = args = null;
+    }
+
+    return result;
+  };
+
+  debounced.clear = function() {
+    if (timeout) {
+      clearTimeout(timeout);
+      timeout = null;
+    }
+  };
+  
+  debounced.flush = function() {
+    if (timeout) {
+      result = func.apply(context, args);
+      context = args = null;
+      
+      clearTimeout(timeout);
+      timeout = null;
+    }
+  };
+
+  return debounced;
+};
+
+// Adds compatibility for ES modules
+debounce.debounce = debounce;
+
+module.exports = debounce;
+
+
+/***/ }),
+
+/***/ "./node_modules/easy-peasy/dist/easy-peasy.esm.js":
+/*!********************************************************!*\
+  !*** ./node_modules/easy-peasy/dist/easy-peasy.esm.js ***!
+  \********************************************************/
+/*! exports provided: StoreProvider, action, actionOn, computed, createComponentStore, createContextStore, createStore, createTransform, createTypedHooks, debug, memo, persist, reducer, thunk, thunkOn, useStore, useStoreActions, useStoreDispatch, useStoreRehydrated, useStoreState */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StoreProvider", function() { return StoreProvider; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "action", function() { return action; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "actionOn", function() { return actionOn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "computed", function() { return computed; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createComponentStore", function() { return createComponentStore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createContextStore", function() { return createContextStore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createStore", function() { return createStore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createTransform", function() { return createTransform; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createTypedHooks", function() { return createTypedHooks; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "debug", function() { return debug; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "memo", function() { return memo; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "persist", function() { return persist; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "reducer", function() { return reducer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "thunk", function() { return thunk; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "thunkOn", function() { return thunkOn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useStore", function() { return useStore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useStoreActions", function() { return useStoreActions; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useStoreDispatch", function() { return useStoreDispatch; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useStoreRehydrated", function() { return useStoreRehydrated; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useStoreState", function() { return useStoreState; });
+/* harmony import */ var immer_peasy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! immer-peasy */ "./node_modules/immer-peasy/dist/immer.module.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
+/* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! redux-thunk */ "./node_modules/redux-thunk/es/index.js");
+/* harmony import */ var memoizerific__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! memoizerific */ "./node_modules/memoizerific/memoizerific.js");
+/* harmony import */ var memoizerific__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(memoizerific__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var is_plain_object__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! is-plain-object */ "./node_modules/easy-peasy/node_modules/is-plain-object/index.js");
+/* harmony import */ var debounce__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! debounce */ "./node_modules/debounce/index.js");
+/* harmony import */ var debounce__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(debounce__WEBPACK_IMPORTED_MODULE_6__);
+
+
+
+
+
+
+
+
+var StoreContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["createContext"])();
+
+// To get around it, we can conditionally useEffect on the server (no-op) and
+// useLayoutEffect in the browser. We need useLayoutEffect to ensure the store
+// subscription callback always has the selector from the latest render commit
+// available, otherwise a store update may happen between render and the effect,
+// which may cause missed updates; we also must ensure the store subscription
+// is created synchronously, otherwise a store update may occur before the
+// subscription is created and an inconsistent state may be observed
+
+var useIsomorphicLayoutEffect = typeof window !== 'undefined' ? react__WEBPACK_IMPORTED_MODULE_1__["useLayoutEffect"] : react__WEBPACK_IMPORTED_MODULE_1__["useEffect"];
+function createStoreStateHook(Context) {
+  return function useStoreState(mapState, equalityFn) {
+    var store = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(Context);
+    var mapStateRef = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])(mapState);
+    var stateRef = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])();
+    var mountedRef = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])(true);
+    var subscriptionMapStateError = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])();
+
+    var _useReducer = Object(react__WEBPACK_IMPORTED_MODULE_1__["useReducer"])(function (s) {
+      return s + 1;
+    }, 0),
+        forceRender = _useReducer[1];
+
+    if (subscriptionMapStateError.current || mapStateRef.current !== mapState || stateRef.current === undefined) {
+      try {
+        stateRef.current = mapState(store.getState());
+      } catch (err) {
+        if (true) {
+          var errorMessage = "An error occurred trying to map state in a useStoreState hook: " + err.message + ".";
+
+          if (subscriptionMapStateError.current) {
+            errorMessage += "\nThis error may be related to the following error:\n" + subscriptionMapStateError.current.stack + "\n\nOriginal stack trace:";
+          }
+
+          throw new Error(errorMessage);
+        }
+
+        throw subscriptionMapStateError.current || err;
+      }
+    }
+
+    useIsomorphicLayoutEffect(function () {
+      mapStateRef.current = mapState;
+      subscriptionMapStateError.current = undefined;
+    });
+    useIsomorphicLayoutEffect(function () {
+      var checkMapState = function checkMapState() {
+        try {
+          var newState = mapStateRef.current(store.getState());
+          var isStateEqual = typeof equalityFn === 'function' ? equalityFn(stateRef.current, newState) : stateRef.current === newState;
+
+          if (isStateEqual) {
+            return;
+          }
+
+          stateRef.current = newState;
+        } catch (err) {
+          // see https://github.com/reduxjs/react-redux/issues/1179
+          // There is a possibility mapState will fail due to stale state or
+          // props, therefore we will just track the error and force our
+          // component to update. It should then receive the updated state
+          subscriptionMapStateError.current = err;
+        }
+
+        if (mountedRef.current) {
+          forceRender({});
+        }
+      };
+
+      var unsubscribe = store.subscribe(checkMapState);
+      checkMapState();
+      return function () {
+        mountedRef.current = false;
+        unsubscribe();
+      };
+    }, []);
+    return stateRef.current;
+  };
+}
+var useStoreState = createStoreStateHook(StoreContext);
+function createStoreActionsHook(Context) {
+  return function useStoreActions(mapActions) {
+    var store = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(Context);
+    return mapActions(store.getActions());
+  };
+}
+var useStoreActions = createStoreActionsHook(StoreContext);
+function createStoreDispatchHook(Context) {
+  return function useStoreDispatch() {
+    var store = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(Context);
+    return store.dispatch;
+  };
+}
+var useStoreDispatch = createStoreDispatchHook(StoreContext);
+function useStore() {
+  return Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(StoreContext);
+}
+function createStoreRehydratedHook(Context) {
+  return function useStoreRehydrated() {
+    var store = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(Context);
+
+    var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+        rehydrated = _useState[0],
+        setRehydrated = _useState[1];
+
+    Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+      store.persist.resolveRehydration().then(function () {
+        return setRehydrated(true);
+      });
+    }, []);
+    return rehydrated;
+  };
+}
+var useStoreRehydrated = createStoreRehydratedHook(StoreContext);
+function createTypedHooks() {
+  return {
+    useStoreActions: useStoreActions,
+    useStoreDispatch: useStoreDispatch,
+    useStoreState: useStoreState,
+    useStoreRehydrated: useStoreRehydrated,
+    useStore: useStore
+  };
+}
+
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+var actionSymbol = 'a';
+var actionOnSymbol = 'aO';
+var computedSymbol = 'c';
+var persistSymbol = 'p';
+var reducerSymbol = 'r';
+var thunkOnSymbol = 'tO';
+var thunkSymbol = 't';
+
+var debug = function debug(state) {
+  if (Object(immer_peasy__WEBPACK_IMPORTED_MODULE_0__["isDraft"])(state)) {
+    return Object(immer_peasy__WEBPACK_IMPORTED_MODULE_0__["original"])(state);
+  }
+
+  return state;
+};
+var memo = function memo(fn, cacheSize) {
+  return memoizerific__WEBPACK_IMPORTED_MODULE_4___default()(cacheSize)(fn);
+};
+var actionOn = function actionOn(targetResolver, fn) {
+  fn[actionOnSymbol] = {
+    targetResolver: targetResolver
+  };
+  return fn;
+};
+var action = function action(fn) {
+  fn[actionSymbol] = {};
+  return fn;
+};
+var defaultStateResolvers = [function (state) {
+  return state;
+}];
+var computed = function computed(fnOrStateResolvers, fn) {
+  if (typeof fn === 'function') {
+    fn[computedSymbol] = {
+      stateResolvers: fnOrStateResolvers
+    };
+    return fn;
+  }
+
+  fnOrStateResolvers[computedSymbol] = {
+    stateResolvers: defaultStateResolvers
+  };
+  return fnOrStateResolvers;
+};
+var persist = function persist(model, config) {
+  var _extends2;
+
+  return _extends({}, model, (_extends2 = {}, _extends2[persistSymbol] = config, _extends2));
+};
+var thunkOn = function thunkOn(targetResolver, fn) {
+  fn[thunkOnSymbol] = {
+    targetResolver: targetResolver
+  };
+  return fn;
+};
+var thunk = function thunk(fn) {
+  fn[thunkSymbol] = {};
+  return fn;
+};
+var reducer = function reducer(fn) {
+  fn[reducerSymbol] = {};
+  return fn;
+};
+
+var deepCloneStateWithoutComputed = function deepCloneStateWithoutComputed(source) {
+  var recursiveClone = function recursiveClone(current) {
+    var next = Object.keys(current).reduce(function (acc, key) {
+      if (Object.getOwnPropertyDescriptor(current, key).get == null) {
+        acc[key] = current[key];
+      }
+
+      return acc;
+    }, {});
+    Object.keys(next).forEach(function (key) {
+      if (Object(is_plain_object__WEBPACK_IMPORTED_MODULE_5__["default"])(next[key])) {
+        next[key] = recursiveClone(next[key]);
+      }
+    });
+    return next;
+  };
+
+  return recursiveClone(source);
+};
+var isPromise = function isPromise(x) {
+  return x != null && typeof x === 'object' && typeof x.then === 'function';
+};
+function get(path, target) {
+  return path.reduce(function (acc, cur) {
+    return Object(is_plain_object__WEBPACK_IMPORTED_MODULE_5__["default"])(acc) ? acc[cur] : undefined;
+  }, target);
+}
+function newify(currentPath, currentState, finalValue) {
+  if (currentPath.length === 0) {
+    return finalValue;
+  }
+
+  var newState = _extends({}, currentState);
+
+  var key = currentPath[0];
+
+  if (currentPath.length === 1) {
+    newState[key] = finalValue;
+  } else {
+    newState[key] = newify(currentPath.slice(1), newState[key], finalValue);
+  }
+
+  return newState;
+}
+var set = function set(path, target, value) {
+  if (path.length === 0) {
+    if (typeof value === 'object') {
+      Object.keys(target).forEach(function (key) {
+        delete target[key];
+      });
+      Object.keys(value).forEach(function (key) {
+        target[key] = value[key];
+      });
+    }
+
+    return;
+  }
+
+  path.reduce(function (acc, cur, idx) {
+    if (idx + 1 === path.length) {
+      acc[cur] = value;
+    } else {
+      acc[cur] = acc[cur] || {};
+    }
+
+    return acc[cur];
+  }, target);
+};
+function createSimpleProduce(disableImmer) {
+  if (disableImmer === void 0) {
+    disableImmer = false;
+  }
+
+  return function simpleProduce(path, state, fn) {
+    if (disableImmer) {
+      var _current = get(path, state);
+
+      var next = fn(_current);
+
+      if (_current !== next) {
+        return newify(path, state, next);
+      }
+
+      return state;
+    }
+
+    if (path.length === 0) {
+      var _draft = Object(immer_peasy__WEBPACK_IMPORTED_MODULE_0__["createDraft"])(state);
+
+      var _result = fn(_draft);
+
+      if (_result) {
+        return Object(immer_peasy__WEBPACK_IMPORTED_MODULE_0__["isDraft"])(_result) ? Object(immer_peasy__WEBPACK_IMPORTED_MODULE_0__["finishDraft"])(_result) : _result;
+      }
+
+      return Object(immer_peasy__WEBPACK_IMPORTED_MODULE_0__["finishDraft"])(_draft);
+    }
+
+    var parentPath = path.slice(0, path.length - 1);
+    var draft = Object(immer_peasy__WEBPACK_IMPORTED_MODULE_0__["createDraft"])(state);
+    var parent = get(parentPath, state);
+    var current = get(path, draft);
+    var result = fn(current);
+
+    if (result) {
+      parent[path[path.length - 1]] = result;
+    }
+
+    return Object(immer_peasy__WEBPACK_IMPORTED_MODULE_0__["finishDraft"])(draft);
+  };
+}
+
+function createReducer(disableImmer, actionReducersDict, customReducers, computedProperties) {
+  var simpleProduce = createSimpleProduce(disableImmer);
+
+  var runActionReducerAtPath = function runActionReducerAtPath(state, action, actionReducer, path) {
+    return simpleProduce(path, state, function (draft) {
+      return actionReducer(draft, action.payload);
+    });
+  };
+
+  var reducerForActions = function reducerForActions(state, action) {
+    var actionReducer = actionReducersDict[action.type];
+
+    if (actionReducer) {
+      var actionMeta = actionReducer[actionSymbol] || actionReducer[actionOnSymbol];
+      return runActionReducerAtPath(state, action, actionReducer, actionMeta.parent);
+    }
+
+    return state;
+  };
+
+  var reducerForCustomReducers = function reducerForCustomReducers(state, action) {
+    return customReducers.reduce(function (acc, _ref) {
+      var parentPath = _ref.parentPath,
+          key = _ref.key,
+          red = _ref.reducer;
+      return simpleProduce(parentPath, acc, function (draft) {
+        draft[key] = red(draft[key], action);
+        return draft;
+      });
+    }, state);
+  };
+
+  var rootReducer = function rootReducer(state, action) {
+    var stateAfterActions = reducerForActions(state, action);
+    var next = customReducers.length > 0 ? reducerForCustomReducers(stateAfterActions, action) : stateAfterActions;
+
+    if (state !== next) {
+      computedProperties.forEach(function (_ref2) {
+        var parentPath = _ref2.parentPath,
+            bindComputedProperty = _ref2.bindComputedProperty;
+        bindComputedProperty(get(parentPath, next));
+      });
+    }
+
+    return next;
+  };
+
+  return rootReducer;
+}
+
+var noopStorage = {
+  getItem: function getItem() {
+    return undefined;
+  },
+  setItem: function setItem() {
+    return undefined;
+  },
+  removeItem: function removeItem() {
+    return undefined;
+  }
+};
+var localStorage = typeof window !== 'undefined' && typeof window.localStorage !== 'undefined' ? window.localStorage : noopStorage;
+var sessionStorage = typeof window !== 'undefined' && typeof window.sessionStorage !== 'undefined' ? window.sessionStorage : noopStorage;
+
+function createStorageWrapper(storage, transformers) {
+  if (storage === void 0) {
+    storage = sessionStorage;
+  }
+
+  if (transformers === void 0) {
+    transformers = [];
+  }
+
+  if (typeof storage === 'string') {
+    if (storage === 'localStorage') {
+      storage = localStorage;
+    } else if (storage === 'sessionStorage') {
+      storage = sessionStorage;
+    } else {
+      if (true) {
+        console.warn("Invalid storage provider specified for Easy Peasy persist: " + storage + "\nValid values include \"localStorage\", \"sessionStorage\" or a custom storage engine.");
+      }
+
+      storage = noopStorage;
+    }
+  }
+
+  var outTransformers = transformers.reverse();
+
+  var serialize = function serialize(data, key) {
+    var simpleKey = key.substr(key.indexOf('@') + 1);
+    var transformed = transformers.reduce(function (acc, cur) {
+      return cur.in(acc, simpleKey);
+    }, data);
+    return storage === localStorage || storage === sessionStorage ? JSON.stringify({
+      data: transformed
+    }) : transformed;
+  };
+
+  var deserialize = function deserialize(data, key) {
+    var simpleKey = key.substr(key.indexOf('@') + 1);
+    var result = storage === localStorage || storage === sessionStorage ? JSON.parse(data).data : data;
+    return outTransformers.reduce(function (acc, cur) {
+      return cur.out(acc, simpleKey);
+    }, result);
+  };
+
+  var isAsync = isPromise(storage.getItem('_'));
+  return {
+    isAsync: isAsync,
+    getItem: function getItem(key) {
+      if (isAsync) {
+        return storage.getItem(key).then(function (wrapped) {
+          return wrapped != null ? deserialize(wrapped, key) : undefined;
+        });
+      }
+
+      var wrapped = storage.getItem(key);
+      return wrapped != null ? deserialize(wrapped, key) : undefined;
+    },
+    setItem: function setItem(key, data) {
+      return storage.setItem(key, serialize(data, key));
+    },
+    removeItem: function removeItem(key) {
+      return storage.removeItem(key);
+    }
+  };
+}
+
+function extractPersistConfig(path, persistDefinition) {
+  if (persistDefinition === void 0) {
+    persistDefinition = {};
+  }
+
+  return {
+    path: path,
+    config: {
+      blacklist: persistDefinition.blacklist || [],
+      mergeStrategy: persistDefinition.mergeStrategy || 'merge',
+      storage: createStorageWrapper(persistDefinition.storage, persistDefinition.transformers),
+      whitelist: persistDefinition.whitelist || []
+    }
+  };
+}
+
+function resolvePersistTargets(target, whitelist, blacklist) {
+  var targets = Object.keys(target);
+
+  if (whitelist.length > 0) {
+    targets = targets.reduce(function (acc, cur) {
+      if (whitelist.findIndex(function (x) {
+        return x === cur;
+      }) !== -1) {
+        return [].concat(acc, [cur]);
+      }
+
+      return acc;
+    }, []);
+  }
+
+  if (blacklist.length > 0) {
+    targets = targets.reduce(function (acc, cur) {
+      if (blacklist.findIndex(function (x) {
+        return x === cur;
+      }) !== -1) {
+        return acc;
+      }
+
+      return [].concat(acc, [cur]);
+    }, []);
+  }
+
+  return targets;
+}
+
+function createPersistor(persistKey, references) {
+  return debounce__WEBPACK_IMPORTED_MODULE_6___default()(function () {
+    references.internals.persistenceConfig.forEach(function (_ref) {
+      var path = _ref.path,
+          config = _ref.config;
+      var storage = config.storage,
+          whitelist = config.whitelist,
+          blacklist = config.blacklist;
+      var state = references.getState();
+      var persistRoot = deepCloneStateWithoutComputed(get(path, state));
+      var targets = resolvePersistTargets(persistRoot, whitelist, blacklist);
+      targets.forEach(function (key) {
+        var targetPath = [].concat(path, [key]);
+        storage.setItem(persistKey(targetPath), get(targetPath, state));
+      });
+    });
+  }, 1000);
+}
+function createPersistMiddleware(persistor, references) {
+  return function () {
+    return function (next) {
+      return function (action) {
+        var state = next(action);
+
+        if (action && action.type !== '@action.ePRS' && references.internals.persistenceConfig.length > 0) {
+          persistor(state);
+        }
+
+        return state;
+      };
+    };
+  };
+}
+function createPersistenceClearer(persistKey, references) {
+  return function () {
+    return new Promise(function (resolve, reject) {
+      references.internals.persistenceConfig.forEach(function (_ref2) {
+        var path = _ref2.path,
+            config = _ref2.config;
+        var storage = config.storage,
+            whitelist = config.whitelist,
+            blacklist = config.blacklist;
+        var persistRoot = get(path, references.getState());
+        var targets = resolvePersistTargets(persistRoot, whitelist, blacklist);
+
+        if (targets.length > 0) {
+          Promise.all(targets.map(function (key) {
+            var targetPath = [].concat(path, [key]);
+            return storage.removeItem(persistKey(targetPath));
+          })).then(function () {
+            return resolve();
+          }, reject);
+        } else {
+          resolve();
+        }
+      });
+    });
+  };
+}
+function rehydrateStateFromPersistIfNeeded(persistKey, replaceState, references) {
+  // If we have any persist configs we will attemp to perform a state rehydration
+  var resolveRehydration = Promise.resolve();
+
+  if (references.internals.persistenceConfig.length > 0) {
+    references.internals.persistenceConfig.forEach(function (persistInstance) {
+      var path = persistInstance.path,
+          config = persistInstance.config;
+      var blacklist = config.blacklist,
+          mergeStrategy = config.mergeStrategy,
+          storage = config.storage,
+          whitelist = config.whitelist;
+      var state = references.internals.defaultState;
+      var persistRoot = deepCloneStateWithoutComputed(get(path, state));
+      var targets = resolvePersistTargets(persistRoot, whitelist, blacklist);
+
+      var applyRehydrationStrategy = function applyRehydrationStrategy(originalState, rehydratedState) {
+        if (mergeStrategy === 'overwrite') {
+          set(path, originalState, rehydratedState);
+        } else if (mergeStrategy === 'merge') {
+          var target = get(path, originalState);
+          Object.keys(rehydratedState).forEach(function (key) {
+            target[key] = rehydratedState[key];
+          });
+        } else if (mergeStrategy === 'mergeDeep') {
+          var _target = get(path, originalState);
+
+          var setAt = function setAt(currentTarget, currentNext) {
+            Object.keys(currentNext).forEach(function (key) {
+              var data = currentNext[key];
+
+              if (Object(is_plain_object__WEBPACK_IMPORTED_MODULE_5__["default"])(data)) {
+                if (!Object(is_plain_object__WEBPACK_IMPORTED_MODULE_5__["default"])(currentTarget[key])) {
+                  currentTarget[key] = {};
+                }
+
+                setAt(currentTarget[key], data);
+              } else {
+                currentTarget[key] = data;
+              }
+            });
+          };
+
+          setAt(_target, rehydratedState);
+        }
+      };
+
+      if (storage.isAsync) {
+        var asyncStateResolvers = targets.reduce(function (acc, key) {
+          var targetPath = [].concat(path, [key]);
+          var dataPromise = storage.getItem(persistKey(targetPath));
+
+          if (isPromise(dataPromise)) {
+            acc.push({
+              key: key,
+              dataPromise: dataPromise
+            });
+          }
+
+          return acc;
+        }, []);
+
+        if (asyncStateResolvers.length > 0) {
+          resolveRehydration = Promise.all(asyncStateResolvers.map(function (x) {
+            return x.dataPromise;
+          })).then(function (resolvedData) {
+            var next = resolvedData.reduce(function (acc, cur, idx) {
+              var key = asyncStateResolvers[idx].key;
+
+              if (cur !== undefined) {
+                acc[key] = cur;
+              }
+
+              return acc;
+            }, {});
+
+            if (Object.keys(next).length === 0) {
+              return;
+            }
+
+            applyRehydrationStrategy(state, next);
+            replaceState(state);
+          });
+        }
+      } else {
+        var next = targets.reduce(function (acc, key) {
+          var targetPath = [].concat(path, [key]);
+          var data = storage.getItem(persistKey(targetPath));
+
+          if (data !== undefined) {
+            acc[key] = data;
+          }
+
+          return acc;
+        }, {});
+        applyRehydrationStrategy(state, next);
+        replaceState(state);
+      }
+    });
+  }
+
+  return resolveRehydration;
+}
+
+function createActionCreator(actionDefinition, meta, references) {
+  var prefix = actionDefinition[actionSymbol] ? '@action' : '@actionOn';
+  var type = prefix + "." + meta.path.join('.');
+  var actionMeta = actionDefinition[actionSymbol] || actionDefinition[actionOnSymbol];
+  actionMeta.actionName = meta.key;
+  actionMeta.type = type;
+  actionMeta.parent = meta.parent;
+  actionMeta.path = meta.path;
+
+  var actionCreator = function actionCreator(payload) {
+    var action = {
+      type: type,
+      payload: payload
+    };
+
+    if (actionDefinition[actionOnSymbol] && actionMeta.resolvedTargets) {
+      payload.resolvedTargets = [].concat(actionMeta.resolvedTargets);
+    }
+
+    var result = references.dispatch(action);
+    return result;
+  };
+
+  actionCreator.type = type;
+  return actionCreator;
+}
+
+function createThunkHandler(thunkDefinition, meta, references, injections, actionCreators) {
+  var thunkMeta = thunkDefinition[thunkSymbol] || thunkDefinition[thunkOnSymbol];
+  return function (payload) {
+    var helpers = {
+      dispatch: references.dispatch,
+      getState: function getState() {
+        return get(meta.parent, references.getState());
+      },
+      getStoreActions: function getStoreActions() {
+        return actionCreators;
+      },
+      getStoreState: references.getState,
+      injections: injections,
+      meta: meta
+    };
+
+    if (thunkDefinition[thunkOnSymbol] && thunkMeta.resolvedTargets) {
+      payload.resolvedTargets = [].concat(thunkMeta.resolvedTargets);
+    }
+
+    return thunkDefinition(get(meta.parent, actionCreators), payload, helpers);
+  };
+}
+function createThunkActionsCreator(thunkDefinition, meta, references, thunkHandler) {
+  var prefix = thunkDefinition[thunkSymbol] ? '@thunk' : '@thunkOn';
+  var type = prefix + "." + meta.path.join('.');
+  var startType = type + "(start)";
+  var successType = type + "(success)";
+  var failType = type + "(fail)";
+  var thunkMeta = thunkDefinition[thunkSymbol] || thunkDefinition[thunkOnSymbol];
+  thunkMeta.type = type;
+  thunkMeta.actionName = meta.key;
+  thunkMeta.parent = meta.parent;
+  thunkMeta.path = meta.path;
+
+  var actionCreator = function actionCreator(payload) {
+    var dispatchError = function dispatchError(err) {
+      references.dispatch({
+        type: failType,
+        payload: payload,
+        error: err
+      });
+      references.dispatch({
+        type: type,
+        payload: payload,
+        error: err
+      });
+    };
+
+    var dispatchSuccess = function dispatchSuccess(result) {
+      references.dispatch({
+        type: successType,
+        payload: payload,
+        result: result
+      });
+      references.dispatch({
+        type: type,
+        payload: payload,
+        result: result
+      });
+    };
+
+    references.dispatch({
+      type: startType,
+      payload: payload
+    });
+
+    try {
+      var result = references.dispatch(function () {
+        return thunkHandler(payload);
+      });
+
+      if (isPromise(result)) {
+        return result.then(function (resolved) {
+          dispatchSuccess(resolved);
+          return resolved;
+        }).catch(function (err) {
+          dispatchError(err);
+          throw err;
+        });
+      }
+
+      dispatchSuccess(result);
+      return result;
+    } catch (err) {
+      dispatchError(err);
+      throw err;
+    }
+  };
+
+  actionCreator.type = type;
+  actionCreator.startType = startType;
+  actionCreator.successType = successType;
+  actionCreator.failType = failType;
+  return actionCreator;
+}
+
+function createListenerMiddleware(references) {
+  return function () {
+    return function (next) {
+      return function (action) {
+        var result = next(action);
+
+        if (action && references.internals.listenerActionMap[action.type] && references.internals.listenerActionMap[action.type].length > 0) {
+          var sourceAction = references.internals.actionCreatorDict[action.type];
+          references.internals.listenerActionMap[action.type].forEach(function (actionCreator) {
+            actionCreator({
+              type: sourceAction ? sourceAction.type : action.type,
+              payload: action.payload,
+              error: action.error,
+              result: action.result
+            });
+          });
+        }
+
+        return result;
+      };
+    };
+  };
+}
+function bindListenerDefinitions(listenerDefinitions, actionCreators, actionCreatorDict, listenerActionMap) {
+  listenerDefinitions.forEach(function (listenerActionOrThunk) {
+    var listenerMeta = listenerActionOrThunk[actionOnSymbol] || listenerActionOrThunk[thunkOnSymbol];
+    var targets = listenerMeta.targetResolver(get(listenerMeta.parent, actionCreators), actionCreators);
+    var targetTypes = (Array.isArray(targets) ? targets : [targets]).reduce(function (acc, target) {
+      if (typeof target === 'function' && target.type && actionCreatorDict[target.type]) {
+        acc.push(target.type);
+      } else if (typeof target === 'string') {
+        acc.push(target);
+      }
+
+      return acc;
+    }, []);
+    listenerMeta.resolvedTargets = targetTypes;
+    targetTypes.forEach(function (targetType) {
+      var listenerReg = listenerActionMap[targetType] || [];
+      listenerReg.push(actionCreatorDict[listenerMeta.type]);
+      listenerActionMap[targetType] = listenerReg;
+    });
+  });
+}
+
+function createComputedPropertyBinder(parentPath, key, definition, computedState, references) {
+  var computedMeta = definition[computedSymbol];
+  var memoisedResultFn = memoizerific__WEBPACK_IMPORTED_MODULE_4___default()(1)(definition);
+  return function createComputedProperty(o) {
+    Object.defineProperty(o, key, {
+      configurable: true,
+      enumerable: true,
+      get: function get$1() {
+        var storeState;
+
+        if (computedState.isInReducer) {
+          storeState = computedState.currentState;
+        } else if (references.getState == null) {
+          return undefined;
+        } else {
+          try {
+            storeState = references.getState();
+          } catch (err) {
+            if (true) {
+              console.warn('Invalid access attempt to a computed property');
+            }
+
+            return undefined;
+          }
+        }
+
+        var state = get(parentPath, storeState);
+
+        var inputs = computedMeta.stateResolvers.map(function (resolver) {
+          return resolver(state, storeState);
+        });
+        return memoisedResultFn.apply(void 0, inputs);
+      }
+    });
+  };
+}
+function createComputedPropertiesMiddleware(references) {
+  return function (store) {
+    return function (next) {
+      return function (action) {
+        references.internals.computedState.currentState = store.getState();
+        references.internals.computedState.isInReducer = true;
+        return next(action);
+      };
+    };
+  };
+}
+
+function extractDataFromModel(model, initialState, injections, references) {
+  var defaultState = initialState;
+  var actionCreatorDict = {};
+  var actionCreators = {};
+  var actionReducersDict = {};
+  var actionThunks = {};
+  var computedProperties = [];
+  var customReducers = [];
+  var listenerActionCreators = {};
+  var listenerActionMap = {};
+  var listenerDefinitions = [];
+  var persistenceConfig = [];
+  var computedState = {
+    isInReducer: false,
+    currentState: defaultState
+  };
+
+  var recursiveExtractFromModel = function recursiveExtractFromModel(current, parentPath) {
+    return Object.keys(current).forEach(function (key) {
+      var value = current[key];
+      var path = [].concat(parentPath, [key]);
+      var meta = {
+        parent: parentPath,
+        path: path,
+        key: key
+      };
+
+      var handleValueAsState = function handleValueAsState() {
+        var initialParentRef = get(parentPath, initialState);
+
+        if (initialParentRef && key in initialParentRef) {
+          set(path, defaultState, initialParentRef[key]);
+        } else {
+          set(path, defaultState, value);
+        }
+      };
+
+      if (key === persistSymbol) {
+        persistenceConfig.push(extractPersistConfig(parentPath, value));
+        return;
+      }
+
+      if (typeof value === 'function') {
+        if (value[actionSymbol] || value[actionOnSymbol]) {
+          var actionReducer = value;
+          var actionCreator = createActionCreator(value, meta, references);
+          actionCreatorDict[actionCreator.type] = actionCreator;
+          actionReducersDict[actionCreator.type] = actionReducer;
+
+          if (meta.key !== 'ePRS') {
+            if (value[actionOnSymbol]) {
+              listenerDefinitions.push(value);
+              set(path, listenerActionCreators, actionCreator);
+            } else {
+              set(path, actionCreators, actionCreator);
+            }
+          }
+        } else if (value[thunkSymbol] || value[thunkOnSymbol]) {
+          var thunkHandler = createThunkHandler(value, meta, references, injections, actionCreators);
+
+          var _actionCreator = createThunkActionsCreator(value, meta, references, thunkHandler);
+
+          set(path, actionThunks, thunkHandler);
+          actionCreatorDict[_actionCreator.type] = _actionCreator;
+
+          if (value[thunkOnSymbol]) {
+            listenerDefinitions.push(value);
+            set(path, listenerActionCreators, _actionCreator);
+          } else {
+            set(path, actionCreators, _actionCreator);
+          }
+        } else if (value[computedSymbol]) {
+          var parent = get(parentPath, defaultState);
+          var bindComputedProperty = createComputedPropertyBinder(parentPath, key, value, computedState, references);
+          bindComputedProperty(parent);
+          computedProperties.push({
+            key: key,
+            parentPath: parentPath,
+            bindComputedProperty: bindComputedProperty
+          });
+        } else if (value[reducerSymbol]) {
+          customReducers.push({
+            key: key,
+            parentPath: parentPath,
+            reducer: value
+          });
+        } else {
+          handleValueAsState();
+        }
+      } else if (Object(is_plain_object__WEBPACK_IMPORTED_MODULE_5__["default"])(value)) {
+        var existing = get(path, defaultState);
+
+        if (existing == null) {
+          set(path, defaultState, {});
+        }
+
+        recursiveExtractFromModel(value, path);
+      } else {
+        handleValueAsState();
+      }
+    });
+  };
+
+  recursiveExtractFromModel(model, []);
+  bindListenerDefinitions(listenerDefinitions, actionCreators, actionCreatorDict, listenerActionMap);
+  return {
+    actionCreatorDict: actionCreatorDict,
+    actionCreators: actionCreators,
+    actionReducersDict: actionReducersDict,
+    computedProperties: computedProperties,
+    customReducers: customReducers,
+    computedState: computedState,
+    defaultState: defaultState,
+    listenerActionCreators: listenerActionCreators,
+    listenerActionMap: listenerActionMap,
+    persistenceConfig: persistenceConfig
+  };
+}
+
+function createStoreInternals(_ref) {
+  var disableImmer = _ref.disableImmer,
+      initialState = _ref.initialState,
+      injections = _ref.injections,
+      model = _ref.model,
+      reducerEnhancer = _ref.reducerEnhancer,
+      references = _ref.references;
+
+  var _extractDataFromModel = extractDataFromModel(model, initialState, injections, references),
+      actionCreatorDict = _extractDataFromModel.actionCreatorDict,
+      actionCreators = _extractDataFromModel.actionCreators,
+      actionReducersDict = _extractDataFromModel.actionReducersDict,
+      computedState = _extractDataFromModel.computedState,
+      computedProperties = _extractDataFromModel.computedProperties,
+      customReducers = _extractDataFromModel.customReducers,
+      defaultState = _extractDataFromModel.defaultState,
+      listenerActionCreators = _extractDataFromModel.listenerActionCreators,
+      listenerActionMap = _extractDataFromModel.listenerActionMap,
+      persistenceConfig = _extractDataFromModel.persistenceConfig;
+
+  var rootReducer = createReducer(disableImmer, actionReducersDict, customReducers, computedProperties);
+  return {
+    actionCreatorDict: actionCreatorDict,
+    actionCreators: actionCreators,
+    computedProperties: computedProperties,
+    computedState: computedState,
+    defaultState: defaultState,
+    listenerActionCreators: listenerActionCreators,
+    listenerActionMap: listenerActionMap,
+    persistenceConfig: persistenceConfig,
+    reducer: reducerEnhancer(rootReducer)
+  };
+}
+
+function createStore(model, options) {
+  if (options === void 0) {
+    options = {};
+  }
+
+  var modelClone = deepCloneStateWithoutComputed(model);
+  var _options = options,
+      compose$1 = _options.compose,
+      _options$devTools = _options.devTools,
+      devTools = _options$devTools === void 0 ? true : _options$devTools,
+      _options$disableImmer = _options.disableImmer,
+      disableImmer = _options$disableImmer === void 0 ? false : _options$disableImmer,
+      _options$enhancers = _options.enhancers,
+      enhancers = _options$enhancers === void 0 ? [] : _options$enhancers,
+      _options$initialState = _options.initialState,
+      initialState = _options$initialState === void 0 ? {} : _options$initialState,
+      injections = _options.injections,
+      _options$middleware = _options.middleware,
+      middleware = _options$middleware === void 0 ? [] : _options$middleware,
+      _options$mockActions = _options.mockActions,
+      mockActions = _options$mockActions === void 0 ? false : _options$mockActions,
+      _options$name = _options.name,
+      storeName = _options$name === void 0 ? "EasyPeasyStore" : _options$name,
+      _options$reducerEnhan = _options.reducerEnhancer,
+      reducerEnhancer = _options$reducerEnhan === void 0 ? function (rootReducer) {
+    return rootReducer;
+  } : _options$reducerEnhan;
+
+  var bindReplaceState = function bindReplaceState(modelDef) {
+    return _extends({}, modelDef, {
+      ePRS: action(function (_, payload) {
+        return payload;
+      })
+    });
+  };
+
+  var references = {};
+  var modelDefinition = bindReplaceState(modelClone);
+  var mockedActions = [];
+
+  var persistKey = function persistKey(targetPath) {
+    return "[" + storeName + "]@" + targetPath.join('.');
+  };
+
+  var persistor = createPersistor(persistKey, references);
+  var persistMiddleware = createPersistMiddleware(persistor, references);
+  var clearPersistance = createPersistenceClearer(persistKey, references);
+
+  var replaceState = function replaceState(nextState) {
+    return references.internals.actionCreatorDict['@action.ePRS'](nextState);
+  };
+
+  var bindStoreInternals = function bindStoreInternals(state) {
+    if (state === void 0) {
+      state = {};
+    }
+
+    references.internals = createStoreInternals({
+      disableImmer: disableImmer,
+      initialState: state,
+      injections: injections,
+      model: modelDefinition,
+      reducerEnhancer: reducerEnhancer,
+      references: references
+    });
+  };
+
+  var mockActionsMiddleware = function mockActionsMiddleware() {
+    return function () {
+      return function (action) {
+        if (action != null) {
+          mockedActions.push(action);
+        }
+
+        return undefined;
+      };
+    };
+  };
+
+  var composeEnhancers = compose$1 || (devTools && typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
+    name: storeName
+  }) : redux__WEBPACK_IMPORTED_MODULE_2__["compose"]);
+  bindStoreInternals(initialState);
+  var easyPeasyMiddleware = [createComputedPropertiesMiddleware(references), redux_thunk__WEBPACK_IMPORTED_MODULE_3__["default"]].concat(middleware, [createListenerMiddleware(references), persistMiddleware]);
+
+  if (mockActions) {
+    easyPeasyMiddleware.push(mockActionsMiddleware);
+  }
+
+  var store = Object(redux__WEBPACK_IMPORTED_MODULE_2__["createStore"])(references.internals.reducer, references.internals.defaultState, composeEnhancers.apply(void 0, [redux__WEBPACK_IMPORTED_MODULE_2__["applyMiddleware"].apply(void 0, easyPeasyMiddleware)].concat(enhancers)));
+  store.subscribe(function () {
+    references.internals.computedState.isInReducer = false;
+  });
+  references.dispatch = store.dispatch;
+  references.getState = store.getState;
+
+  var bindActionCreators = function bindActionCreators() {
+    Object.keys(store.dispatch).forEach(function (actionsKey) {
+      delete store.dispatch[actionsKey];
+    });
+    Object.keys(references.internals.actionCreators).forEach(function (key) {
+      store.dispatch[key] = references.internals.actionCreators[key];
+    });
+  };
+
+  bindActionCreators();
+
+  var rebindStore = function rebindStore(removeKey) {
+    var currentState = store.getState();
+
+    if (removeKey) {
+      delete currentState[removeKey];
+    }
+
+    bindStoreInternals(currentState);
+    store.replaceReducer(references.internals.reducer);
+    replaceState(references.internals.defaultState);
+    bindActionCreators();
+  };
+
+  var _resolveRehydration = rehydrateStateFromPersistIfNeeded(persistKey, replaceState, references);
+
+  return Object.assign(store, {
+    addModel: function addModel(key, modelForKey) {
+      if (modelDefinition[key] && "development" !== 'production') {
+        // eslint-disable-next-line no-console
+        console.warn("easy-peasy: The store model already contains a model definition for \"" + key + "\"");
+        store.removeModel(key);
+      }
+
+      modelDefinition[key] = modelForKey;
+      rebindStore();
+    },
+    clearMockedActions: function clearMockedActions() {
+      mockedActions = [];
+    },
+    getActions: function getActions() {
+      return references.internals.actionCreators;
+    },
+    getListeners: function getListeners() {
+      return references.internals.listenerActionCreators;
+    },
+    getMockedActions: function getMockedActions() {
+      return [].concat(mockedActions);
+    },
+    persist: {
+      clear: clearPersistance,
+      flush: function flush() {
+        return persistor.flush();
+      },
+      resolveRehydration: function resolveRehydration() {
+        return _resolveRehydration;
+      }
+    },
+    reconfigure: function reconfigure(newModel) {
+      modelDefinition = bindReplaceState(newModel);
+      rebindStore();
+    },
+    removeModel: function removeModel(key) {
+      if (!modelDefinition[key]) {
+        if (true) {
+          // eslint-disable-next-line no-console
+          console.warn("easy-peasy: The store model does not contain a model definition for \"" + key + "\"");
+        }
+
+        return;
+      }
+
+      delete modelDefinition[key];
+      rebindStore(key);
+    }
+  });
+}
+
+/* eslint-disable react/prop-types */
+function createContextStore(model, config) {
+  var StoreContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["createContext"])();
+
+  function Provider(_ref) {
+    var children = _ref.children,
+        initialData = _ref.initialData;
+    var store = Object(react__WEBPACK_IMPORTED_MODULE_1__["useMemo"])(function () {
+      return createStore(typeof model === 'function' ? model(initialData) : model, config);
+    }, []);
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(StoreContext.Provider, {
+      value: store
+    }, children);
+  }
+
+  function useStore() {
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(StoreContext);
+  }
+
+  return {
+    Provider: Provider,
+    useStore: useStore,
+    useStoreState: createStoreStateHook(StoreContext),
+    useStoreActions: createStoreActionsHook(StoreContext),
+    useStoreDispatch: createStoreDispatchHook(StoreContext),
+    useStoreRehydrated: createStoreRehydratedHook(StoreContext)
+  };
+}
+
+/**
+ * Some good references on the topic of reinitialisation:
+ * - https://github.com/facebook/react/issues/14830
+ */
+
+function createComponentStore(model, config) {
+  return function useLocalStore(initialData) {
+    var store = Object(react__WEBPACK_IMPORTED_MODULE_1__["useMemo"])(function () {
+      return createStore(typeof model === 'function' ? model(initialData) : model, config);
+    }, []);
+    var previousStateRef = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])(store.getState());
+
+    var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(function () {
+      return store.getState();
+    }),
+        currentState = _useState[0],
+        setCurrentState = _useState[1];
+
+    Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+      return store.subscribe(function () {
+        var nextState = store.getState();
+
+        if (previousStateRef.current !== nextState) {
+          previousStateRef.current = nextState;
+          setCurrentState(nextState);
+        }
+      });
+    }, [store]);
+    return [currentState, store.getActions()];
+  };
+}
+
+/**
+ * This file has been copied from redux-persist.
+ * The intention being to support as much of the redux-persist API as possible.
+ */
+function createTransform(inbound, outbound, config) {
+  if (config === void 0) {
+    config = {};
+  }
+
+  var whitelist = config.whitelist || null;
+  var blacklist = config.blacklist || null;
+
+  function whitelistBlacklistCheck(key) {
+    if (whitelist && whitelist.indexOf(key) === -1) return true;
+    if (blacklist && blacklist.indexOf(key) !== -1) return true;
+    return false;
+  }
+
+  return {
+    in: function _in(data, key, fullState) {
+      return !whitelistBlacklistCheck(key) && inbound ? inbound(data, key, fullState) : data;
+    },
+    out: function out(data, key, fullState) {
+      return !whitelistBlacklistCheck(key) && outbound ? outbound(data, key, fullState) : data;
+    }
+  };
+}
+
+function StoreProvider(_ref) {
+  var children = _ref.children,
+      store = _ref.store;
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(StoreContext.Provider, {
+    value: store
+  }, children);
+}
+
+/**
+ * The auto freeze feature of immer doesn't seem to work in our testing. We have
+ * explicitly disabled it to avoid perf issues.
+ */
+
+Object(immer_peasy__WEBPACK_IMPORTED_MODULE_0__["setAutoFreeze"])(false);
+
+
+//# sourceMappingURL=easy-peasy.esm.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/easy-peasy/node_modules/is-plain-object/index.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/easy-peasy/node_modules/is-plain-object/index.js ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return isPlainObject; });
+/* harmony import */ var isobject__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! isobject */ "./node_modules/easy-peasy/node_modules/isobject/index.js");
+/*!
+ * is-plain-object <https://github.com/jonschlinkert/is-plain-object>
+ *
+ * Copyright (c) 2014-2017, Jon Schlinkert.
+ * Released under the MIT License.
+ */
+
+
+
+function isObjectObject(o) {
+  return Object(isobject__WEBPACK_IMPORTED_MODULE_0__["default"])(o) === true
+    && Object.prototype.toString.call(o) === '[object Object]';
+}
+
+function isPlainObject(o) {
+  var ctor,prot;
+
+  if (isObjectObject(o) === false) return false;
+
+  // If has modified constructor
+  ctor = o.constructor;
+  if (typeof ctor !== 'function') return false;
+
+  // If has modified prototype
+  prot = ctor.prototype;
+  if (isObjectObject(prot) === false) return false;
+
+  // If constructor does not have an Object-specific method
+  if (prot.hasOwnProperty('isPrototypeOf') === false) {
+    return false;
+  }
+
+  // Most likely a plain Object
+  return true;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/easy-peasy/node_modules/isobject/index.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/easy-peasy/node_modules/isobject/index.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return isObject; });
+/*!
+ * isobject <https://github.com/jonschlinkert/isobject>
+ *
+ * Copyright (c) 2014-2017, Jon Schlinkert.
+ * Released under the MIT License.
+ */
+
+function isObject(val) {
+  return val != null && typeof val === 'object' && Array.isArray(val) === false;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/immer-peasy/dist/immer.module.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/immer-peasy/dist/immer.module.js ***!
+  \*******************************************************/
+/*! exports provided: default, Immer, applyPatches, createDraft, finishDraft, immerable, isDraft, isDraftable, nothing, original, produce, setAutoFreeze, setUseProxies */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Immer", function() { return Immer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "applyPatches", function() { return applyPatches$1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createDraft", function() { return createDraft; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "finishDraft", function() { return finishDraft; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "immerable", function() { return DRAFTABLE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isDraft", function() { return isDraft; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isDraftable", function() { return isDraftable; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "nothing", function() { return NOTHING; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "original", function() { return original; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "produce", function() { return produce; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setAutoFreeze", function() { return setAutoFreeze; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setUseProxies", function() { return setUseProxies; });
+var obj;
+var NOTHING = typeof Symbol !== "undefined" ? Symbol("immer-nothing") : ( obj = {}, obj["immer-nothing"] = true, obj );
+var DRAFTABLE = typeof Symbol !== "undefined" && Symbol.for ? Symbol.for("immer-draftable") : "__$immer_draftable";
+var DRAFT_STATE = typeof Symbol !== "undefined" && Symbol.for ? Symbol.for("immer-state") : "__$immer_state";
+function isDraft(value) {
+  return !!value && !!value[DRAFT_STATE];
+}
+function isDraftable(value) {
+  if (!value || typeof value !== "object") { return false; }
+  if (Array.isArray(value)) { return true; }
+  var proto = Object.getPrototypeOf(value);
+  if (!proto || proto === Object.prototype) { return true; }
+  return !!value[DRAFTABLE] || !!value.constructor[DRAFTABLE];
+}
+function original(value) {
+  if (value && value[DRAFT_STATE]) {
+    return value[DRAFT_STATE].base;
+  } // otherwise return undefined
+
+}
+var assign = Object.assign || function assign(target, value) {
+  for (var key in value) {
+    if (has(value, key)) {
+      target[key] = value[key];
+    }
+  }
+
+  return target;
+};
+var ownKeys = typeof Reflect !== "undefined" && Reflect.ownKeys ? Reflect.ownKeys : typeof Object.getOwnPropertySymbols !== "undefined" ? function (obj) { return Object.getOwnPropertyNames(obj).concat(Object.getOwnPropertySymbols(obj)); } : Object.getOwnPropertyNames;
+function shallowCopy(base, invokeGetters) {
+  if ( invokeGetters === void 0 ) invokeGetters = false;
+
+  if (Array.isArray(base)) { return base.slice(); }
+  var clone = Object.create(Object.getPrototypeOf(base));
+  ownKeys(base).forEach(function (key) {
+    if (key === DRAFT_STATE) {
+      return; // Never copy over draft state.
+    }
+
+    var desc = Object.getOwnPropertyDescriptor(base, key);
+    var value = desc.value;
+
+    if (desc.get) {
+      if (invokeGetters) {
+        value = desc.get.call(base);
+      }
+    }
+
+    if (desc.enumerable) {
+      clone[key] = value;
+    } else if (invokeGetters) {
+      Object.defineProperty(clone, key, {
+        value: value,
+        writable: true,
+        configurable: true
+      });
+    }
+  });
+  return clone;
+}
+function each(value, cb) {
+  if (Array.isArray(value)) {
+    for (var i = 0; i < value.length; i++) { cb(i, value[i], value); }
+  } else {
+    ownKeys(value).forEach(function (key) { return cb(key, value[key], value); });
+  }
+}
+function isEnumerable(base, prop) {
+  var desc = Object.getOwnPropertyDescriptor(base, prop);
+  return !!desc && desc.enumerable;
+}
+function has(thing, prop) {
+  return Object.prototype.hasOwnProperty.call(thing, prop);
+}
+function is(x, y) {
+  // From: https://github.com/facebook/fbjs/blob/c69904a511b900266935168223063dd8772dfc40/packages/fbjs/src/core/shallowEqual.js
+  if (x === y) {
+    return x !== 0 || 1 / x === 1 / y;
+  } else {
+    return x !== x && y !== y;
+  }
+}
+
+/** Each scope represents a `produce` call. */
+
+var ImmerScope = function ImmerScope(parent) {
+  this.drafts = [];
+  this.parent = parent; // Whenever the modified draft contains a draft from another scope, we
+  // need to prevent auto-freezing so the unowned draft can be finalized.
+
+  this.canAutoFreeze = true; // To avoid prototype lookups:
+
+  this.patches = null;
+};
+
+ImmerScope.prototype.usePatches = function usePatches (patchListener) {
+  if (patchListener) {
+    this.patches = [];
+    this.inversePatches = [];
+    this.patchListener = patchListener;
+  }
+};
+
+ImmerScope.prototype.revoke = function revoke$1 () {
+  this.leave();
+  this.drafts.forEach(revoke);
+  this.drafts = null; // Make draft-related methods throw.
+};
+
+ImmerScope.prototype.leave = function leave () {
+  if (this === ImmerScope.current) {
+    ImmerScope.current = this.parent;
+  }
+};
+ImmerScope.current = null;
+
+ImmerScope.enter = function () {
+  return this.current = new ImmerScope(this.current);
+};
+
+function revoke(draft) {
+  draft[DRAFT_STATE].revoke();
+}
+
+// but share them all instead
+
+var descriptors = {};
+function willFinalize(scope, result, isReplaced) {
+  scope.drafts.forEach(function (draft) {
+    draft[DRAFT_STATE].finalizing = true;
+  });
+
+  if (!isReplaced) {
+    if (scope.patches) {
+      markChangesRecursively(scope.drafts[0]);
+    } // This is faster when we don't care about which attributes changed.
+
+
+    markChangesSweep(scope.drafts);
+  } // When a child draft is returned, look for changes.
+  else if (isDraft(result) && result[DRAFT_STATE].scope === scope) {
+      markChangesSweep(scope.drafts);
+    }
+}
+function createProxy(base, parent) {
+  var isArray = Array.isArray(base);
+  var draft = clonePotentialDraft(base);
+  each(draft, function (prop) {
+    proxyProperty(draft, prop, isArray || isEnumerable(base, prop));
+  }); // See "proxy.js" for property documentation.
+
+  var scope = parent ? parent.scope : ImmerScope.current;
+  var state = {
+    scope: scope,
+    modified: false,
+    finalizing: false,
+    // es5 only
+    finalized: false,
+    assigned: {},
+    parent: parent,
+    base: base,
+    draft: draft,
+    copy: null,
+    revoke: revoke$1,
+    revoked: false // es5 only
+
+  };
+  createHiddenProperty(draft, DRAFT_STATE, state);
+  scope.drafts.push(draft);
+  return draft;
+}
+
+function revoke$1() {
+  this.revoked = true;
+}
+
+function source(state) {
+  return state.copy || state.base;
+} // Access a property without creating an Immer draft.
+
+
+function peek(draft, prop) {
+  var state = draft[DRAFT_STATE];
+
+  if (state && !state.finalizing) {
+    state.finalizing = true;
+    var value = draft[prop];
+    state.finalizing = false;
+    return value;
+  }
+
+  return draft[prop];
+}
+
+function get(state, prop) {
+  assertUnrevoked(state);
+  var value = peek(source(state), prop);
+  if (state.finalizing) { return value; } // Create a draft if the value is unmodified.
+
+  if (value === peek(state.base, prop) && isDraftable(value)) {
+    prepareCopy(state);
+    return state.copy[prop] = createProxy(value, state);
+  }
+
+  return value;
+}
+
+function set(state, prop, value) {
+  assertUnrevoked(state);
+  state.assigned[prop] = true;
+
+  if (!state.modified) {
+    if (is(value, peek(source(state), prop))) { return; }
+    markChanged(state);
+    prepareCopy(state);
+  }
+
+  state.copy[prop] = value;
+}
+
+function markChanged(state) {
+  if (!state.modified) {
+    state.modified = true;
+    if (state.parent) { markChanged(state.parent); }
+  }
+}
+
+function prepareCopy(state) {
+  if (!state.copy) { state.copy = clonePotentialDraft(state.base); }
+}
+
+function clonePotentialDraft(base) {
+  var state = base && base[DRAFT_STATE];
+
+  if (state) {
+    state.finalizing = true;
+    var draft = shallowCopy(state.draft, true);
+    state.finalizing = false;
+    return draft;
+  }
+
+  return shallowCopy(base);
+}
+
+function proxyProperty(draft, prop, enumerable) {
+  var desc = descriptors[prop];
+
+  if (desc) {
+    desc.enumerable = enumerable;
+  } else {
+    descriptors[prop] = desc = {
+      configurable: true,
+      enumerable: enumerable,
+
+      get: function get$1() {
+        return get(this[DRAFT_STATE], prop);
+      },
+
+      set: function set$1(value) {
+        set(this[DRAFT_STATE], prop, value);
+      }
+
+    };
+  }
+
+  Object.defineProperty(draft, prop, desc);
+}
+
+function assertUnrevoked(state) {
+  if (state.revoked === true) { throw new Error("Cannot use a proxy that has been revoked. Did you pass an object from inside an immer function to an async process? " + JSON.stringify(source(state))); }
+} // This looks expensive, but only proxies are visited, and only objects without known changes are scanned.
+
+
+function markChangesSweep(drafts) {
+  // The natural order of drafts in the `scope` array is based on when they
+  // were accessed. By processing drafts in reverse natural order, we have a
+  // better chance of processing leaf nodes first. When a leaf node is known to
+  // have changed, we can avoid any traversal of its ancestor nodes.
+  for (var i = drafts.length - 1; i >= 0; i--) {
+    var state = drafts[i][DRAFT_STATE];
+
+    if (!state.modified) {
+      if (Array.isArray(state.base)) {
+        if (hasArrayChanges(state)) { markChanged(state); }
+      } else if (hasObjectChanges(state)) { markChanged(state); }
+    }
+  }
+}
+
+function markChangesRecursively(object) {
+  if (!object || typeof object !== "object") { return; }
+  var state = object[DRAFT_STATE];
+  if (!state) { return; }
+  var base = state.base;
+  var draft = state.draft;
+  var assigned = state.assigned;
+
+  if (!Array.isArray(object)) {
+    // Look for added keys.
+    Object.keys(draft).forEach(function (key) {
+      // The `undefined` check is a fast path for pre-existing keys.
+      if (base[key] === undefined && !has(base, key)) {
+        assigned[key] = true;
+        markChanged(state);
+      } else if (!assigned[key]) {
+        // Only untouched properties trigger recursion.
+        markChangesRecursively(draft[key]);
+      }
+    }); // Look for removed keys.
+
+    Object.keys(base).forEach(function (key) {
+      // The `undefined` check is a fast path for pre-existing keys.
+      if (draft[key] === undefined && !has(draft, key)) {
+        assigned[key] = false;
+        markChanged(state);
+      }
+    });
+  } else if (hasArrayChanges(state)) {
+    markChanged(state);
+    assigned.length = true;
+
+    if (draft.length < base.length) {
+      for (var i = draft.length; i < base.length; i++) { assigned[i] = false; }
+    } else {
+      for (var i$1 = base.length; i$1 < draft.length; i$1++) { assigned[i$1] = true; }
+    }
+
+    for (var i$2 = 0; i$2 < draft.length; i$2++) {
+      // Only untouched indices trigger recursion.
+      if (assigned[i$2] === undefined) { markChangesRecursively(draft[i$2]); }
+    }
+  }
+}
+
+function hasObjectChanges(state) {
+  var base = state.base;
+  var draft = state.draft; // Search for added keys and changed keys. Start at the back, because
+  // non-numeric keys are ordered by time of definition on the object.
+
+  var keys = Object.keys(draft);
+
+  for (var i = keys.length - 1; i >= 0; i--) {
+    var key = keys[i];
+    var baseValue = base[key]; // The `undefined` check is a fast path for pre-existing keys.
+
+    if (baseValue === undefined && !has(base, key)) {
+      return true;
+    } // Once a base key is deleted, future changes go undetected, because its
+    // descriptor is erased. This branch detects any missed changes.
+    else {
+        var value = draft[key];
+        var state$1 = value && value[DRAFT_STATE];
+
+        if (state$1 ? state$1.base !== baseValue : !is(value, baseValue)) {
+          return true;
+        }
+      }
+  } // At this point, no keys were added or changed.
+  // Compare key count to determine if keys were deleted.
+
+
+  return keys.length !== Object.keys(base).length;
+}
+
+function hasArrayChanges(state) {
+  var draft = state.draft;
+  if (draft.length !== state.base.length) { return true; } // See #116
+  // If we first shorten the length, our array interceptors will be removed.
+  // If after that new items are added, result in the same original length,
+  // those last items will have no intercepting property.
+  // So if there is no own descriptor on the last position, we know that items were removed and added
+  // N.B.: splice, unshift, etc only shift values around, but not prop descriptors, so we only have to check
+  // the last one
+
+  var descriptor = Object.getOwnPropertyDescriptor(draft, draft.length - 1); // descriptor can be null, but only for newly created sparse arrays, eg. new Array(10)
+
+  if (descriptor && !descriptor.get) { return true; } // For all other cases, we don't have to compare, as they would have been picked up by the index setters
+
+  return false;
+}
+
+function createHiddenProperty(target, prop, value) {
+  Object.defineProperty(target, prop, {
+    value: value,
+    enumerable: false,
+    writable: true
+  });
+}
+
+var legacyProxy = /*#__PURE__*/Object.freeze({
+    willFinalize: willFinalize,
+    createProxy: createProxy
+});
+
+function willFinalize$1() {}
+function createProxy$1(base, parent) {
+  var scope = parent ? parent.scope : ImmerScope.current;
+  var state = {
+    // Track which produce call this is associated with.
+    scope: scope,
+    // True for both shallow and deep changes.
+    modified: false,
+    // Used during finalization.
+    finalized: false,
+    // Track which properties have been assigned (true) or deleted (false).
+    assigned: {},
+    // The parent draft state.
+    parent: parent,
+    // The base state.
+    base: base,
+    // The base proxy.
+    draft: null,
+    // Any property proxies.
+    drafts: {},
+    // The base copy with any updated values.
+    copy: null,
+    // Called by the `produce` function.
+    revoke: null
+  };
+  var ref = Array.isArray(base) ? // [state] is used for arrays, to make sure the proxy is array-ish and not violate invariants,
+  // although state itself is an object
+  Proxy.revocable([state], arrayTraps) : Proxy.revocable(state, objectTraps);
+  var revoke = ref.revoke;
+  var proxy = ref.proxy;
+  state.draft = proxy;
+  state.revoke = revoke;
+  scope.drafts.push(proxy);
+  return proxy;
+}
+var objectTraps = {
+  get: get$1,
+
+  has: function has(target, prop) {
+    return prop in source$1(target);
+  },
+
+  ownKeys: function ownKeys(target) {
+    return Reflect.ownKeys(source$1(target));
+  },
+
+  set: set$1,
+  deleteProperty: deleteProperty,
+  getOwnPropertyDescriptor: getOwnPropertyDescriptor,
+
+  defineProperty: function defineProperty() {
+    throw new Error("Object.defineProperty() cannot be used on an Immer draft"); // prettier-ignore
+  },
+
+  getPrototypeOf: function getPrototypeOf(target) {
+    return Object.getPrototypeOf(target.base);
+  },
+
+  setPrototypeOf: function setPrototypeOf() {
+    throw new Error("Object.setPrototypeOf() cannot be used on an Immer draft"); // prettier-ignore
+  }
+
+};
+var arrayTraps = {};
+each(objectTraps, function (key, fn) {
+  arrayTraps[key] = function () {
+    arguments[0] = arguments[0][0];
+    return fn.apply(this, arguments);
+  };
+});
+
+arrayTraps.deleteProperty = function (state, prop) {
+  if (isNaN(parseInt(prop))) {
+    throw new Error("Immer only supports deleting array indices"); // prettier-ignore
+  }
+
+  return objectTraps.deleteProperty.call(this, state[0], prop);
+};
+
+arrayTraps.set = function (state, prop, value) {
+  if (prop !== "length" && isNaN(parseInt(prop))) {
+    throw new Error("Immer only supports setting array indices and the 'length' property"); // prettier-ignore
+  }
+
+  return objectTraps.set.call(this, state[0], prop, value);
+}; // returns the object we should be reading the current value from, which is base, until some change has been made
+
+
+function source$1(state) {
+  return state.copy || state.base;
+} // Access a property without creating an Immer draft.
+
+
+function peek$1(draft, prop) {
+  var state = draft[DRAFT_STATE];
+  var desc = Reflect.getOwnPropertyDescriptor(state ? source$1(state) : draft, prop);
+  return desc && desc.value;
+}
+
+function get$1(state, prop) {
+  if (prop === DRAFT_STATE) { return state; }
+  var drafts = state.drafts; // Check for existing draft in unmodified state.
+
+  if (!state.modified && has(drafts, prop)) {
+    return drafts[prop];
+  }
+
+  var value = source$1(state)[prop];
+
+  if (state.finalized || !isDraftable(value)) {
+    return value;
+  } // Check for existing draft in modified state.
+
+
+  if (state.modified) {
+    // Assigned values are never drafted. This catches any drafts we created, too.
+    if (value !== peek$1(state.base, prop)) { return value; } // Store drafts on the copy (when one exists).
+
+    drafts = state.copy;
+  }
+
+  return drafts[prop] = createProxy$1(value, state);
+}
+
+function set$1(state, prop, value) {
+  if (!state.modified) {
+    var baseValue = peek$1(state.base, prop); // Optimize based on value's truthiness. Truthy values are guaranteed to
+    // never be undefined, so we can avoid the `in` operator. Lastly, truthy
+    // values may be drafts, but falsy values are never drafts.
+
+    var isUnchanged = value ? is(baseValue, value) || value === state.drafts[prop] : is(baseValue, value) && prop in state.base;
+    if (isUnchanged) { return true; }
+    markChanged$1(state);
+  }
+
+  state.assigned[prop] = true;
+  state.copy[prop] = value;
+  return true;
+}
+
+function deleteProperty(state, prop) {
+  // The `undefined` check is a fast path for pre-existing keys.
+  if (peek$1(state.base, prop) !== undefined || prop in state.base) {
+    state.assigned[prop] = false;
+    markChanged$1(state);
+  }
+
+  if (state.copy) { delete state.copy[prop]; }
+  return true;
+} // Note: We never coerce `desc.value` into an Immer draft, because we can't make
+// the same guarantee in ES5 mode.
+
+
+function getOwnPropertyDescriptor(state, prop) {
+  var owner = source$1(state);
+  var desc = Reflect.getOwnPropertyDescriptor(owner, prop);
+
+  if (desc) {
+    desc.writable = true;
+    desc.configurable = !Array.isArray(owner) || prop !== "length";
+  }
+
+  return desc;
+}
+
+function markChanged$1(state) {
+  if (!state.modified) {
+    state.modified = true;
+    state.copy = assign(shallowCopy(state.base), state.drafts);
+    state.drafts = null;
+    if (state.parent) { markChanged$1(state.parent); }
+  }
+}
+
+var modernProxy = /*#__PURE__*/Object.freeze({
+    willFinalize: willFinalize$1,
+    createProxy: createProxy$1
+});
+
+function generatePatches(state, basePath, patches, inversePatches) {
+  Array.isArray(state.base) ? generateArrayPatches(state, basePath, patches, inversePatches) : generateObjectPatches(state, basePath, patches, inversePatches);
+}
+
+function generateArrayPatches(state, basePath, patches, inversePatches) {
+  var assign, assign$1;
+
+  var base = state.base;
+  var copy = state.copy;
+  var assigned = state.assigned; // Reduce complexity by ensuring `base` is never longer.
+
+  if (copy.length < base.length) {
+    (assign = [copy, base], base = assign[0], copy = assign[1]);
+    (assign$1 = [inversePatches, patches], patches = assign$1[0], inversePatches = assign$1[1]);
+  }
+
+  var delta = copy.length - base.length; // Find the first replaced index.
+
+  var start = 0;
+
+  while (base[start] === copy[start] && start < base.length) {
+    ++start;
+  } // Find the last replaced index. Search from the end to optimize splice patches.
+
+
+  var end = base.length;
+
+  while (end > start && base[end - 1] === copy[end + delta - 1]) {
+    --end;
+  } // Process replaced indices.
+
+
+  for (var i = start; i < end; ++i) {
+    if (assigned[i] && copy[i] !== base[i]) {
+      var path = basePath.concat([i]);
+      patches.push({
+        op: "replace",
+        path: path,
+        value: copy[i]
+      });
+      inversePatches.push({
+        op: "replace",
+        path: path,
+        value: base[i]
+      });
+    }
+  }
+
+  var useRemove = end != base.length;
+  var replaceCount = patches.length; // Process added indices.
+
+  for (var i$1 = end + delta - 1; i$1 >= end; --i$1) {
+    var path$1 = basePath.concat([i$1]);
+    patches[replaceCount + i$1 - end] = {
+      op: "add",
+      path: path$1,
+      value: copy[i$1]
+    };
+
+    if (useRemove) {
+      inversePatches.push({
+        op: "remove",
+        path: path$1
+      });
+    }
+  } // One "replace" patch reverses all non-splicing "add" patches.
+
+
+  if (!useRemove) {
+    inversePatches.push({
+      op: "replace",
+      path: basePath.concat(["length"]),
+      value: base.length
+    });
+  }
+}
+
+function generateObjectPatches(state, basePath, patches, inversePatches) {
+  var base = state.base;
+  var copy = state.copy;
+  each(state.assigned, function (key, assignedValue) {
+    var origValue = base[key];
+    var value = copy[key];
+    var op = !assignedValue ? "remove" : key in base ? "replace" : "add";
+    if (origValue === value && op === "replace") { return; }
+    var path = basePath.concat(key);
+    patches.push(op === "remove" ? {
+      op: op,
+      path: path
+    } : {
+      op: op,
+      path: path,
+      value: value
+    });
+    inversePatches.push(op === "add" ? {
+      op: "remove",
+      path: path
+    } : op === "remove" ? {
+      op: "add",
+      path: path,
+      value: origValue
+    } : {
+      op: "replace",
+      path: path,
+      value: origValue
+    });
+  });
+}
+
+function applyPatches(draft, patches) {
+  for (var i = 0; i < patches.length; i++) {
+    var patch = patches[i];
+    var path = patch.path;
+
+    if (path.length === 0 && patch.op === "replace") {
+      draft = patch.value;
+    } else {
+      var base = draft;
+
+      for (var i$1 = 0; i$1 < path.length - 1; i$1++) {
+        base = base[path[i$1]];
+        if (!base || typeof base !== "object") { throw new Error("Cannot apply patch, path doesn't resolve: " + path.join("/")); } // prettier-ignore
+      }
+
+      var key = path[path.length - 1];
+
+      switch (patch.op) {
+        case "replace":
+          base[key] = patch.value;
+          break;
+
+        case "add":
+          if (Array.isArray(base)) {
+            // TODO: support "foo/-" paths for appending to an array
+            base.splice(key, 0, patch.value);
+          } else {
+            base[key] = patch.value;
+          }
+
+          break;
+
+        case "remove":
+          if (Array.isArray(base)) {
+            base.splice(key, 1);
+          } else {
+            delete base[key];
+          }
+
+          break;
+
+        default:
+          throw new Error("Unsupported patch operation: " + patch.op);
+      }
+    }
+  }
+
+  return draft;
+}
+
+function verifyMinified() {}
+
+var configDefaults = {
+  useProxies: typeof Proxy !== "undefined" && typeof Reflect !== "undefined",
+  autoFreeze: typeof process !== "undefined" ? "development" !== "production" : verifyMinified.name === "verifyMinified",
+  onAssign: null,
+  onDelete: null,
+  onCopy: null
+};
+var Immer = function Immer(config) {
+  assign(this, configDefaults, config);
+  this.setUseProxies(this.useProxies);
+  this.produce = this.produce.bind(this);
+};
+
+Immer.prototype.produce = function produce (base, recipe, patchListener) {
+    var this$1 = this;
+
+  // curried invocation
+  if (typeof base === "function" && typeof recipe !== "function") {
+    var defaultBase = recipe;
+    recipe = base;
+    var self = this;
+    return function curriedProduce(base) {
+        var this$1 = this;
+        if ( base === void 0 ) base = defaultBase;
+        var args = [], len = arguments.length - 1;
+        while ( len-- > 0 ) args[ len ] = arguments[ len + 1 ];
+
+      return self.produce(base, function (draft) { return recipe.call.apply(recipe, [ this$1, draft ].concat( args )); }); // prettier-ignore
+    };
+  } // prettier-ignore
+
+
+  {
+    if (typeof recipe !== "function") {
+      throw new Error("The first or second argument to `produce` must be a function");
+    }
+
+    if (patchListener !== undefined && typeof patchListener !== "function") {
+      throw new Error("The third argument to `produce` must be a function or undefined");
+    }
+  }
+  var result; // Only plain objects, arrays, and "immerable classes" are drafted.
+
+  if (isDraftable(base)) {
+    var scope = ImmerScope.enter();
+    var proxy = this.createProxy(base);
+    var hasError = true;
+
+    try {
+      result = recipe(proxy);
+      hasError = false;
+    } finally {
+      // finally instead of catch + rethrow better preserves original stack
+      if (hasError) { scope.revoke(); }else { scope.leave(); }
+    }
+
+    if (result instanceof Promise) {
+      return result.then(function (result) {
+        scope.usePatches(patchListener);
+        return this$1.processResult(result, scope);
+      }, function (error) {
+        scope.revoke();
+        throw error;
+      });
+    }
+
+    scope.usePatches(patchListener);
+    return this.processResult(result, scope);
+  } else {
+    result = recipe(base);
+    if (result === undefined) { return base; }
+    return result !== NOTHING ? result : undefined;
+  }
+};
+
+Immer.prototype.createDraft = function createDraft (base) {
+  if (!isDraftable(base)) {
+    throw new Error("First argument to `createDraft` must be a plain object, an array, or an immerable object"); // prettier-ignore
+  }
+
+  var scope = ImmerScope.enter();
+  var proxy = this.createProxy(base);
+  proxy[DRAFT_STATE].isManual = true;
+  scope.leave();
+  return proxy;
+};
+
+Immer.prototype.finishDraft = function finishDraft (draft, patchListener) {
+  var state = draft && draft[DRAFT_STATE];
+
+  if (!state || !state.isManual) {
+    throw new Error("First argument to `finishDraft` must be a draft returned by `createDraft`"); // prettier-ignore
+  }
+
+  if (state.finalized) {
+    throw new Error("The given draft is already finalized"); // prettier-ignore
+  }
+
+  var scope = state.scope;
+  scope.usePatches(patchListener);
+  return this.processResult(undefined, scope);
+};
+
+Immer.prototype.setAutoFreeze = function setAutoFreeze (value) {
+  this.autoFreeze = value;
+};
+
+Immer.prototype.setUseProxies = function setUseProxies (value) {
+  this.useProxies = value;
+  assign(this, value ? modernProxy : legacyProxy);
+};
+
+Immer.prototype.applyPatches = function applyPatches$1 (base, patches) {
+  // Mutate the base state when a draft is passed.
+  if (isDraft(base)) {
+    return applyPatches(base, patches);
+  } // Otherwise, produce a copy of the base state.
+
+
+  return this.produce(base, function (draft) { return applyPatches(draft, patches); });
+};
+/** @internal */
+
+
+Immer.prototype.processResult = function processResult (result, scope) {
+  var baseDraft = scope.drafts[0];
+  var isReplaced = result !== undefined && result !== baseDraft;
+  this.willFinalize(scope, result, isReplaced);
+
+  if (isReplaced) {
+    if (baseDraft[DRAFT_STATE].modified) {
+      scope.revoke();
+      throw new Error("An immer producer returned a new value *and* modified its draft. Either return a new value *or* modify the draft."); // prettier-ignore
+    }
+
+    if (isDraftable(result)) {
+      // Finalize the result in case it contains (or is) a subset of the draft.
+      result = this.finalize(result, null, scope);
+    }
+
+    if (scope.patches) {
+      scope.patches.push({
+        op: "replace",
+        path: [],
+        value: result
+      });
+      scope.inversePatches.push({
+        op: "replace",
+        path: [],
+        value: baseDraft[DRAFT_STATE].base
+      });
+    }
+  } else {
+    // Finalize the base draft.
+    result = this.finalize(baseDraft, [], scope);
+  }
+
+  scope.revoke();
+
+  if (scope.patches) {
+    scope.patchListener(scope.patches, scope.inversePatches);
+  }
+
+  return result !== NOTHING ? result : undefined;
+};
+/**
+ * @internal
+ * Finalize a draft, returning either the unmodified base state or a modified
+ * copy of the base state.
+ */
+
+
+Immer.prototype.finalize = function finalize (draft, path, scope) {
+    var this$1 = this;
+
+  var state = draft[DRAFT_STATE];
+
+  if (!state) {
+    if (Object.isFrozen(draft)) { return draft; }
+    return this.finalizeTree(draft, null, scope);
+  } // Never finalize drafts owned by another scope.
+
+
+  if (state.scope !== scope) {
+    return draft;
+  }
+
+  if (!state.modified) {
+    return state.base;
+  }
+
+  if (!state.finalized) {
+    state.finalized = true;
+    this.finalizeTree(state.draft, path, scope);
+
+    if (this.onDelete) {
+      // The `assigned` object is unreliable with ES5 drafts.
+      if (this.useProxies) {
+        var assigned = state.assigned;
+
+        for (var prop in assigned) {
+          if (!assigned[prop]) { this.onDelete(state, prop); }
+        }
+      } else {
+        var base = state.base;
+          var copy = state.copy;
+        each(base, function (prop) {
+          if (!has(copy, prop)) { this$1.onDelete(state, prop); }
+        });
+      }
+    }
+
+    if (this.onCopy) {
+      this.onCopy(state);
+    } // At this point, all descendants of `state.copy` have been finalized,
+    // so we can be sure that `scope.canAutoFreeze` is accurate.
+
+
+    if (this.autoFreeze && scope.canAutoFreeze) {
+      Object.freeze(state.copy);
+    }
+
+    if (path && scope.patches) {
+      generatePatches(state, path, scope.patches, scope.inversePatches);
+    }
+  }
+
+  return state.copy;
+};
+/**
+ * @internal
+ * Finalize all drafts in the given state tree.
+ */
+
+
+Immer.prototype.finalizeTree = function finalizeTree (root, rootPath, scope) {
+    var this$1 = this;
+
+  var state = root[DRAFT_STATE];
+
+  if (state) {
+    if (!this.useProxies) {
+      // Create the final copy, with added keys and without deleted keys.
+      state.copy = shallowCopy(state.draft, true);
+    }
+
+    root = state.copy;
+  }
+
+  var needPatches = !!rootPath && !!scope.patches;
+
+  var finalizeProperty = function (prop, value, parent) {
+    if (value === parent) {
+      throw Error("Immer forbids circular references");
+    } // In the `finalizeTree` method, only the `root` object may be a draft.
+
+
+    var isDraftProp = !!state && parent === root;
+
+    if (isDraft(value)) {
+      var path = isDraftProp && needPatches && !state.assigned[prop] ? rootPath.concat(prop) : null; // Drafts owned by `scope` are finalized here.
+
+      value = this$1.finalize(value, path, scope); // Drafts from another scope must prevent auto-freezing.
+
+      if (isDraft(value)) {
+        scope.canAutoFreeze = false;
+      } // Preserve non-enumerable properties.
+
+
+      if (Array.isArray(parent) || isEnumerable(parent, prop)) {
+        parent[prop] = value;
+      } else {
+        Object.defineProperty(parent, prop, {
+          value: value
+        });
+      } // Unchanged drafts are never passed to the `onAssign` hook.
+
+
+      if (isDraftProp && value === state.base[prop]) { return; }
+    } // Unchanged draft properties are ignored.
+    else if (isDraftProp && is(value, state.base[prop])) {
+        return;
+      } // Search new objects for unfinalized drafts. Frozen objects should never contain drafts.
+      else if (isDraftable(value) && !Object.isFrozen(value)) {
+          each(value, finalizeProperty);
+        }
+
+    if (isDraftProp && this$1.onAssign) {
+      this$1.onAssign(state, prop, value);
+    }
+  };
+
+  each(root, finalizeProperty);
+  return root;
+};
+
+var immer = new Immer();
+/**
+ * The `produce` function takes a value and a "recipe function" (whose
+ * return value often depends on the base state). The recipe function is
+ * free to mutate its first argument however it wants. All mutations are
+ * only ever applied to a __copy__ of the base state.
+ *
+ * Pass only a function to create a "curried producer" which relieves you
+ * from passing the recipe function every time.
+ *
+ * Only plain objects and arrays are made mutable. All other objects are
+ * considered uncopyable.
+ *
+ * Note: This function is __bound__ to its `Immer` instance.
+ *
+ * @param {any} base - the initial state
+ * @param {Function} producer - function that receives a proxy of the base state as first argument and which can be freely modified
+ * @param {Function} patchListener - optional function that will be called with all the patches produced here
+ * @returns {any} a new state, or the initial state if nothing was modified
+ */
+
+var produce = immer.produce;
+/**
+ * Pass true to automatically freeze all copies created by Immer.
+ *
+ * By default, auto-freezing is disabled in production.
+ */
+
+var setAutoFreeze = immer.setAutoFreeze.bind(immer);
+/**
+ * Pass true to use the ES2015 `Proxy` class when creating drafts, which is
+ * always faster than using ES5 proxies.
+ *
+ * By default, feature detection is used, so calling this is rarely necessary.
+ */
+
+var setUseProxies = immer.setUseProxies.bind(immer);
+/**
+ * Apply an array of Immer patches to the first argument.
+ *
+ * This function is a producer, which means copy-on-write is in effect.
+ */
+
+var applyPatches$1 = immer.applyPatches.bind(immer);
+/**
+ * Create an Immer draft from the given base state, which may be a draft itself.
+ * The draft can be modified until you finalize it with the `finishDraft` function.
+ */
+
+var createDraft = immer.createDraft.bind(immer);
+/**
+ * Finalize an Immer draft from a `createDraft` call, returning the base state
+ * (if no changes were made) or a modified copy. The draft must *not* be
+ * mutated afterwards.
+ *
+ * Pass a function as the 2nd argument to generate Immer patches based on the
+ * changes that were made.
+ */
+
+var finishDraft = immer.finishDraft.bind(immer);
+
+/* harmony default export */ __webpack_exports__["default"] = (produce);
+
+//# sourceMappingURL=immer.module.js.map
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../process/browser.js */ "./node_modules/process/browser.js")))
+
+/***/ }),
+
+/***/ "./node_modules/memoizerific/memoizerific.js":
+/*!***************************************************!*\
+  !*** ./node_modules/memoizerific/memoizerific.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var require;var require;(function(f){if(true){module.exports=f()}else { var g; }})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return require(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
+module.exports = function(forceSimilar) {
+	if (typeof Map !== 'function' || forceSimilar) {
+		var Similar = _dereq_('./similar');
+		return new Similar();
+	}
+	else {
+		return new Map();
+	}
+}
+
+},{"./similar":2}],2:[function(_dereq_,module,exports){
+function Similar() {
+	this.list = [];
+	this.lastItem = undefined;
+	this.size = 0;
+
+	return this;
+}
+
+Similar.prototype.get = function(key) {
+	var index;
+
+	if (this.lastItem && this.isEqual(this.lastItem.key, key)) {
+		return this.lastItem.val;
+	}
+
+	index = this.indexOf(key);
+	if (index >= 0) {
+		this.lastItem = this.list[index];
+		return this.list[index].val;
+	}
+
+	return undefined;
+};
+
+Similar.prototype.set = function(key, val) {
+	var index;
+
+	if (this.lastItem && this.isEqual(this.lastItem.key, key)) {
+		this.lastItem.val = val;
+		return this;
+	}
+
+	index = this.indexOf(key);
+	if (index >= 0) {
+		this.lastItem = this.list[index];
+		this.list[index].val = val;
+		return this;
+	}
+
+	this.lastItem = { key: key, val: val };
+	this.list.push(this.lastItem);
+	this.size++;
+
+	return this;
+};
+
+Similar.prototype.delete = function(key) {
+	var index;
+
+	if (this.lastItem && this.isEqual(this.lastItem.key, key)) {
+		this.lastItem = undefined;
+	}
+
+	index = this.indexOf(key);
+	if (index >= 0) {
+		this.size--;
+		return this.list.splice(index, 1)[0];
+	}
+
+	return undefined;
+};
+
+
+// important that has() doesn't use get() in case an existing key has a falsy value, in which case has() would return false
+Similar.prototype.has = function(key) {
+	var index;
+
+	if (this.lastItem && this.isEqual(this.lastItem.key, key)) {
+		return true;
+	}
+
+	index = this.indexOf(key);
+	if (index >= 0) {
+		this.lastItem = this.list[index];
+		return true;
+	}
+
+	return false;
+};
+
+Similar.prototype.forEach = function(callback, thisArg) {
+	var i;
+	for (i = 0; i < this.size; i++) {
+		callback.call(thisArg || this, this.list[i].val, this.list[i].key, this);
+	}
+};
+
+Similar.prototype.indexOf = function(key) {
+	var i;
+	for (i = 0; i < this.size; i++) {
+		if (this.isEqual(this.list[i].key, key)) {
+			return i;
+		}
+	}
+	return -1;
+};
+
+// check if the numbers are equal, or whether they are both precisely NaN (isNaN returns true for all non-numbers)
+Similar.prototype.isEqual = function(val1, val2) {
+	return val1 === val2 || (val1 !== val1 && val2 !== val2);
+};
+
+module.exports = Similar;
+},{}],3:[function(_dereq_,module,exports){
+var MapOrSimilar = _dereq_('map-or-similar');
+
+module.exports = function (limit) {
+	var cache = new MapOrSimilar(undefined === 'true'),
+		lru = [];
+
+	return function (fn) {
+		var memoizerific = function () {
+			var currentCache = cache,
+				newMap,
+				fnResult,
+				argsLengthMinusOne = arguments.length - 1,
+				lruPath = Array(argsLengthMinusOne + 1),
+				isMemoized = true,
+				i;
+
+			if ((memoizerific.numArgs || memoizerific.numArgs === 0) && memoizerific.numArgs !== argsLengthMinusOne + 1) {
+				throw new Error('Memoizerific functions should always be called with the same number of arguments');
+			}
+
+			// loop through each argument to traverse the map tree
+			for (i = 0; i < argsLengthMinusOne; i++) {
+				lruPath[i] = {
+					cacheItem: currentCache,
+					arg: arguments[i]
+				};
+
+				// climb through the hierarchical map tree until the second-last argument has been found, or an argument is missing.
+				// if all arguments up to the second-last have been found, this will potentially be a cache hit (determined later)
+				if (currentCache.has(arguments[i])) {
+					currentCache = currentCache.get(arguments[i]);
+					continue;
+				}
+
+				isMemoized = false;
+
+				// make maps until last value
+				newMap = new MapOrSimilar(undefined === 'true');
+				currentCache.set(arguments[i], newMap);
+				currentCache = newMap;
+			}
+
+			// we are at the last arg, check if it is really memoized
+			if (isMemoized) {
+				if (currentCache.has(arguments[argsLengthMinusOne])) {
+					fnResult = currentCache.get(arguments[argsLengthMinusOne]);
+				}
+				else {
+					isMemoized = false;
+				}
+			}
+
+			if (!isMemoized) {
+				fnResult = fn.apply(null, arguments);
+				currentCache.set(arguments[argsLengthMinusOne], fnResult);
+			}
+
+			if (limit > 0) {
+				lruPath[argsLengthMinusOne] = {
+					cacheItem: currentCache,
+					arg: arguments[argsLengthMinusOne]
+				};
+
+				if (isMemoized) {
+					moveToMostRecentLru(lru, lruPath);
+				}
+				else {
+					lru.push(lruPath);
+				}
+
+				if (lru.length > limit) {
+					removeCachedResult(lru.shift());
+				}
+			}
+
+			memoizerific.wasMemoized = isMemoized;
+			memoizerific.numArgs = argsLengthMinusOne + 1;
+
+			return fnResult;
+		};
+
+		memoizerific.limit = limit;
+		memoizerific.wasMemoized = false;
+		memoizerific.cache = cache;
+		memoizerific.lru = lru;
+
+		return memoizerific;
+	};
+};
+
+// move current args to most recent position
+function moveToMostRecentLru(lru, lruPath) {
+	var lruLen = lru.length,
+		lruPathLen = lruPath.length,
+		isMatch,
+		i, ii;
+
+	for (i = 0; i < lruLen; i++) {
+		isMatch = true;
+		for (ii = 0; ii < lruPathLen; ii++) {
+			if (!isEqual(lru[i][ii].arg, lruPath[ii].arg)) {
+				isMatch = false;
+				break;
+			}
+		}
+		if (isMatch) {
+			break;
+		}
+	}
+
+	lru.push(lru.splice(i, 1)[0]);
+}
+
+// remove least recently used cache item and all dead branches
+function removeCachedResult(removedLru) {
+	var removedLruLen = removedLru.length,
+		currentLru = removedLru[removedLruLen - 1],
+		tmp,
+		i;
+
+	currentLru.cacheItem.delete(currentLru.arg);
+
+	// walk down the tree removing dead branches (size 0) along the way
+	for (i = removedLruLen - 2; i >= 0; i--) {
+		currentLru = removedLru[i];
+		tmp = currentLru.cacheItem.get(currentLru.arg);
+
+		if (!tmp || !tmp.size) {
+			currentLru.cacheItem.delete(currentLru.arg);
+		} else {
+			break;
+		}
+	}
+}
+
+// check if the numbers are equal, or whether they are both precisely NaN (isNaN returns true for all non-numbers)
+function isEqual(val1, val2) {
+	return val1 === val2 || (val1 !== val1 && val2 !== val2);
+}
+},{"map-or-similar":1}]},{},[3])(3)
+});
+
+/***/ }),
+
 /***/ "./node_modules/native-url/dist/index.js":
 /*!***********************************************!*\
   !*** ./node_modules/native-url/dist/index.js ***!
@@ -4229,6 +7374,18 @@ for (var i = 0; i < DOMIterables.length; i++) {
 
 var e,t=(e=__webpack_require__(/*! querystring */ "./node_modules/querystring-es3/index.js"))&&"object"==typeof e&&"default"in e?e.default:e,r=/https?|ftp|gopher|file/;function o(e){"string"==typeof e&&(e=f(e));var o=function(e,t,r){var o=e.auth,a=e.hostname,s=e.protocol||"",h=e.pathname||"",c=e.hash||"",p=e.query||"",n=!1;o=o?encodeURIComponent(o).replace(/%3A/i,":")+"@":"",e.host?n=o+e.host:a&&(n=o+(~a.indexOf(":")?"["+a+"]":a),e.port&&(n+=":"+e.port)),p&&"object"==typeof p&&(p=t.encode(p));var l=e.search||p&&"?"+p||"";return s&&":"!==s.substr(-1)&&(s+=":"),e.slashes||(!s||r.test(s))&&!1!==n?(n="//"+(n||""),h&&"/"!==h[0]&&(h="/"+h)):n||(n=""),c&&"#"!==c[0]&&(c="#"+c),l&&"?"!==l[0]&&(l="?"+l),{protocol:s,host:n,pathname:h=h.replace(/[?#]/g,encodeURIComponent),search:l=l.replace("#","%23"),hash:c}}(e,t,r);return""+o.protocol+o.host+o.pathname+o.search+o.hash}var a="http://",s="w.w",h=a+s,c=/^https?|ftp|gopher|file/,p=/^(.+?)([#?].*)/,n=/^([a-z0-9.+-]*:)(\/{0,3})(.*)/i,l=/^([a-z0-9.+-]*:)?\/\/\/*/i,i=/^([a-z0-9.+-]*:)(\/{0,2})\[(.*)\]$/i;function u(e){try{return decodeURI(e)}catch(t){return e}}function f(e,r,a){void 0===r&&(r=!1),void 0===a&&(a=!1);var f=(e=u(e.trim())).match(p);e=f?f[1].replace(/\\/g,"/")+f[2]:e.replace(/\\/g,"/"),i.test(e)&&"/"!==e.slice(-1)&&(e+="/");var m=!/(^javascript)/.test(e)&&e.match(n),v=l.test(e),d="";m&&(c.test(m[1])||(d=m[1].toLowerCase(),e=""+m[2]+m[3]),m[2]||(v=!1,c.test(m[1])?(d=m[1],e=""+m[3]):e="//"+m[3]),3!==m[2].length&&1!==m[2].length||(d=m[1],e="/"+m[3]));var g,b=e.match(/(:[0-9]+)/),y="";b&&b[1]&&3===b[1].length&&(e=e.replace(y=b[1],y+"00"));var x={},w="",O="";try{g=new URL(e)}catch(t){w=t,d||a||!/^\/\//.test(e)||/^\/\/.+[@.]/.test(e)||(O="/",e=e.substr(1));try{g=new URL(e,h)}catch(e){return x.protocol=d,x.href=d,x}}x.slashes=v&&!O,x.host=~g.host.indexOf(s)?"":g.host,x.hostname=~g.hostname.indexOf(s)?"":g.hostname.replace(/(\[|\])/g,""),x.protocol=w?d||null:g.protocol,x.search=g.search.replace(/\\/g,"%5C"),x.hash=g.hash.replace(/\\/g,"%5C");var R=e.split("#");!x.search&&~R[0].indexOf("?")&&(x.search="?"),x.hash||""!==R[1]||(x.hash="#"),x.query=r?t.decode(g.search.substr(1)):x.search.substr(1),x.pathname=O+u(g.pathname).replace(/"/g,"%22"),"about:"===x.protocol&&"blank"===x.pathname&&(x.protocol="",x.pathname=""),w&&"/"!==e[0]&&(x.pathname=x.pathname.substr(1)),d&&!c.test(d)&&"/"!==e.slice(-1)&&"/"===x.pathname&&(x.pathname=""),x.path=x.pathname+x.search,x.auth=[g.username,g.password].map(decodeURIComponent).filter(Boolean).join(":"),x.port=g.port,y&&(x.host=x.host.replace(y+"00",y),x.port=x.port.slice(0,-2)),x.href=O?""+x.pathname+x.search+x.hash:o(x);var U=/^(file)/.test(x.href)?["host","hostname"]:[];return Object.keys(x).forEach(function(e){~U.indexOf(e)||(x[e]=x[e]||null)}),x}var m=/^([a-z0-9.+-]*:\/\/\/)([a-z0-9.+-]:\/*)?/i,v=/https?|ftp|gopher|file/;function d(e,t){var r="string"==typeof e?f(e):e;e="object"==typeof e?o(e):e;var s=f(t),c="";r.protocol&&!r.slashes&&(c=r.protocol,e=e.replace(r.protocol,""),c+="/"===t[0]||"/"===e[0]?"/":""),c&&s.protocol&&(c="",s.slashes||(c=s.protocol,t=t.replace(s.protocol,"")));var p=e.match(m);p&&!s.protocol&&(e=e.substr((c=p[1]+(p[2]||"")).length),/^\/\/[^\/]/.test(t)&&(c=c.slice(0,-1)));var n=new URL(e,h+"/"),l=new URL(t,n).toString().replace(h,""),i=s.protocol||r.protocol;return i+=r.slashes||s.slashes?"//":"",!c&&i?l=l.replace(a,i):c&&(l=l.replace(a,"")),v.test(l)||~t.indexOf(".")||"/"===e.slice(-1)||"/"===t.slice(-1)||"/"!==l.slice(-1)||(l=l.slice(0,-1)),c&&(l=c+("/"===l[0]?l.substr(1):l)),l}exports.parse=f,exports.format=o,exports.resolve=d,exports.resolveObject=function(e,t){return f(d(e,t))};
 //# sourceMappingURL=index.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/next/app.js":
+/*!**********************************!*\
+  !*** ./node_modules/next/app.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! ./dist/pages/_app */ "./node_modules/next/dist/pages/_app.js")
 
 
 /***/ }),
@@ -4244,20 +7401,20 @@ module.exports = (__webpack_require__(/*! dll-reference dll_5f137288facb1107b491
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_app&absolutePagePath=next%2Fdist%2Fpages%2F_app!./":
-/*!*******************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_app&absolutePagePath=next%2Fdist%2Fpages%2F_app ***!
-  \*******************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_app&absolutePagePath=private-next-pages%2F_app.js!./":
+/*!*********************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_app&absolutePagePath=private-next-pages%2F_app.js ***!
+  \*********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
     (window.__NEXT_P=window.__NEXT_P||[]).push(["/_app", function() {
-      var mod = __webpack_require__(/*! next/dist/pages/_app */ "./node_modules/next/dist/pages/_app.js")
+      var mod = __webpack_require__(/*! private-next-pages/_app.js */ "./pages/_app.js")
       if(true) {
-        module.hot.accept(/*! next/dist/pages/_app */ "./node_modules/next/dist/pages/_app.js", function() {
+        module.hot.accept(/*! private-next-pages/_app.js */ "./pages/_app.js", function() {
           if(!next.router.components["/_app"]) return
-          var updatedPage = __webpack_require__(/*! next/dist/pages/_app */ "./node_modules/next/dist/pages/_app.js")
+          var updatedPage = __webpack_require__(/*! private-next-pages/_app.js */ "./pages/_app.js")
           next.router.update("/_app", updatedPage)
         })
       }
@@ -5866,6 +9023,201 @@ function createUrl(router) {
 
 /***/ }),
 
+/***/ "./node_modules/process/browser.js":
+/*!*****************************************!*\
+  !*** ./node_modules/process/browser.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// shim for using process in browser
+var process = module.exports = {};
+
+// cached from whatever global is present so that test runners that stub it
+// don't break things.  But we need to wrap it in a try catch in case it is
+// wrapped in strict mode code which doesn't define any globals.  It's inside a
+// function because try/catches deoptimize in certain engines.
+
+var cachedSetTimeout;
+var cachedClearTimeout;
+
+function defaultSetTimout() {
+    throw new Error('setTimeout has not been defined');
+}
+function defaultClearTimeout () {
+    throw new Error('clearTimeout has not been defined');
+}
+(function () {
+    try {
+        if (typeof setTimeout === 'function') {
+            cachedSetTimeout = setTimeout;
+        } else {
+            cachedSetTimeout = defaultSetTimout;
+        }
+    } catch (e) {
+        cachedSetTimeout = defaultSetTimout;
+    }
+    try {
+        if (typeof clearTimeout === 'function') {
+            cachedClearTimeout = clearTimeout;
+        } else {
+            cachedClearTimeout = defaultClearTimeout;
+        }
+    } catch (e) {
+        cachedClearTimeout = defaultClearTimeout;
+    }
+} ())
+function runTimeout(fun) {
+    if (cachedSetTimeout === setTimeout) {
+        //normal enviroments in sane situations
+        return setTimeout(fun, 0);
+    }
+    // if setTimeout wasn't available but was latter defined
+    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
+        cachedSetTimeout = setTimeout;
+        return setTimeout(fun, 0);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedSetTimeout(fun, 0);
+    } catch(e){
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
+            return cachedSetTimeout.call(null, fun, 0);
+        } catch(e){
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
+            return cachedSetTimeout.call(this, fun, 0);
+        }
+    }
+
+
+}
+function runClearTimeout(marker) {
+    if (cachedClearTimeout === clearTimeout) {
+        //normal enviroments in sane situations
+        return clearTimeout(marker);
+    }
+    // if clearTimeout wasn't available but was latter defined
+    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
+        cachedClearTimeout = clearTimeout;
+        return clearTimeout(marker);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedClearTimeout(marker);
+    } catch (e){
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
+            return cachedClearTimeout.call(null, marker);
+        } catch (e){
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
+            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
+            return cachedClearTimeout.call(this, marker);
+        }
+    }
+
+
+
+}
+var queue = [];
+var draining = false;
+var currentQueue;
+var queueIndex = -1;
+
+function cleanUpNextTick() {
+    if (!draining || !currentQueue) {
+        return;
+    }
+    draining = false;
+    if (currentQueue.length) {
+        queue = currentQueue.concat(queue);
+    } else {
+        queueIndex = -1;
+    }
+    if (queue.length) {
+        drainQueue();
+    }
+}
+
+function drainQueue() {
+    if (draining) {
+        return;
+    }
+    var timeout = runTimeout(cleanUpNextTick);
+    draining = true;
+
+    var len = queue.length;
+    while(len) {
+        currentQueue = queue;
+        queue = [];
+        while (++queueIndex < len) {
+            if (currentQueue) {
+                currentQueue[queueIndex].run();
+            }
+        }
+        queueIndex = -1;
+        len = queue.length;
+    }
+    currentQueue = null;
+    draining = false;
+    runClearTimeout(timeout);
+}
+
+process.nextTick = function (fun) {
+    var args = new Array(arguments.length - 1);
+    if (arguments.length > 1) {
+        for (var i = 1; i < arguments.length; i++) {
+            args[i - 1] = arguments[i];
+        }
+    }
+    queue.push(new Item(fun, args));
+    if (queue.length === 1 && !draining) {
+        runTimeout(drainQueue);
+    }
+};
+
+// v8 likes predictible objects
+function Item(fun, array) {
+    this.fun = fun;
+    this.array = array;
+}
+Item.prototype.run = function () {
+    this.fun.apply(null, this.array);
+};
+process.title = 'browser';
+process.browser = true;
+process.env = {};
+process.argv = [];
+process.version = ''; // empty string to avoid regexp issues
+process.versions = {};
+
+function noop() {}
+
+process.on = noop;
+process.addListener = noop;
+process.once = noop;
+process.off = noop;
+process.removeListener = noop;
+process.removeAllListeners = noop;
+process.emit = noop;
+process.prependListener = noop;
+process.prependOnceListener = noop;
+
+process.listeners = function (name) { return [] }
+
+process.binding = function (name) {
+    throw new Error('process.binding is not supported');
+};
+
+process.cwd = function () { return '/' };
+process.chdir = function (dir) {
+    throw new Error('process.chdir is not supported');
+};
+process.umask = function() { return 0; };
+
+
+/***/ }),
+
 /***/ "./node_modules/querystring-es3/decode.js":
 /*!************************************************!*\
   !*** ./node_modules/querystring-es3/decode.js ***!
@@ -6339,6 +9691,721 @@ if (false) {} else {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(/*! dll-reference dll_5f137288facb1107b491 */ "dll-reference dll_5f137288facb1107b491"))("./node_modules/react/index.js");
+
+/***/ }),
+
+/***/ "./node_modules/redux-thunk/es/index.js":
+/*!**********************************************!*\
+  !*** ./node_modules/redux-thunk/es/index.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function createThunkMiddleware(extraArgument) {
+  return function (_ref) {
+    var dispatch = _ref.dispatch,
+        getState = _ref.getState;
+    return function (next) {
+      return function (action) {
+        if (typeof action === 'function') {
+          return action(dispatch, getState, extraArgument);
+        }
+
+        return next(action);
+      };
+    };
+  };
+}
+
+var thunk = createThunkMiddleware();
+thunk.withExtraArgument = createThunkMiddleware;
+
+/* harmony default export */ __webpack_exports__["default"] = (thunk);
+
+/***/ }),
+
+/***/ "./node_modules/redux/es/redux.js":
+/*!****************************************!*\
+  !*** ./node_modules/redux/es/redux.js ***!
+  \****************************************/
+/*! exports provided: __DO_NOT_USE__ActionTypes, applyMiddleware, bindActionCreators, combineReducers, compose, createStore */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__DO_NOT_USE__ActionTypes", function() { return ActionTypes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "applyMiddleware", function() { return applyMiddleware; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bindActionCreators", function() { return bindActionCreators; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "combineReducers", function() { return combineReducers; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "compose", function() { return compose; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createStore", function() { return createStore; });
+/* harmony import */ var symbol_observable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! symbol-observable */ "./node_modules/symbol-observable/es/index.js");
+
+
+/**
+ * These are private action types reserved by Redux.
+ * For any unknown actions, you must return the current state.
+ * If the current state is undefined, you must return the initial state.
+ * Do not reference these action types directly in your code.
+ */
+var randomString = function randomString() {
+  return Math.random().toString(36).substring(7).split('').join('.');
+};
+
+var ActionTypes = {
+  INIT: "@@redux/INIT" + randomString(),
+  REPLACE: "@@redux/REPLACE" + randomString(),
+  PROBE_UNKNOWN_ACTION: function PROBE_UNKNOWN_ACTION() {
+    return "@@redux/PROBE_UNKNOWN_ACTION" + randomString();
+  }
+};
+
+/**
+ * @param {any} obj The object to inspect.
+ * @returns {boolean} True if the argument appears to be a plain object.
+ */
+function isPlainObject(obj) {
+  if (typeof obj !== 'object' || obj === null) return false;
+  var proto = obj;
+
+  while (Object.getPrototypeOf(proto) !== null) {
+    proto = Object.getPrototypeOf(proto);
+  }
+
+  return Object.getPrototypeOf(obj) === proto;
+}
+
+/**
+ * Creates a Redux store that holds the state tree.
+ * The only way to change the data in the store is to call `dispatch()` on it.
+ *
+ * There should only be a single store in your app. To specify how different
+ * parts of the state tree respond to actions, you may combine several reducers
+ * into a single reducer function by using `combineReducers`.
+ *
+ * @param {Function} reducer A function that returns the next state tree, given
+ * the current state tree and the action to handle.
+ *
+ * @param {any} [preloadedState] The initial state. You may optionally specify it
+ * to hydrate the state from the server in universal apps, or to restore a
+ * previously serialized user session.
+ * If you use `combineReducers` to produce the root reducer function, this must be
+ * an object with the same shape as `combineReducers` keys.
+ *
+ * @param {Function} [enhancer] The store enhancer. You may optionally specify it
+ * to enhance the store with third-party capabilities such as middleware,
+ * time travel, persistence, etc. The only store enhancer that ships with Redux
+ * is `applyMiddleware()`.
+ *
+ * @returns {Store} A Redux store that lets you read the state, dispatch actions
+ * and subscribe to changes.
+ */
+
+function createStore(reducer, preloadedState, enhancer) {
+  var _ref2;
+
+  if (typeof preloadedState === 'function' && typeof enhancer === 'function' || typeof enhancer === 'function' && typeof arguments[3] === 'function') {
+    throw new Error('It looks like you are passing several store enhancers to ' + 'createStore(). This is not supported. Instead, compose them ' + 'together to a single function.');
+  }
+
+  if (typeof preloadedState === 'function' && typeof enhancer === 'undefined') {
+    enhancer = preloadedState;
+    preloadedState = undefined;
+  }
+
+  if (typeof enhancer !== 'undefined') {
+    if (typeof enhancer !== 'function') {
+      throw new Error('Expected the enhancer to be a function.');
+    }
+
+    return enhancer(createStore)(reducer, preloadedState);
+  }
+
+  if (typeof reducer !== 'function') {
+    throw new Error('Expected the reducer to be a function.');
+  }
+
+  var currentReducer = reducer;
+  var currentState = preloadedState;
+  var currentListeners = [];
+  var nextListeners = currentListeners;
+  var isDispatching = false;
+  /**
+   * This makes a shallow copy of currentListeners so we can use
+   * nextListeners as a temporary list while dispatching.
+   *
+   * This prevents any bugs around consumers calling
+   * subscribe/unsubscribe in the middle of a dispatch.
+   */
+
+  function ensureCanMutateNextListeners() {
+    if (nextListeners === currentListeners) {
+      nextListeners = currentListeners.slice();
+    }
+  }
+  /**
+   * Reads the state tree managed by the store.
+   *
+   * @returns {any} The current state tree of your application.
+   */
+
+
+  function getState() {
+    if (isDispatching) {
+      throw new Error('You may not call store.getState() while the reducer is executing. ' + 'The reducer has already received the state as an argument. ' + 'Pass it down from the top reducer instead of reading it from the store.');
+    }
+
+    return currentState;
+  }
+  /**
+   * Adds a change listener. It will be called any time an action is dispatched,
+   * and some part of the state tree may potentially have changed. You may then
+   * call `getState()` to read the current state tree inside the callback.
+   *
+   * You may call `dispatch()` from a change listener, with the following
+   * caveats:
+   *
+   * 1. The subscriptions are snapshotted just before every `dispatch()` call.
+   * If you subscribe or unsubscribe while the listeners are being invoked, this
+   * will not have any effect on the `dispatch()` that is currently in progress.
+   * However, the next `dispatch()` call, whether nested or not, will use a more
+   * recent snapshot of the subscription list.
+   *
+   * 2. The listener should not expect to see all state changes, as the state
+   * might have been updated multiple times during a nested `dispatch()` before
+   * the listener is called. It is, however, guaranteed that all subscribers
+   * registered before the `dispatch()` started will be called with the latest
+   * state by the time it exits.
+   *
+   * @param {Function} listener A callback to be invoked on every dispatch.
+   * @returns {Function} A function to remove this change listener.
+   */
+
+
+  function subscribe(listener) {
+    if (typeof listener !== 'function') {
+      throw new Error('Expected the listener to be a function.');
+    }
+
+    if (isDispatching) {
+      throw new Error('You may not call store.subscribe() while the reducer is executing. ' + 'If you would like to be notified after the store has been updated, subscribe from a ' + 'component and invoke store.getState() in the callback to access the latest state. ' + 'See https://redux.js.org/api-reference/store#subscribelistener for more details.');
+    }
+
+    var isSubscribed = true;
+    ensureCanMutateNextListeners();
+    nextListeners.push(listener);
+    return function unsubscribe() {
+      if (!isSubscribed) {
+        return;
+      }
+
+      if (isDispatching) {
+        throw new Error('You may not unsubscribe from a store listener while the reducer is executing. ' + 'See https://redux.js.org/api-reference/store#subscribelistener for more details.');
+      }
+
+      isSubscribed = false;
+      ensureCanMutateNextListeners();
+      var index = nextListeners.indexOf(listener);
+      nextListeners.splice(index, 1);
+      currentListeners = null;
+    };
+  }
+  /**
+   * Dispatches an action. It is the only way to trigger a state change.
+   *
+   * The `reducer` function, used to create the store, will be called with the
+   * current state tree and the given `action`. Its return value will
+   * be considered the **next** state of the tree, and the change listeners
+   * will be notified.
+   *
+   * The base implementation only supports plain object actions. If you want to
+   * dispatch a Promise, an Observable, a thunk, or something else, you need to
+   * wrap your store creating function into the corresponding middleware. For
+   * example, see the documentation for the `redux-thunk` package. Even the
+   * middleware will eventually dispatch plain object actions using this method.
+   *
+   * @param {Object} action A plain object representing “what changed”. It is
+   * a good idea to keep actions serializable so you can record and replay user
+   * sessions, or use the time travelling `redux-devtools`. An action must have
+   * a `type` property which may not be `undefined`. It is a good idea to use
+   * string constants for action types.
+   *
+   * @returns {Object} For convenience, the same action object you dispatched.
+   *
+   * Note that, if you use a custom middleware, it may wrap `dispatch()` to
+   * return something else (for example, a Promise you can await).
+   */
+
+
+  function dispatch(action) {
+    if (!isPlainObject(action)) {
+      throw new Error('Actions must be plain objects. ' + 'Use custom middleware for async actions.');
+    }
+
+    if (typeof action.type === 'undefined') {
+      throw new Error('Actions may not have an undefined "type" property. ' + 'Have you misspelled a constant?');
+    }
+
+    if (isDispatching) {
+      throw new Error('Reducers may not dispatch actions.');
+    }
+
+    try {
+      isDispatching = true;
+      currentState = currentReducer(currentState, action);
+    } finally {
+      isDispatching = false;
+    }
+
+    var listeners = currentListeners = nextListeners;
+
+    for (var i = 0; i < listeners.length; i++) {
+      var listener = listeners[i];
+      listener();
+    }
+
+    return action;
+  }
+  /**
+   * Replaces the reducer currently used by the store to calculate the state.
+   *
+   * You might need this if your app implements code splitting and you want to
+   * load some of the reducers dynamically. You might also need this if you
+   * implement a hot reloading mechanism for Redux.
+   *
+   * @param {Function} nextReducer The reducer for the store to use instead.
+   * @returns {void}
+   */
+
+
+  function replaceReducer(nextReducer) {
+    if (typeof nextReducer !== 'function') {
+      throw new Error('Expected the nextReducer to be a function.');
+    }
+
+    currentReducer = nextReducer; // This action has a similiar effect to ActionTypes.INIT.
+    // Any reducers that existed in both the new and old rootReducer
+    // will receive the previous state. This effectively populates
+    // the new state tree with any relevant data from the old one.
+
+    dispatch({
+      type: ActionTypes.REPLACE
+    });
+  }
+  /**
+   * Interoperability point for observable/reactive libraries.
+   * @returns {observable} A minimal observable of state changes.
+   * For more information, see the observable proposal:
+   * https://github.com/tc39/proposal-observable
+   */
+
+
+  function observable() {
+    var _ref;
+
+    var outerSubscribe = subscribe;
+    return _ref = {
+      /**
+       * The minimal observable subscription method.
+       * @param {Object} observer Any object that can be used as an observer.
+       * The observer object should have a `next` method.
+       * @returns {subscription} An object with an `unsubscribe` method that can
+       * be used to unsubscribe the observable from the store, and prevent further
+       * emission of values from the observable.
+       */
+      subscribe: function subscribe(observer) {
+        if (typeof observer !== 'object' || observer === null) {
+          throw new TypeError('Expected the observer to be an object.');
+        }
+
+        function observeState() {
+          if (observer.next) {
+            observer.next(getState());
+          }
+        }
+
+        observeState();
+        var unsubscribe = outerSubscribe(observeState);
+        return {
+          unsubscribe: unsubscribe
+        };
+      }
+    }, _ref[symbol_observable__WEBPACK_IMPORTED_MODULE_0__["default"]] = function () {
+      return this;
+    }, _ref;
+  } // When a store is created, an "INIT" action is dispatched so that every
+  // reducer returns their initial state. This effectively populates
+  // the initial state tree.
+
+
+  dispatch({
+    type: ActionTypes.INIT
+  });
+  return _ref2 = {
+    dispatch: dispatch,
+    subscribe: subscribe,
+    getState: getState,
+    replaceReducer: replaceReducer
+  }, _ref2[symbol_observable__WEBPACK_IMPORTED_MODULE_0__["default"]] = observable, _ref2;
+}
+
+/**
+ * Prints a warning in the console if it exists.
+ *
+ * @param {String} message The warning message.
+ * @returns {void}
+ */
+function warning(message) {
+  /* eslint-disable no-console */
+  if (typeof console !== 'undefined' && typeof console.error === 'function') {
+    console.error(message);
+  }
+  /* eslint-enable no-console */
+
+
+  try {
+    // This error was thrown as a convenience so that if you enable
+    // "break on all exceptions" in your console,
+    // it would pause the execution at this line.
+    throw new Error(message);
+  } catch (e) {} // eslint-disable-line no-empty
+
+}
+
+function getUndefinedStateErrorMessage(key, action) {
+  var actionType = action && action.type;
+  var actionDescription = actionType && "action \"" + String(actionType) + "\"" || 'an action';
+  return "Given " + actionDescription + ", reducer \"" + key + "\" returned undefined. " + "To ignore an action, you must explicitly return the previous state. " + "If you want this reducer to hold no value, you can return null instead of undefined.";
+}
+
+function getUnexpectedStateShapeWarningMessage(inputState, reducers, action, unexpectedKeyCache) {
+  var reducerKeys = Object.keys(reducers);
+  var argumentName = action && action.type === ActionTypes.INIT ? 'preloadedState argument passed to createStore' : 'previous state received by the reducer';
+
+  if (reducerKeys.length === 0) {
+    return 'Store does not have a valid reducer. Make sure the argument passed ' + 'to combineReducers is an object whose values are reducers.';
+  }
+
+  if (!isPlainObject(inputState)) {
+    return "The " + argumentName + " has unexpected type of \"" + {}.toString.call(inputState).match(/\s([a-z|A-Z]+)/)[1] + "\". Expected argument to be an object with the following " + ("keys: \"" + reducerKeys.join('", "') + "\"");
+  }
+
+  var unexpectedKeys = Object.keys(inputState).filter(function (key) {
+    return !reducers.hasOwnProperty(key) && !unexpectedKeyCache[key];
+  });
+  unexpectedKeys.forEach(function (key) {
+    unexpectedKeyCache[key] = true;
+  });
+  if (action && action.type === ActionTypes.REPLACE) return;
+
+  if (unexpectedKeys.length > 0) {
+    return "Unexpected " + (unexpectedKeys.length > 1 ? 'keys' : 'key') + " " + ("\"" + unexpectedKeys.join('", "') + "\" found in " + argumentName + ". ") + "Expected to find one of the known reducer keys instead: " + ("\"" + reducerKeys.join('", "') + "\". Unexpected keys will be ignored.");
+  }
+}
+
+function assertReducerShape(reducers) {
+  Object.keys(reducers).forEach(function (key) {
+    var reducer = reducers[key];
+    var initialState = reducer(undefined, {
+      type: ActionTypes.INIT
+    });
+
+    if (typeof initialState === 'undefined') {
+      throw new Error("Reducer \"" + key + "\" returned undefined during initialization. " + "If the state passed to the reducer is undefined, you must " + "explicitly return the initial state. The initial state may " + "not be undefined. If you don't want to set a value for this reducer, " + "you can use null instead of undefined.");
+    }
+
+    if (typeof reducer(undefined, {
+      type: ActionTypes.PROBE_UNKNOWN_ACTION()
+    }) === 'undefined') {
+      throw new Error("Reducer \"" + key + "\" returned undefined when probed with a random type. " + ("Don't try to handle " + ActionTypes.INIT + " or other actions in \"redux/*\" ") + "namespace. They are considered private. Instead, you must return the " + "current state for any unknown actions, unless it is undefined, " + "in which case you must return the initial state, regardless of the " + "action type. The initial state may not be undefined, but can be null.");
+    }
+  });
+}
+/**
+ * Turns an object whose values are different reducer functions, into a single
+ * reducer function. It will call every child reducer, and gather their results
+ * into a single state object, whose keys correspond to the keys of the passed
+ * reducer functions.
+ *
+ * @param {Object} reducers An object whose values correspond to different
+ * reducer functions that need to be combined into one. One handy way to obtain
+ * it is to use ES6 `import * as reducers` syntax. The reducers may never return
+ * undefined for any action. Instead, they should return their initial state
+ * if the state passed to them was undefined, and the current state for any
+ * unrecognized action.
+ *
+ * @returns {Function} A reducer function that invokes every reducer inside the
+ * passed object, and builds a state object with the same shape.
+ */
+
+
+function combineReducers(reducers) {
+  var reducerKeys = Object.keys(reducers);
+  var finalReducers = {};
+
+  for (var i = 0; i < reducerKeys.length; i++) {
+    var key = reducerKeys[i];
+
+    if (true) {
+      if (typeof reducers[key] === 'undefined') {
+        warning("No reducer provided for key \"" + key + "\"");
+      }
+    }
+
+    if (typeof reducers[key] === 'function') {
+      finalReducers[key] = reducers[key];
+    }
+  }
+
+  var finalReducerKeys = Object.keys(finalReducers); // This is used to make sure we don't warn about the same
+  // keys multiple times.
+
+  var unexpectedKeyCache;
+
+  if (true) {
+    unexpectedKeyCache = {};
+  }
+
+  var shapeAssertionError;
+
+  try {
+    assertReducerShape(finalReducers);
+  } catch (e) {
+    shapeAssertionError = e;
+  }
+
+  return function combination(state, action) {
+    if (state === void 0) {
+      state = {};
+    }
+
+    if (shapeAssertionError) {
+      throw shapeAssertionError;
+    }
+
+    if (true) {
+      var warningMessage = getUnexpectedStateShapeWarningMessage(state, finalReducers, action, unexpectedKeyCache);
+
+      if (warningMessage) {
+        warning(warningMessage);
+      }
+    }
+
+    var hasChanged = false;
+    var nextState = {};
+
+    for (var _i = 0; _i < finalReducerKeys.length; _i++) {
+      var _key = finalReducerKeys[_i];
+      var reducer = finalReducers[_key];
+      var previousStateForKey = state[_key];
+      var nextStateForKey = reducer(previousStateForKey, action);
+
+      if (typeof nextStateForKey === 'undefined') {
+        var errorMessage = getUndefinedStateErrorMessage(_key, action);
+        throw new Error(errorMessage);
+      }
+
+      nextState[_key] = nextStateForKey;
+      hasChanged = hasChanged || nextStateForKey !== previousStateForKey;
+    }
+
+    hasChanged = hasChanged || finalReducerKeys.length !== Object.keys(state).length;
+    return hasChanged ? nextState : state;
+  };
+}
+
+function bindActionCreator(actionCreator, dispatch) {
+  return function () {
+    return dispatch(actionCreator.apply(this, arguments));
+  };
+}
+/**
+ * Turns an object whose values are action creators, into an object with the
+ * same keys, but with every function wrapped into a `dispatch` call so they
+ * may be invoked directly. This is just a convenience method, as you can call
+ * `store.dispatch(MyActionCreators.doSomething())` yourself just fine.
+ *
+ * For convenience, you can also pass an action creator as the first argument,
+ * and get a dispatch wrapped function in return.
+ *
+ * @param {Function|Object} actionCreators An object whose values are action
+ * creator functions. One handy way to obtain it is to use ES6 `import * as`
+ * syntax. You may also pass a single function.
+ *
+ * @param {Function} dispatch The `dispatch` function available on your Redux
+ * store.
+ *
+ * @returns {Function|Object} The object mimicking the original object, but with
+ * every action creator wrapped into the `dispatch` call. If you passed a
+ * function as `actionCreators`, the return value will also be a single
+ * function.
+ */
+
+
+function bindActionCreators(actionCreators, dispatch) {
+  if (typeof actionCreators === 'function') {
+    return bindActionCreator(actionCreators, dispatch);
+  }
+
+  if (typeof actionCreators !== 'object' || actionCreators === null) {
+    throw new Error("bindActionCreators expected an object or a function, instead received " + (actionCreators === null ? 'null' : typeof actionCreators) + ". " + "Did you write \"import ActionCreators from\" instead of \"import * as ActionCreators from\"?");
+  }
+
+  var boundActionCreators = {};
+
+  for (var key in actionCreators) {
+    var actionCreator = actionCreators[key];
+
+    if (typeof actionCreator === 'function') {
+      boundActionCreators[key] = bindActionCreator(actionCreator, dispatch);
+    }
+  }
+
+  return boundActionCreators;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function ownKeys(object, enumerableOnly) {
+  var keys = Object.keys(object);
+
+  if (Object.getOwnPropertySymbols) {
+    keys.push.apply(keys, Object.getOwnPropertySymbols(object));
+  }
+
+  if (enumerableOnly) keys = keys.filter(function (sym) {
+    return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+  });
+  return keys;
+}
+
+function _objectSpread2(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+
+    if (i % 2) {
+      ownKeys(source, true).forEach(function (key) {
+        _defineProperty(target, key, source[key]);
+      });
+    } else if (Object.getOwnPropertyDescriptors) {
+      Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+      ownKeys(source).forEach(function (key) {
+        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+      });
+    }
+  }
+
+  return target;
+}
+
+/**
+ * Composes single-argument functions from right to left. The rightmost
+ * function can take multiple arguments as it provides the signature for
+ * the resulting composite function.
+ *
+ * @param {...Function} funcs The functions to compose.
+ * @returns {Function} A function obtained by composing the argument functions
+ * from right to left. For example, compose(f, g, h) is identical to doing
+ * (...args) => f(g(h(...args))).
+ */
+function compose() {
+  for (var _len = arguments.length, funcs = new Array(_len), _key = 0; _key < _len; _key++) {
+    funcs[_key] = arguments[_key];
+  }
+
+  if (funcs.length === 0) {
+    return function (arg) {
+      return arg;
+    };
+  }
+
+  if (funcs.length === 1) {
+    return funcs[0];
+  }
+
+  return funcs.reduce(function (a, b) {
+    return function () {
+      return a(b.apply(void 0, arguments));
+    };
+  });
+}
+
+/**
+ * Creates a store enhancer that applies middleware to the dispatch method
+ * of the Redux store. This is handy for a variety of tasks, such as expressing
+ * asynchronous actions in a concise manner, or logging every action payload.
+ *
+ * See `redux-thunk` package as an example of the Redux middleware.
+ *
+ * Because middleware is potentially asynchronous, this should be the first
+ * store enhancer in the composition chain.
+ *
+ * Note that each middleware will be given the `dispatch` and `getState` functions
+ * as named arguments.
+ *
+ * @param {...Function} middlewares The middleware chain to be applied.
+ * @returns {Function} A store enhancer applying the middleware.
+ */
+
+function applyMiddleware() {
+  for (var _len = arguments.length, middlewares = new Array(_len), _key = 0; _key < _len; _key++) {
+    middlewares[_key] = arguments[_key];
+  }
+
+  return function (createStore) {
+    return function () {
+      var store = createStore.apply(void 0, arguments);
+
+      var _dispatch = function dispatch() {
+        throw new Error('Dispatching while constructing your middleware is not allowed. ' + 'Other middleware would not be applied to this dispatch.');
+      };
+
+      var middlewareAPI = {
+        getState: store.getState,
+        dispatch: function dispatch() {
+          return _dispatch.apply(void 0, arguments);
+        }
+      };
+      var chain = middlewares.map(function (middleware) {
+        return middleware(middlewareAPI);
+      });
+      _dispatch = compose.apply(void 0, chain)(store.dispatch);
+      return _objectSpread2({}, store, {
+        dispatch: _dispatch
+      });
+    };
+  };
+}
+
+/*
+ * This is a dummy function to check if the function name has been altered by minification.
+ * If the function has been minified and NODE_ENV !== 'production', warn the user.
+ */
+
+function isCrushed() {}
+
+if ( true && typeof isCrushed.name === 'string' && isCrushed.name !== 'isCrushed') {
+  warning('You are currently using minified code outside of NODE_ENV === "production". ' + 'This means that you are running a slower development build of Redux. ' + 'You can use loose-envify (https://github.com/zertosh/loose-envify) for browserify ' + 'or setting mode to production in webpack (https://webpack.js.org/concepts/mode/) ' + 'to ensure you have the correct code for your production build.');
+}
+
+
+
 
 /***/ }),
 
@@ -7079,6 +11146,248 @@ try {
 
 /***/ }),
 
+/***/ "./node_modules/symbol-observable/es/index.js":
+/*!****************************************************!*\
+  !*** ./node_modules/symbol-observable/es/index.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(global, module) {/* harmony import */ var _ponyfill_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ponyfill.js */ "./node_modules/symbol-observable/es/ponyfill.js");
+/* global window */
+
+
+var root;
+
+if (typeof self !== 'undefined') {
+  root = self;
+} else if (typeof window !== 'undefined') {
+  root = window;
+} else if (typeof global !== 'undefined') {
+  root = global;
+} else if (true) {
+  root = module;
+} else {}
+
+var result = Object(_ponyfill_js__WEBPACK_IMPORTED_MODULE_0__["default"])(root);
+/* harmony default export */ __webpack_exports__["default"] = (result);
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js"), __webpack_require__(/*! ./../../webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./node_modules/symbol-observable/es/ponyfill.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/symbol-observable/es/ponyfill.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return symbolObservablePonyfill; });
+function symbolObservablePonyfill(root) {
+	var result;
+	var Symbol = root.Symbol;
+
+	if (typeof Symbol === 'function') {
+		if (Symbol.observable) {
+			result = Symbol.observable;
+		} else {
+			result = Symbol('observable');
+			Symbol.observable = result;
+		}
+	} else {
+		result = '@@observable';
+	}
+
+	return result;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/webpack/buildin/global.js":
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+
+/***/ "./node_modules/webpack/buildin/harmony-module.js":
+/*!*******************************************!*\
+  !*** (webpack)/buildin/harmony-module.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function(originalModule) {
+	if (!originalModule.webpackPolyfill) {
+		var module = Object.create(originalModule);
+		// module.parent = undefined by default
+		if (!module.children) module.children = [];
+		Object.defineProperty(module, "loaded", {
+			enumerable: true,
+			get: function() {
+				return module.l;
+			}
+		});
+		Object.defineProperty(module, "id", {
+			enumerable: true,
+			get: function() {
+				return module.i;
+			}
+		});
+		Object.defineProperty(module, "exports", {
+			enumerable: true
+		});
+		module.webpackPolyfill = 1;
+	}
+	return module;
+};
+
+
+/***/ }),
+
+/***/ "./pages/_app.js":
+/*!***********************!*\
+  !*** ./pages/_app.js ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _default; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/app */ "./node_modules/next/app.js");
+/* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../store */ "./store.js");
+/* harmony import */ var easy_peasy__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! easy-peasy */ "./node_modules/easy-peasy/dist/easy-peasy.esm.js");
+
+
+
+
+
+
+var _jsxFileName = "/Users/hamadoudiallo/Desktop/airbnbClone/pages/_app.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
+
+
+
+
+var _default =
+/*#__PURE__*/
+function (_App) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(_default, _App);
+
+  function _default() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, _default);
+
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(_default).apply(this, arguments));
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(_default, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          Component = _this$props.Component,
+          pageProps = _this$props.pageProps;
+      return __jsx(easy_peasy__WEBPACK_IMPORTED_MODULE_9__["StoreProvider"], {
+        store: _store__WEBPACK_IMPORTED_MODULE_8__["default"],
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }, __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10
+        },
+        __self: this
+      })));
+    }
+  }]);
+
+  return _default;
+}(next_app__WEBPACK_IMPORTED_MODULE_7___default.a);
+
+
+
+/***/ }),
+
+/***/ "./store.js":
+/*!******************!*\
+  !*** ./store.js ***!
+  \******************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var easy_peasy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! easy-peasy */ "./node_modules/easy-peasy/dist/easy-peasy.esm.js");
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(easy_peasy__WEBPACK_IMPORTED_MODULE_0__["createStore"])({
+  modals: {
+    showModal: false,
+    showLoginModal: false,
+    showRegistration: false,
+    setShowModal: Object(easy_peasy__WEBPACK_IMPORTED_MODULE_0__["action"])(function (state) {
+      state.showModal = true;
+    }),
+    setHideModal: Object(easy_peasy__WEBPACK_IMPORTED_MODULE_0__["action"])(function (state) {
+      state.showModal = false;
+    }),
+    setShowLoginModal: Object(easy_peasy__WEBPACK_IMPORTED_MODULE_0__["action"])(function (state) {
+      state.showModal = true;
+      state.showLoginModal = true;
+      state.showRegistrationModal = false;
+    }),
+    setShowRegistrationModal: Object(easy_peasy__WEBPACK_IMPORTED_MODULE_0__["action"])(function (state) {
+      state.showModal = true;
+      state.showLoginModal = false;
+      state.showRegistrationModal = true;
+    })
+  }
+}));
+
+/***/ }),
+
 /***/ "dll-reference dll_5f137288facb1107b491":
 /*!*******************************************!*\
   !*** external "dll_5f137288facb1107b491" ***!
@@ -7090,5 +11399,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[["./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_app&absolutePagePath=next%2Fdist%2Fpages%2F_app!./","static/runtime/webpack.js"]]]);
+},[["./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_app&absolutePagePath=private-next-pages%2F_app.js!./","static/runtime/webpack.js"]]]);
 //# sourceMappingURL=_app.js.map
