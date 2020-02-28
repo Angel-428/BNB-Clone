@@ -1,10 +1,17 @@
 import { createStore, action } from "easy-peasy";
 
 export default createStore({
+  user: {
+    user: null,
+    setUser: action((state, payload) => {
+      state.user = payload;
+    })
+  },
   modals: {
     showModal: false,
     showLoginModal: false,
     showRegistration: false,
+
     setShowModal: action(state => {
       state.showModal = true;
     }),
