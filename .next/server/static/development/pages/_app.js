@@ -1830,14 +1830,15 @@ function createUrl(router) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MyApp; });
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/app */ "./node_modules/next/app.js");
 /* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../store */ "./store.js");
-/* harmony import */ var easy_peasy__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! easy-peasy */ "easy-peasy");
-/* harmony import */ var easy_peasy__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(easy_peasy__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var easy_peasy__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! easy-peasy */ "easy-peasy");
+/* harmony import */ var easy_peasy__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(easy_peasy__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../store */ "./store.js");
 
 var _jsxFileName = "/Users/hamadoudiallo/Desktop/airbnbClone/pages/_app.js";
 
@@ -1845,29 +1846,68 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = (class extends next_app__WEBPACK_IMPORTED_MODULE_2___default.a {
+class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_2___default.a {
+  static async getInitialProps({
+    Component,
+    ctx
+  }) {
+    const appProps = (await Component.getInitialProps) ? await Component.getInitialProps(ctx) : {};
+    const user = null;
+    return {
+      appProps,
+      user
+    };
+  } // constructor(props) {
+  //   super(props);
+  // }
+
+
   render() {
     const {
       Component,
-      pageProps
+      appProps,
+      user
     } = this.props;
-    return __jsx(easy_peasy__WEBPACK_IMPORTED_MODULE_4__["StoreProvider"], {
-      store: _store__WEBPACK_IMPORTED_MODULE_3__["default"],
+
+    if (user) {
+      _store__WEBPACK_IMPORTED_MODULE_4__["default"].getActions().user.setUser(user);
+    }
+
+    return __jsx(easy_peasy__WEBPACK_IMPORTED_MODULE_3__["StoreProvider"], {
+      store: _store__WEBPACK_IMPORTED_MODULE_4__["default"],
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 9
+        lineNumber: 24
       },
       __self: this
-    }, __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
+    }, __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, appProps, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 10
+        lineNumber: 25
       },
       __self: this
     })));
   }
 
-});
+} // MyApp.getInitialProps = async appContext => {
+//   // const { id } = query;
+//   const appProps = await App.getInitialProps(appContext);
+//   let user = null;
+//   console.log("app.context.req", appContext.ctx);
+//   // if (appContext.ctx.req) {
+//   //   user = appContext.ctx.req;
+//   // }
+//   if (
+//     appContext.ctx.req &&
+//     appContext.ctx.req.session &&
+//     appContext.ctx.req.session.passport &&
+//     appContext.ctx.req.session.passport.user
+//   ) {
+//     user = appContext.ctx.req.session.passport.user;
+//   }
+//   return { ...appProps, user: user };
+// };
+// export default MyApp;
 
 /***/ }),
 
@@ -1884,6 +1924,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var easy_peasy__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(easy_peasy__WEBPACK_IMPORTED_MODULE_0__);
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(easy_peasy__WEBPACK_IMPORTED_MODULE_0__["createStore"])({
+  user: {
+    user: null,
+    setUser: Object(easy_peasy__WEBPACK_IMPORTED_MODULE_0__["action"])((state, payload) => {
+      state.user = payload;
+    })
+  },
   modals: {
     showModal: false,
     showLoginModal: false,
