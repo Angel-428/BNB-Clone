@@ -1,9 +1,10 @@
-import houses from "../houses.json";
+// import houses from "../houses.json";
 import Head from "next/head";
 import Layout from "../../components/Layout";
 import DateRangePicker from "../../components/DateRangePicker";
 import { useStoreActions } from "easy-peasy";
 import React, { useState } from "react";
+import fetch from "isomorphic-unfetch";
 
 const calcNumberOfNightsBetweenDates = (startDate, endDate) => {
   const start = new Date(startDate); //clone
@@ -26,6 +27,7 @@ const House = props => {
   const setShowLoginModal = useStoreActions(
     actions => actions.modals.setShowLoginModal
   );
+
   const content = (
     <div className="container">
       <Head>
@@ -36,9 +38,25 @@ const House = props => {
         <p>
           {props.house.type} - {props.house.town}
         </p>
-        <p>
-          {props.house.rating} ({props.house.reviewsCount})
-        </p>
+        <div>
+          {props.house.rating}{" "}
+          {props.house.reviewsCount ? (
+            <div className="reviews">
+              <h3>{props.house.reviewsCount} Reviews</h3>
+
+              {props.house.reviews.map((review, index) => {
+                return (
+                  <div key={index}>
+                    <p>{new Date(review.createdAt).toDateString()}</p>
+                    <p>{review.comment}</p>
+                  </div>
+                );
+              })}
+            </div>
+          ) : (
+            <></>
+          )}
+        </div>
       </article>
       <aside>
         <h2>Add dates for prices</h2>
@@ -97,10 +115,14 @@ const House = props => {
   return <Layout content={content} />;
 };
 
-House.getInitialProps = ({ query }) => {
+House.getInitialProps = async ({ query }) => {
   const { id } = query;
+
+  const res = await fetch(`http://localhost:4000/api/house/${id}`);
+  const house = await res.json();
+
   return {
-    house: houses.filter(house => house.id === id)[0]
+    house
   };
 };
 
