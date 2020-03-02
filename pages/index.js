@@ -1,9 +1,9 @@
-// import fetch from "isomorphic-unfetch";
+import fetch from "isomorphic-unfetch";
 import House from "../components/House";
 import Layout from "../components/Layout";
-import axios from "axios";
+import { useEffect } from "react";
+
 const Index = props => {
-  console.log("props", props);
   return (
     <Layout
       content={
@@ -31,7 +31,8 @@ const Index = props => {
 };
 
 Index.getInitialProps = async () => {
-  const houses = await axios.get(`http://localhost:4000/api/house`);
+  const res = await fetch(`http://localhost:4000/api/house`);
+  const houses = await res.json();
   return {
     houses
   };

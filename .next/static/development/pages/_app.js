@@ -11330,6 +11330,7 @@ function (_App) {
     //   super(props);
     // }
     value: function render() {
+      // console.log("this.props", this.props);
       var _this$props = this.props,
           Component = _this$props.Component,
           appProps = _this$props.appProps,
@@ -11343,13 +11344,13 @@ function (_App) {
         store: _store__WEBPACK_IMPORTED_MODULE_10__["default"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 26
         },
         __self: this
       }, __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, appProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 27
         },
         __self: this
       })));
