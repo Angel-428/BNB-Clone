@@ -7,6 +7,7 @@ export default class MyApp extends App {
     const appProps = (await Component.getInitialProps)
       ? await Component.getInitialProps(ctx)
       : {};
+
     const user = null;
     return { appProps, user };
   }
@@ -16,6 +17,7 @@ export default class MyApp extends App {
   // }
 
   render() {
+    // console.log("this.props", this.props);
     const { Component, appProps, user } = this.props;
     if (user) {
       store.getActions().user.setUser(user);

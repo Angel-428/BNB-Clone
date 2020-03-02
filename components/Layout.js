@@ -4,6 +4,7 @@ import Modal from "./Modal";
 import LoginModal from "./LoginModal";
 import RegistrationModal from "./RegistrationModal";
 import { useStoreState, useStoreActions } from "easy-peasy";
+import { useEffect, useState } from "react";
 
 const Layout = props => {
   // const [showModal, setShowModal] = useState(false);
@@ -14,7 +15,7 @@ const Layout = props => {
   const showRegistrationModal = useStoreState(
     state => state.modals.showRegistrationModal
   );
-
+  const setUser = useStoreActions(actions => actions.user.setUser);
   const setHideModal = useStoreActions(actions => actions.modals.setHideModal);
   const setShowRegistrationModal = useStoreActions(
     actions => actions.modals.setShowRegistrationModal
@@ -22,6 +23,37 @@ const Layout = props => {
   const setShowLoginModal = useStoreActions(
     actions => actions.modals.setShowLoginModal
   );
+  useEffect( () => {
+    ( function fetchData (){
+      const token = window.sessionStorage.getItem("token")
+      // console.log('object', token)
+      if (token) {
+        fetch("http://localhost:4000/api/login", {
+          method: "post",
+          headers: {
+            "content-type": "application/json",
+            "authorization": token
+          }
+        }).then(res => res.json()).then(data => {
+          if(data && data.id){
+            fetch(`http://localhost:4000/api/user/${data.id}`, {
+              method: "get",
+              headers: {
+                "content-type": "application/json",
+                "authorization": token
+              }
+            }).then(response => response.json()).then(user => {
+              if(user && user.email){
+                setUser(user.email)
+              }
+            })
+          }
+        })
+
+      }
+    })();
+
+  })
   return (
     <div>
       <Header />

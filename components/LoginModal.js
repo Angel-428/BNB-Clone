@@ -15,18 +15,31 @@ export default props => {
           onSubmit={async ev => {
             try {
               ev.preventDefault();
+              const saveAuthTokenInSession = token => {
+                window.sessionStorage.setItem("token", token);
+              };
               const res = await axios.post("http://localhost:4000/api/login", {
                 email,
                 password
               });
-              const data = await res.data;
-              if (res.status === 200 && data.id) {
-                const response = await axios.get(
-                  `http://localhost:4000/api/user/${data.id}`
-                );
 
-                setUser(response.data.email);
-                setHideModal();
+              const data = await res.data;
+              if (res.status === 200 && data.userId) {
+                saveAuthTokenInSession(data.token);
+                const response = await axios.get(
+                  `http://localhost:4000/api/user/${data.userId}`,
+                  {
+                    headers: {
+                      "Content-Type": "application/json",
+                      "authorization": data.token
+                    }
+                  }
+                );
+                console.log("response", response);
+                if (response && response.data.email) {
+                  setUser(response.data.email);
+                  setHideModal();
+                }
               }
             } catch (error) {
               alert(error);
