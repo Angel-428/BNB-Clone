@@ -28,7 +28,12 @@ const Header = () => {
                 <a
                   href="#"
                   onClick={async () => {
-                    setUser(null);
+                    let token = window.sessionStorage.getItem("token");
+                    if (user && token !== "") {
+                      console.log("firing");
+                      token = window.sessionStorage.setItem("token", "");
+                      setUser(null);
+                    }
                   }}
                 >
                   Log out
