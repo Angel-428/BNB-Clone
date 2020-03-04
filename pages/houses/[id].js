@@ -20,8 +20,29 @@ const calcNumberOfNightsBetweenDates = (startDate, endDate) => {
   return dayCount;
 };
 
+const canBook = async (houseId, startDate, endDate, userEmail) => {
+  try {
+    const response = await axios.post("http://localhost:4000/api/house/check", {
+      houseId,
+      startDate,
+      endDate,
+      userEmail
+    });
+
+    if (response.data.message === "busy") {
+      alert(response.data.message);
+      return;
+    }
+
+    return true;
+  } catch (error) {
+    console.log(error);
+    return;
+  }
+};
 const getBookedDates = async id => {
   try {
+    let datesArray = [];
     const response = await axios.post(
       "http://localhost:4000/api/house/booked",
       {
@@ -50,7 +71,7 @@ const House = props => {
   const [endDate, setEndDate] = useState();
   const user = useStoreState(state => state.user.user);
   // const setUser = useStoreActions(actions => actions.user.setUser);
-  console.log("props", props);
+
   const content = (
     <div className="container">
       <Head>
@@ -105,22 +126,26 @@ const House = props => {
             {user ? (
               <button
                 className="reserve"
-                onClick={() => {
+                onClick={async () => {
+                  if (!(await canBook(props.house.id, startDate, endDate))) {
+                    alert("The date choosen are not valid");
+                    return;
+                  }
                   try {
-                    fetch("http://localhost:4000/api/house/booking", {
-                      method: "post",
-                      headers: {
-                        "content-type": "application/json"
-                      },
-                      body: JSON.stringify({
+                    const response = await axios.post(
+                      "http://localhost:4000/api/house/reserve",
+                      {
                         houseId: props.house.id,
                         startDate,
                         endDate,
-                        userEmail: user
-                      })
-                    })
-                      .then(resp => resp.json())
-                      .then(data => console.log("data", data));
+                        user
+                      }
+                    );
+                    if (response.data.status === "error") {
+                      alert(response.data.message);
+                      return;
+                    }
+                    console.log(response.data);
                   } catch (error) {
                     console.error(error);
                   }
