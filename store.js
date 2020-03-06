@@ -3,8 +3,12 @@ import { createStore, action } from "easy-peasy";
 export default createStore({
   user: {
     user: null,
+    houseBooked: [],
     setUser: action((state, payload) => {
       state.user = payload;
+    }),
+    setHouseBooked: action((state, payload) => {
+      state.houseBooked = payload;
     })
   },
   modals: {

@@ -11326,11 +11326,7 @@ function (_App) {
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(MyApp, [{
     key: "render",
-    // constructor(props) {
-    //   super(props);
-    // }
     value: function render() {
-      // console.log("this.props", this.props);
       var _this$props = this.props,
           Component = _this$props.Component,
           appProps = _this$props.appProps,
@@ -11344,13 +11340,13 @@ function (_App) {
         store: _store__WEBPACK_IMPORTED_MODULE_10__["default"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 21
         },
         __self: this
       }, __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, appProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 22
         },
         __self: this
       })));
@@ -11402,26 +11398,7 @@ function (_App) {
   }]);
 
   return MyApp;
-}(next_app__WEBPACK_IMPORTED_MODULE_8___default.a); // MyApp.getInitialProps = async appContext => {
-//   // const { id } = query;
-//   const appProps = await App.getInitialProps(appContext);
-//   let user = null;
-//   console.log("app.context.req", appContext.ctx);
-//   // if (appContext.ctx.req) {
-//   //   user = appContext.ctx.req;
-//   // }
-//   if (
-//     appContext.ctx.req &&
-//     appContext.ctx.req.session &&
-//     appContext.ctx.req.session.passport &&
-//     appContext.ctx.req.session.passport.user
-//   ) {
-//     user = appContext.ctx.req.session.passport.user;
-//   }
-//   return { ...appProps, user: user };
-// };
-// export default MyApp;
-
+}(next_app__WEBPACK_IMPORTED_MODULE_8___default.a);
 
 
 
@@ -11441,8 +11418,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (Object(easy_peasy__WEBPACK_IMPORTED_MODULE_0__["createStore"])({
   user: {
     user: null,
+    houseBooked: [],
     setUser: Object(easy_peasy__WEBPACK_IMPORTED_MODULE_0__["action"])(function (state, payload) {
       state.user = payload;
+    }),
+    setHouseBooked: Object(easy_peasy__WEBPACK_IMPORTED_MODULE_0__["action"])(function (state, payload) {
+      state.houseBooked = payload;
     })
   },
   modals: {

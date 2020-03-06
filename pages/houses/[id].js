@@ -70,7 +70,6 @@ const House = props => {
   const [startDate, setStartDate] = useState();
   const [endDate, setEndDate] = useState();
   const user = useStoreState(state => state.user.user);
-  // const setUser = useStoreActions(actions => actions.user.setUser);
 
   const content = (
     <div className="container">
@@ -138,14 +137,14 @@ const House = props => {
                         houseId: props.house.id,
                         startDate,
                         endDate,
+                        reserved: true,
                         user
                       }
                     );
+
                     if (response.data.status === "error") {
                       alert(response.data.message);
-                      return;
                     }
-                    console.log(response.data);
                   } catch (error) {
                     console.error(error);
                   }
