@@ -7,9 +7,6 @@ import { useStoreState, useStoreActions } from "easy-peasy";
 import { useEffect, useState } from "react";
 
 const Layout = props => {
-  // const [showModal, setShowModal] = useState(false);
-  // const [showLoginModal, setShowLoginModal] = useState(false);
-  // const [showRegistrationModal, setShowRegistrationModal] = useState(false);
   const showModal = useStoreState(state => state.modals.showModal);
   const showLoginModal = useStoreState(state => state.modals.showLoginModal);
   const showRegistrationModal = useStoreState(
@@ -23,37 +20,39 @@ const Layout = props => {
   const setShowLoginModal = useStoreActions(
     actions => actions.modals.setShowLoginModal
   );
-  useEffect( () => {
-    ( function fetchData (){
-      const token = window.sessionStorage.getItem("token")
-      // console.log('object', token)
+  useEffect(() => {
+    (function fetchData() {
+      const token = window.sessionStorage.getItem("token");
       if (token) {
         fetch("http://localhost:4000/api/login", {
           method: "post",
           headers: {
             "content-type": "application/json",
-            "authorization": token
-          }
-        }).then(res => res.json()).then(data => {
-          if(data && data.id){
-            fetch(`http://localhost:4000/api/user/${data.id}`, {
-              method: "get",
-              headers: {
-                "content-type": "application/json",
-                "authorization": token
-              }
-            }).then(response => response.json()).then(user => {
-              if(user && user.email){
-                setUser(user.email)
-              }
-            })
+            authorization: token
           }
         })
-
+          .then(res => res.json())
+          .then(data => {
+            if (data && data.id) {
+              fetch(`http://localhost:4000/api/user/${data.id}`, {
+                method: "get",
+                headers: {
+                  "content-type": "application/json",
+                  authorization: token
+                }
+              })
+                .then(response => response.json())
+                .then(user => {
+                  if (user && user.email) {
+                    setUser(user.email);
+                  }
+                });
+            }
+          });
       }
     })();
+  });
 
-  })
   return (
     <div>
       <Header />

@@ -25,12 +25,16 @@ const Header = () => {
             <>
               <li className="username">{user}</li>
               <li>
+                <Link href="/bookings">
+                  <a>Bookings</a>
+                </Link>
+              </li>
+              <li>
                 <a
                   href="#"
                   onClick={async () => {
                     let token = window.sessionStorage.getItem("token");
                     if (user && token !== "") {
-                      console.log("firing");
                       token = window.sessionStorage.setItem("token", "");
                       setUser(null);
                     }

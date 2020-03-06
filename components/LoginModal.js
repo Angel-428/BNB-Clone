@@ -31,11 +31,11 @@ export default props => {
                   {
                     headers: {
                       "Content-Type": "application/json",
-                      "authorization": data.token
+                      authorization: data.token
                     }
                   }
                 );
-                console.log("response", response);
+
                 if (response && response.data.email) {
                   setUser(response.data.email);
                   setHideModal();

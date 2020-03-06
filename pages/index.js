@@ -1,7 +1,6 @@
 import fetch from "isomorphic-unfetch";
 import House from "../components/House";
 import Layout from "../components/Layout";
-import { useEffect } from "react";
 
 const Index = props => {
   return (
