@@ -35,10 +35,7 @@ export default ({ datesChange, bookedDates }) => {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
   const user = useStoreState(state => state.user.user);
-  // console.log("user", user);
-  // const datesArray = user.length > 0 ? bookedDates : null;
-  // console.log("datesArray", datesArray);
-  // console.log("bookedDates", bookedDates);
+
   return (
     <div className="date-range-picker-container">
       <div>
