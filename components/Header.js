@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useStoreActions, useStoreState, action } from "easy-peasy";
-import axios from "axios";
+
 const Header = () => {
   const setShowLoginModal = useStoreActions(
     actions => actions.modals.setShowLoginModal
@@ -27,6 +27,11 @@ const Header = () => {
               <li>
                 <Link href="/bookings">
                   <a>Bookings</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/host">
+                  <a>My Houses</a>
                 </Link>
               </li>
               <li>

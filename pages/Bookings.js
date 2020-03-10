@@ -103,21 +103,4 @@ const Bookings = props => {
   );
 };
 
-// Bookings.getInitialProps = async ctx => {
-// const response = await axios({
-//   method: "get",
-//   url: "http://localhost:4000/api/house/bookings/list/",
-//   headers: ctx.req
-//     ? {
-//         cookie: ctx.req.headers.cookie
-//       }
-//     : undefined
-// });
-// // console.log("ctx.req", response);
-// return {
-//   bookings: response.data
-// };
-
-// };
-
 export default Bookings;

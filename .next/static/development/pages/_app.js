@@ -11422,11 +11422,19 @@ __webpack_require__.r(__webpack_exports__);
   user: {
     user: null,
     houseBooked: [],
+    dataBook: [],
+    dataHouse: [],
+    setMyBookedHouse: Object(easy_peasy__WEBPACK_IMPORTED_MODULE_0__["action"])(function (state, payload) {
+      state.dataBook = payload;
+    }),
     setUser: Object(easy_peasy__WEBPACK_IMPORTED_MODULE_0__["action"])(function (state, payload) {
       state.user = payload;
     }),
     setHouseBooked: Object(easy_peasy__WEBPACK_IMPORTED_MODULE_0__["action"])(function (state, payload) {
       state.houseBooked = payload;
+    }),
+    setMyHouses: Object(easy_peasy__WEBPACK_IMPORTED_MODULE_0__["action"])(function (state, payload) {
+      state.dataHouse = payload;
     })
   },
   modals: {
