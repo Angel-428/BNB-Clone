@@ -27,7 +27,13 @@ const Bookings = props => {
         .then(res => res.json())
         .then(data => {
           if (data && data.id) {
-            fetch(`http://localhost:4000/api/house/bookings/list/${data.id}`)
+            fetch(`http://localhost:4000/api/house/bookings/list/${data.id}`, {
+              method: "get",
+              headers: {
+                "content-type": "application/json",
+                authorization: token
+              }
+            })
               .then(response => response.json())
               .then(res => {
                 setHouseBooked(res);

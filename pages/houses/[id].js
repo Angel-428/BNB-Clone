@@ -22,11 +22,17 @@ const calcNumberOfNightsBetweenDates = (startDate, endDate) => {
 
 const canBook = async (houseId, startDate, endDate, userEmail) => {
   try {
+    const token = window.sessionStorage.getItem("token");
+
     const response = await axios.post("http://localhost:4000/api/house/check", {
       houseId,
       startDate,
       endDate,
-      userEmail
+      userEmail,
+      headers: {
+        "content-type": "application/json",
+        authorization: token
+      }
     });
 
     if (response.data.message === "busy") {
@@ -49,6 +55,7 @@ const getBookedDates = async id => {
         houseId: id
       }
     );
+
     if (response.data.status === "error") {
       alert(response.data.message);
       return;
@@ -131,6 +138,7 @@ const House = props => {
                     return;
                   }
                   try {
+                    const token = window.sessionStorage.getItem("token");
                     const response = await axios.post(
                       "http://localhost:4000/api/house/reserve",
                       {
@@ -138,13 +146,21 @@ const House = props => {
                         startDate,
                         endDate,
                         reserved: true,
-                        user
+                        user,
+                        headers: {
+                          "content-type": "application/json",
+                          authorization: token
+                        }
                       }
                     );
 
                     if (response.data.status === "error") {
                       alert(response.data.message);
+                      return;
                     }
+                    console.log(response.data);
+                    alert("Booking Successfull");
+                    return;
                   } catch (error) {
                     console.error(error);
                   }

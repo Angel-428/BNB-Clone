@@ -1,6 +1,7 @@
 import App from "next/app";
 import { StoreProvider } from "easy-peasy";
 import store from "../store";
+import "./style.css";
 
 export default class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
