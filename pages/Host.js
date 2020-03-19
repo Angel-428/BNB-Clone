@@ -47,7 +47,7 @@ const Host = props => {
   }, []);
 
   return (
-    // <div>Test</div>
+
     <Layout
       content={
         <div>
