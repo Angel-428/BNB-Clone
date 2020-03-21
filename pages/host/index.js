@@ -4,7 +4,7 @@ import Link from "next/link";
 import { actions, useEffect, useState } from "react";
 import { useStoreActions, useStoreState } from "easy-peasy";
 
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 
 const Host = props => {
   const setDataBook = useStoreActions(actions => actions.user.setMyBookedHouse);
@@ -34,7 +34,7 @@ const Host = props => {
             })
               .then(response => response.json())
               .then(res => {
-                setDataBook(res.book);
+                setDataBook(res.bookings);
                 setHouse(res.houses);
               });
           }
@@ -46,8 +46,8 @@ const Host = props => {
     fetchingDataOnMount();
   }, []);
 
-  return (
 
+  return (
     <Layout
       content={
         <div>

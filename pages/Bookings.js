@@ -26,6 +26,7 @@ const Bookings = props => {
       })
         .then(res => res.json())
         .then(data => {
+
           if (data && data.id) {
             fetch(`http://localhost:4000/api/house/bookings/list/${data.id}`, {
               method: "get",
@@ -57,8 +58,8 @@ const Bookings = props => {
           <h2>Your bookings</h2>
 
           <div className="bookings">
-            {data && data.length > 0 ? (
-              data.map((booking, index) => {
+            {data && data.bookings && data.bookings.length > 0 ? (
+              data.bookings.map((booking, index) => {
                 return (
                   <div className="booking" key={index}>
                     <img src={booking.house.picture} alt="House picture" />

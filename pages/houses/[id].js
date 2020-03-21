@@ -24,17 +24,21 @@ const canBook = async (houseId, startDate, endDate, userEmail) => {
   try {
     const token = window.sessionStorage.getItem("token");
 
-    const response = await axios.post("http://localhost:4000/api/house/check", {
-      houseId,
-      startDate,
-      endDate,
-      userEmail,
+    const response = await axios({
+      method: "post",
+      url: "http://localhost:4000/api/house/check",
+      data: {
+        houseId,
+        startDate,
+        endDate,
+        userEmail,
+      },
       headers: {
         "content-type": "application/json",
         authorization: token
       }
     });
-
+    console.log('response', response)
     if (response.data.message === "busy") {
       alert(response.data.message);
       return;
@@ -133,15 +137,16 @@ const House = props => {
               <button
                 className="reserve"
                 onClick={async () => {
-                  if (!(await canBook(props.house.id, startDate, endDate))) {
+                  if (!(await canBook(props.house.id, startDate, endDate, user))) {
                     alert("The date choosen are not valid");
                     return;
                   }
                   try {
                     const token = window.sessionStorage.getItem("token");
-                    const response = await axios.post(
-                      "http://localhost:4000/api/house/reserve",
-                      {
+                    const response = await axios({
+                      method: "post",
+                      url: "http://localhost:4000/api/house/reserve",
+                      data: {
                         houseId: props.house.id,
                         startDate,
                         endDate,
@@ -152,6 +157,7 @@ const House = props => {
                           authorization: token
                         }
                       }
+                    }
                     );
 
                     if (response.data.status === "error") {
