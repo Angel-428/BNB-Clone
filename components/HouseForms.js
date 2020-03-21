@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import Router from "next/router";
-import { useStoreActions, useStoreState, action } from "easy-peasy";
+import { useStoreActions, useStoreState } from "easy-peasy";
 const HouseForms = props => {
   const id = (props.house && props.house.id) || null;
 
@@ -52,7 +52,7 @@ const HouseForms = props => {
           try {
             const response = await axios({
               method: "post",
-              url: `http://localhost:4000/api/house/${
+              url: `http://localhost:4000/api/house/host/${
                 props.edit ? "edit" : "new"
               }`,
               headers: {
@@ -79,14 +79,15 @@ const HouseForms = props => {
                 type
               }
             });
-            // if (response.data.status === "error") {
-            //   alert(response.data.message);
-            //   return;
-            // }
+
+            if (response.data.status === "error") {
+              alert(response.data.message);
+              return;
+            }
             console.log("response", response);
-            // goto("http://localhost:4000/api/house/host/new");
+            Router.push("/host");
           } catch (error) {
-            // alert(error.response.data.message);
+            alert("there is an error", error.response.data.message);
             console.log("error", error);
             return;
           }

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useStoreActions, useStoreState, action } from "easy-peasy";
+import Router from "next/router";
 
 const Header = () => {
   const setShowLoginModal = useStoreActions(
@@ -30,6 +31,11 @@ const Header = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/host/new">
+                  <a>Add House</a>
+                </Link>
+              </li>
+              <li>
                 <Link href="/host">
                   <a>My Houses</a>
                 </Link>
@@ -42,6 +48,7 @@ const Header = () => {
                     if (user && token !== "") {
                       token = window.sessionStorage.setItem("token", "");
                       setUser(null);
+                      Router.push("/");
                     }
                   }}
                 >
