@@ -31,14 +31,14 @@ const canBook = async (houseId, startDate, endDate, userEmail) => {
         houseId,
         startDate,
         endDate,
-        userEmail,
+        userEmail
       },
       headers: {
         "content-type": "application/json",
         authorization: token
       }
     });
-    console.log('response', response)
+    console.log("response", response);
     if (response.data.message === "busy") {
       alert(response.data.message);
       return;
@@ -92,6 +92,7 @@ const House = props => {
         <p>
           {props.house.type} - {props.house.town}
         </p>
+        <div>{props.house.description}</div>
         <div>
           {props.house.rating}{" "}
           {props.house.reviewsCount ? (
@@ -137,7 +138,9 @@ const House = props => {
               <button
                 className="reserve"
                 onClick={async () => {
-                  if (!(await canBook(props.house.id, startDate, endDate, user))) {
+                  if (
+                    !(await canBook(props.house.id, startDate, endDate, user))
+                  ) {
                     alert("The date choosen are not valid");
                     return;
                   }
@@ -157,8 +160,7 @@ const House = props => {
                           authorization: token
                         }
                       }
-                    }
-                    );
+                    });
 
                     if (response.data.status === "error") {
                       alert(response.data.message);
