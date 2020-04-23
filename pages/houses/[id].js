@@ -92,7 +92,11 @@ const House = props => {
         <p>
           {props.house.type} - {props.house.town}
         </p>
-        <div>{props.house.description}</div>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: props.house.description
+          }}
+        ></div>
         <div>
           {props.house.rating}{" "}
           {props.house.reviewsCount ? (

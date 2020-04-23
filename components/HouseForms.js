@@ -2,7 +2,9 @@ import { useState } from "react";
 import axios from "axios";
 import Router from "next/router";
 import { useStoreActions, useStoreState } from "easy-peasy";
-const HouseForms = props => {
+import Editor from "react-pell";
+
+const HouseForms = (props) => {
   const id = (props.house && props.house.id) || null;
 
   const [title, setTitle] = useState((props.house && props.house.title) || "");
@@ -41,12 +43,12 @@ const HouseForms = props => {
 
   const houseTypes = ["Entire house", "Room"];
 
-  const user = useStoreState(state => state.user.user);
-  const setUser = useStoreActions(actions => actions.user.setUser);
+  const user = useStoreState((state) => state.user.user);
+  const setUser = useStoreActions((actions) => actions.user.setUser);
   return (
     <div>
       <form
-        onSubmit={async event => {
+        onSubmit={async (event) => {
           event.preventDefault();
           const token = window.sessionStorage.getItem("token");
           try {
@@ -58,7 +60,7 @@ const HouseForms = props => {
               headers: {
                 "content-type": "application/json",
                 authorization: token,
-                user
+                user,
               },
               data: {
                 id: props.edit ? id : null,
@@ -76,15 +78,14 @@ const HouseForms = props => {
                 heating,
                 freeParking,
                 entirePlace,
-                type
-              }
+                type,
+              },
             });
 
             if (response.data.status === "error") {
               alert(response.data.message);
               return;
             }
-            console.log("response", response);
             Router.push("/host");
           } catch (error) {
             alert("there is an error", error.response.data.message);
@@ -97,7 +98,7 @@ const HouseForms = props => {
           <label>House title</label>
           <input
             required
-            onChange={event => setTitle(event.target.value)}
+            onChange={(event) => setTitle(event.target.value)}
             type="text"
             placeholder="House title"
             value={title}
@@ -107,7 +108,7 @@ const HouseForms = props => {
           <label>Town</label>
           <input
             required
-            onChange={event => setTown(event.target.value)}
+            onChange={(event) => setTown(event.target.value)}
             type="text"
             placeholder="Town"
             value={town}
@@ -117,7 +118,7 @@ const HouseForms = props => {
           <label>Price per night</label>
           <input
             required
-            onChange={event => setPrice(event.target.value)}
+            onChange={(event) => setPrice(event.target.value)}
             type="number"
             placeholder="Price per night"
             value={price}
@@ -126,21 +127,42 @@ const HouseForms = props => {
         <p>
           <label>House picture URL</label>
           <input
-            required
-            onChange={event => setPicture(event.target.value)}
-            type="text"
-            placeholder="House picture URL"
-            value={picture}
+            type="file"
+            id="fileUpload"
+            accept="image/*"
+            onChange={async (e) => {
+              try {
+                console.log("e", e.target.files);
+                const token = window.sessionStorage.getItem("token");
+                const files = e.target.files[0];
+                const formData = new FormData();
+                formData.append("file", files);
+                const response = await axios({
+                  method: "post",
+                  url: `http://localhost:4000/api/house/host/image`,
+                  data: formData,
+                  headers: {
+                    "Content-Type": "multipart/form-data",
+                    authorization: token,
+                  },
+                });
+
+                setPicture(response.data.fileUrl);
+              } catch (error) {
+                console.log("error", error);
+              }
+            }}
           />
+          {picture ? <img src={picture} width="200" alt="House image" /> : ""}
         </p>
-        <p>
+        <div>
           <label>House description</label>
-          <textarea
-            required
-            onChange={event => setDescription(event.target.value)}
-            value={description}
-          ></textarea>
-        </p>
+          <Editor
+            onChange={(html) => setDescription(html)}
+            defaultContent={description}
+            actions={["bold", "underline", "italic"]}
+          />
+        </div>
 
         <div className="grid">
           <div>
@@ -148,7 +170,7 @@ const HouseForms = props => {
               <label>Number of guests</label>
               <input
                 required
-                onChange={event => setGuests(event.target.value)}
+                onChange={(event) => setGuests(event.target.value)}
                 type="number"
                 placeholder="Number of guests"
                 value={guests}
@@ -158,7 +180,7 @@ const HouseForms = props => {
               <label>Number of bedrooms</label>
               <input
                 required
-                onChange={event => setBedrooms(event.target.value)}
+                onChange={(event) => setBedrooms(event.target.value)}
                 type="number"
                 placeholder="Number of bedrooms"
                 value={bedrooms}
@@ -168,7 +190,7 @@ const HouseForms = props => {
               <label>Number of beds</label>
               <input
                 required
-                onChange={event => setBeds(event.target.value)}
+                onChange={(event) => setBeds(event.target.value)}
                 type="number"
                 placeholder="Number of beds"
                 value={beds}
@@ -178,7 +200,7 @@ const HouseForms = props => {
               <label>Number of baths</label>
               <input
                 required
-                onChange={event => setBaths(event.target.value)}
+                onChange={(event) => setBaths(event.target.value)}
                 type="number"
                 placeholder="Number of baths"
                 value={baths}
@@ -190,7 +212,7 @@ const HouseForms = props => {
             <p>
               <label>Does it have Wifi?</label>
               <select
-                onChange={event => setWifi(event.target.value)}
+                onChange={(event) => setWifi(event.target.value)}
                 value={wifi}
               >
                 <option value="true">Yes</option>
@@ -200,7 +222,7 @@ const HouseForms = props => {
             <p>
               <label>Does it have a kitchen?</label>
               <select
-                onChange={event => setKitchen(event.target.value)}
+                onChange={(event) => setKitchen(event.target.value)}
                 value={kitchen}
               >
                 <option value="true">Yes</option>
@@ -210,7 +232,7 @@ const HouseForms = props => {
             <p>
               <label>Does it have heating?</label>
               <select
-                onChange={event => setHeating(event.target.value)}
+                onChange={(event) => setHeating(event.target.value)}
                 value={heating}
               >
                 <option value="true">Yes</option>
@@ -220,7 +242,7 @@ const HouseForms = props => {
             <p>
               <label>Does it have free parking?</label>
               <select
-                onChange={event => setFreeParking(event.target.value)}
+                onChange={(event) => setFreeParking(event.target.value)}
                 value={freeParking}
               >
                 <option value="true">Yes</option>
@@ -230,7 +252,7 @@ const HouseForms = props => {
             <p>
               <label>Is it the entire place?</label>
               <select
-                onChange={event => setEntirePlace(event.target.value)}
+                onChange={(event) => setEntirePlace(event.target.value)}
                 value={entirePlace}
               >
                 <option value="true">Yes</option>
@@ -240,7 +262,7 @@ const HouseForms = props => {
             <p>
               <label>Type of house</label>
               <select
-                onChange={event => setType(event.target.value)}
+                onChange={(event) => setType(event.target.value)}
                 value={type}
               >
                 {houseTypes.map((item, key) => (
@@ -258,6 +280,7 @@ const HouseForms = props => {
 
       <style jsx>{`
         input[type="number"],
+        input[type="file"],
         select,
         textarea {
           display: block;
@@ -280,6 +303,36 @@ const HouseForms = props => {
 
         .grid > div {
           padding: 50px;
+        }
+        .pell-container {
+          border: 1px solid #ccc;
+        }
+        .pell,
+        .pell-content {
+          box-sizing: border-box;
+        }
+        .pell-content {
+          height: 300px;
+          outline: 0;
+          overflow-y: auto;
+          padding: 10px;
+        }
+        .pell-actionbar {
+          background-color: #fff;
+          border-bottom: 1px solid hsla(0, 0%, 4%, 0.1);
+        }
+        .pell-button {
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          height: 30px;
+          outline: 0;
+          width: 30px;
+          vertical-align: bottom;
+          color: black;
+        }
+        .pell-button-selected {
+          background-color: #f0f0f0;
         }
       `}</style>
     </div>

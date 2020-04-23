@@ -1842,7 +1842,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./style.css */ "./pages/style.css");
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_5__);
 
-var _jsxFileName = "/Users/hamadoudiallo/Desktop/airbnbClone/pages/_app.js";
+var _jsxFileName = "/Users/hamadoudiallo/Desktop/Desktop files/airbnbClone/pages/_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
