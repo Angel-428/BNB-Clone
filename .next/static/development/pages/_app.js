@@ -11308,7 +11308,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/hamadoudiallo/Desktop/airbnbClone/pages/_app.js";
+var _jsxFileName = "/Users/hamadoudiallo/Desktop/Desktop files/airbnbClone/pages/_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 
