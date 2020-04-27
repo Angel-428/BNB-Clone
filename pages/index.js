@@ -2,7 +2,7 @@ import fetch from "isomorphic-unfetch";
 import House from "../components/House";
 import Layout from "../components/Layout";
 
-const Index = props => {
+const Index = (props) => {
   return (
     <Layout
       content={
@@ -32,9 +32,8 @@ const Index = props => {
 Index.getInitialProps = async () => {
   const res = await fetch(`http://localhost:4000/api/house`);
   const houses = await res.json();
-  console.log("houses", houses);
   return {
-    houses
+    houses,
   };
 };
 

@@ -132,21 +132,19 @@ const HouseForms = (props) => {
             accept="image/*"
             onChange={async (e) => {
               try {
-                console.log("e", e.target.files);
                 const token = window.sessionStorage.getItem("token");
                 const files = e.target.files[0];
                 const formData = new FormData();
                 formData.append("file", files);
                 const response = await axios({
                   method: "post",
-                  url: `http://localhost:4000/api/house/host/image`,
+                  url: `http://localhost:4000/api/house/upload`,
                   data: formData,
                   headers: {
                     "Content-Type": "multipart/form-data",
                     authorization: token,
                   },
                 });
-
                 setPicture(response.data.fileUrl);
               } catch (error) {
                 console.log("error", error);
