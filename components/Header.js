@@ -4,16 +4,17 @@ import Router from "next/router";
 
 const Header = () => {
   const setShowLoginModal = useStoreActions(
-    actions => actions.modals.setShowLoginModal
+    (actions) => actions.modals.setShowLoginModal
   );
   const setShowRegistrationModal = useStoreActions(
-    actions => actions.modals.setShowRegistrationModal
+    (actions) => actions.modals.setShowRegistrationModal
   );
-  const user = useStoreState(state => state.user.user);
-  const setUser = useStoreActions(actions => actions.user.setUser);
+  const user = useStoreState((state) => state.user.user);
+  const setUser = useStoreActions((actions) => actions.user.setUser);
 
   return (
     <div className="nav-container">
+      <img src="../images/housebin.png" alt="" />
       <Link href="/">
         <a>
           <img src="#" alt="" />
