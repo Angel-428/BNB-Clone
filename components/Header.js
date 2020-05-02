@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <div className="nav-container">
-      <img src="../images/housebin.png" alt="" />
+      <img src="/images/housebin.png" alt="" />
       <Link href="/">
         <a>
           <img src="#" alt="" />
