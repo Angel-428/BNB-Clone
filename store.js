@@ -17,28 +17,28 @@ export default createStore({
     }),
     setMyHouses: action((state, payload) => {
       state.dataHouse = payload;
-    })
+    }),
   },
   modals: {
     showModal: false,
     showLoginModal: false,
     showRegistration: false,
 
-    setShowModal: action(state => {
+    setShowModal: action((state) => {
       state.showModal = true;
     }),
-    setHideModal: action(state => {
+    setHideModal: action((state) => {
       state.showModal = false;
     }),
-    setShowLoginModal: action(state => {
+    setShowLoginModal: action((state) => {
       state.showModal = true;
       state.showLoginModal = true;
       state.showRegistrationModal = false;
     }),
-    setShowRegistrationModal: action(state => {
+    setShowRegistrationModal: action((state) => {
       state.showModal = true;
       state.showLoginModal = false;
       state.showRegistrationModal = true;
-    })
-  }
+    }),
+  },
 });

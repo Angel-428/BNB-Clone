@@ -1,38 +1,39 @@
 import { useState } from "react";
 import { useStoreActions, useStoreState } from "easy-peasy";
 import axios from "axios";
-export default props => {
+export default (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const setUser = useStoreActions(action => action.user.setUser);
-  const setHideModal = useStoreActions(actions => actions.modals.setHideModal);
+  const setUser = useStoreActions((action) => action.user.setUser);
+  const setHideModal = useStoreActions(
+    (actions) => actions.modals.setHideModal
+  );
 
   return (
     <>
       <h2>Log in</h2>
       <div>
         <form
-          onSubmit={async ev => {
+          onSubmit={async (ev) => {
             try {
               ev.preventDefault();
-              const saveAuthTokenInSession = token => {
+              const saveAuthTokenInSession = (token) => {
                 window.sessionStorage.setItem("token", token);
               };
               const res = await axios.post("http://localhost:4000/api/login", {
                 email,
-                password
+                password,
               });
 
-              const data = await res.data;
-              if (res.status === 200 && data.userId) {
-                saveAuthTokenInSession(data.token);
+              if (res.status === 200 && res.data.userId) {
+                saveAuthTokenInSession(res.data.token);
                 const response = await axios.get(
-                  `http://localhost:4000/api/user/${data.userId}`,
+                  `http://localhost:4000/api/user/${res.data.userId}`,
                   {
                     headers: {
                       "Content-Type": "application/json",
-                      authorization: data.token
-                    }
+                      authorization: res.data.token,
+                    },
                   }
                 );
 
@@ -42,7 +43,7 @@ export default props => {
                 }
               }
             } catch (error) {
-              alert(error);
+              alert("wrong credentials");
               return;
             }
           }}
@@ -51,7 +52,7 @@ export default props => {
             id="email"
             type="email"
             placeholder="Email address"
-            onChange={e => {
+            onChange={(e) => {
               setEmail(e.target.value);
             }}
           />
@@ -59,7 +60,7 @@ export default props => {
             id="password"
             type="password"
             placeholder="Password"
-            onChange={e => {
+            onChange={(e) => {
               setPassword(e.target.value);
             }}
           />

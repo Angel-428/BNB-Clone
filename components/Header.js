@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useStoreActions, useStoreState, action } from "easy-peasy";
+import { useStoreActions, useStoreState } from "easy-peasy";
 import Router from "next/router";
 
 const Header = () => {
@@ -16,10 +16,9 @@ const Header = () => {
     <div className="nav-container">
       <Link href="/">
         <a>
-          <img src="/images/housebin.png" alt="" />
+          <img src="/static/housebin.png" width="42" height="42" />
         </a>
       </Link>
-
       <nav>
         <ul>
           {user ? (
