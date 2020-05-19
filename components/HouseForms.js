@@ -319,15 +319,15 @@ const HouseForms = (props) => {
           background-color: #fff;
           border-bottom: 1px solid hsla(0, 0%, 4%, 0.1);
         }
-        .pell-button {
-          background-color: transparent;
+        button {
+          background-color: rgb(255, 90, 95);
+          color: white;
+          font-size: 13px;
+          width: 100%;
           border: none;
+          height: 40px;
+          border-radius: 4px;
           cursor: pointer;
-          height: 30px;
-          outline: 0;
-          width: 30px;
-          vertical-align: bottom;
-          color: black;
         }
         .pell-button-selected {
           background-color: #f0f0f0;

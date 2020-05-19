@@ -18,7 +18,7 @@ const Index = (props) => {
           <style jsx>{`
             .houses {
               display: grid;
-              grid-template-columns: 50% 50%;
+              grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
               grid-template-rows: 300px 300px;
               grid-gap: 40px;
             }
