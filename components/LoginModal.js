@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useStoreActions, useStoreState } from "easy-peasy";
+import { useStoreActions } from "easy-peasy";
 import axios from "axios";
 export default (props) => {
   const [email, setEmail] = useState("");

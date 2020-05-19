@@ -31,12 +31,12 @@ const canBook = async (houseId, startDate, endDate, userEmail) => {
         houseId,
         startDate,
         endDate,
-        userEmail
+        userEmail,
       },
       headers: {
         "content-type": "application/json",
-        authorization: token
-      }
+        authorization: token,
+      },
     });
     console.log("response", response);
     if (response.data.message === "busy") {
@@ -50,13 +50,13 @@ const canBook = async (houseId, startDate, endDate, userEmail) => {
     return;
   }
 };
-const getBookedDates = async id => {
+const getBookedDates = async (id) => {
   try {
     let datesArray = [];
     const response = await axios.post(
       "http://localhost:4000/api/house/booked",
       {
-        houseId: id
+        houseId: id,
       }
     );
 
@@ -70,17 +70,17 @@ const getBookedDates = async id => {
   }
 };
 
-const House = props => {
+const House = (props) => {
   const [dateChosen, setDateChosen] = useState(false);
   const [numberOfNightsBetweenDates, setNumberOfNightsBetweenDates] = useState(
     0
   );
   const setShowLoginModal = useStoreActions(
-    actions => actions.modals.setShowLoginModal
+    (actions) => actions.modals.setShowLoginModal
   );
   const [startDate, setStartDate] = useState();
   const [endDate, setEndDate] = useState();
-  const user = useStoreState(state => state.user.user);
+  const user = useStoreState((state) => state.user.user);
 
   const content = (
     <div className="container">
@@ -88,13 +88,18 @@ const House = props => {
         <title>{props.house.title}</title>
       </Head>
       <article>
-        <img src={props.house.picture} width="100%" alt="House picture" />
+        <img
+          src={props.house.picture}
+          alt={props.house.title}
+          width="100%"
+          alt="House picture"
+        />
         <p>
           {props.house.type} - {props.house.town}
         </p>
         <div
           dangerouslySetInnerHTML={{
-            __html: props.house.description
+            __html: props.house.description,
           }}
         ></div>
         <div>
@@ -161,9 +166,9 @@ const House = props => {
                         user,
                         headers: {
                           "content-type": "application/json",
-                          authorization: token
-                        }
-                      }
+                          authorization: token,
+                        },
+                      },
                     });
 
                     if (response.data.status === "error") {
@@ -198,6 +203,7 @@ const House = props => {
         .container {
           display: grid;
           grid-template-columns: 60% 40%;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
           grid-gap: 30px;
         }
 
@@ -230,7 +236,7 @@ House.getInitialProps = async ({ query }) => {
 
   return {
     house,
-    responseDate
+    responseDate,
   };
 };
 
