@@ -6,11 +6,13 @@ import { useStoreActions, useStoreState } from "easy-peasy";
 
 import Layout from "../../components/Layout";
 
-const Host = props => {
-  const setDataBook = useStoreActions(actions => actions.user.setMyBookedHouse);
-  const dataBook = useStoreState(state => state.user.dataBook);
-  const setHouse = useStoreActions(actions => actions.user.setMyHouses);
-  const dataHouse = useStoreState(state => state.user.dataHouse);
+const Host = (props) => {
+  const setDataBook = useStoreActions(
+    (actions) => actions.user.setMyBookedHouse
+  );
+  const dataBook = useStoreState((state) => state.user.dataBook);
+  const setHouse = useStoreActions((actions) => actions.user.setMyHouses);
+  const dataHouse = useStoreState((state) => state.user.dataHouse);
 
   const fetchingDataOnMount = () => {
     const token = window.sessionStorage.getItem("token");
@@ -19,21 +21,21 @@ const Host = props => {
         method: "post",
         headers: {
           "content-type": "application/json",
-          authorization: token
-        }
+          authorization: token,
+        },
       })
-        .then(res => res.json())
-        .then(data => {
+        .then((res) => res.json())
+        .then((data) => {
           if (data && data.id) {
             fetch(`http://localhost:4000/api/house/host/list/${data.id}`, {
               method: "get",
               headers: {
                 "content-type": "application/json",
-                authorization: token
-              }
+                authorization: token,
+              },
             })
-              .then(response => response.json())
-              .then(res => {
+              .then((response) => response.json())
+              .then((res) => {
                 setDataBook(res.bookings);
                 setHouse(res.houses);
               });
@@ -45,7 +47,6 @@ const Host = props => {
   useEffect(() => {
     fetchingDataOnMount();
   }, []);
-
 
   return (
     <Layout
@@ -118,7 +119,7 @@ const Host = props => {
           <style jsx>{`
             .container {
               display: grid;
-              grid-template-columns: 60% 40%;
+              grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
               grid-gap: 50px;
             }
 
