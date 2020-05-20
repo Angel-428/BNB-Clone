@@ -1,4 +1,3 @@
-// import houses from "../houses.json";
 import Head from "next/head";
 import Layout from "../../components/Layout";
 import DateRangePicker from "../../components/DateRangePicker";
@@ -9,8 +8,8 @@ import fetch from "isomorphic-unfetch";
 import axios from "axios";
 
 const calcNumberOfNightsBetweenDates = (startDate, endDate) => {
-  const start = new Date(startDate); //clone
-  const end = new Date(endDate); //clone
+  const start = new Date(startDate);
+  const end = new Date(endDate);
   let dayCount = 0;
 
   while (end > start) {

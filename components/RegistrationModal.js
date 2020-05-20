@@ -2,20 +2,22 @@ import axios from "axios";
 import { useState } from "react";
 import { useStoreActions, useStoreState } from "easy-peasy";
 
-export default props => {
+export default (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfirmation, setPasswordConfirmation] = useState("");
   const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");
-  const setUser = useStoreActions(action => action.user.setUser);
-  const setHideModal = useStoreActions(actions => actions.modals.setHideModal);
+  const setUser = useStoreActions((action) => action.user.setUser);
+  const setHideModal = useStoreActions(
+    (actions) => actions.modals.setHideModal
+  );
   return (
     <>
       <h2>Sign up</h2>
       <div>
         <form
-          onSubmit={async ev => {
+          onSubmit={async (ev) => {
             try {
               ev.preventDefault();
               const register = await axios.post(
@@ -25,11 +27,11 @@ export default props => {
                   lastName,
                   email,
                   password,
-                  passwordConfirmation
+                  passwordConfirmation,
                 }
               );
               const data = await register.data;
-              console.log("register", data);
+
               if (data.status === "error") {
                 alert(response.data.message);
               }
@@ -44,7 +46,7 @@ export default props => {
             id="name"
             type="name"
             placeholder="First Name"
-            onChange={e => {
+            onChange={(e) => {
               setName(e.target.value);
             }}
           />
@@ -52,7 +54,7 @@ export default props => {
             id="lastname"
             type="lastname"
             placeholder="Last Name"
-            onChange={e => {
+            onChange={(e) => {
               setLastName(e.target.value);
             }}
           />
@@ -60,7 +62,7 @@ export default props => {
             id="email"
             type="email"
             placeholder="Email address"
-            onChange={e => {
+            onChange={(e) => {
               setEmail(e.target.value);
             }}
           />
@@ -69,7 +71,7 @@ export default props => {
             id="password"
             type="password"
             placeholder="Password"
-            onChange={e => {
+            onChange={(e) => {
               setPassword(e.target.value);
             }}
           />
@@ -77,7 +79,7 @@ export default props => {
             id="passwordconfirmation"
             type="password"
             placeholder="Enter password again"
-            onChange={e => {
+            onChange={(e) => {
               setPasswordConfirmation(e.target.value);
             }}
           />

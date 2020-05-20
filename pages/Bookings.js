@@ -1,19 +1,15 @@
 import Layout from "../components/Layout";
-import axios from "axios";
 import Head from "next/head";
-import { useStoreActions, useStoreState, useStore, action } from "easy-peasy";
+import { useStoreActions, useStoreState } from "easy-peasy";
 import { actions, useEffect, useState } from "react";
 
 const Bookings = (props) => {
-  const user = useStoreState((state) => state.user.user);
   const setHouseBooked = useStoreActions(
     (actions) => actions.user.setHouseBooked
   );
   const setUser = useStoreActions((actions) => actions.user.setUser);
-  const [name, setName] = useState("");
   const data = useStoreState((state) => state.user.houseBooked);
 
-  // console.log("setHouseBooked", setHouseBooked);
   const fetchingDataOnMount = () => {
     const token = window.sessionStorage.getItem("token");
     if (token) {

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import Router from "next/router";
-import { useStoreActions, useStoreState } from "easy-peasy";
+import { useStoreState } from "easy-peasy";
 import Editor from "react-pell";
 
 const HouseForms = (props) => {
@@ -44,7 +44,7 @@ const HouseForms = (props) => {
   const houseTypes = ["Entire house", "Room"];
 
   const user = useStoreState((state) => state.user.user);
-  const setUser = useStoreActions((actions) => actions.user.setUser);
+
   return (
     <div>
       <form

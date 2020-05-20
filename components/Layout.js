@@ -1,24 +1,25 @@
 import Header from "./Header";
-// import { useState } from "react";
 import Modal from "./Modal";
 import LoginModal from "./LoginModal";
 import RegistrationModal from "./RegistrationModal";
 import { useStoreState, useStoreActions } from "easy-peasy";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
-const Layout = props => {
-  const showModal = useStoreState(state => state.modals.showModal);
-  const showLoginModal = useStoreState(state => state.modals.showLoginModal);
+const Layout = (props) => {
+  const showModal = useStoreState((state) => state.modals.showModal);
+  const showLoginModal = useStoreState((state) => state.modals.showLoginModal);
   const showRegistrationModal = useStoreState(
-    state => state.modals.showRegistrationModal
+    (state) => state.modals.showRegistrationModal
   );
-  const setUser = useStoreActions(actions => actions.user.setUser);
-  const setHideModal = useStoreActions(actions => actions.modals.setHideModal);
+  const setUser = useStoreActions((actions) => actions.user.setUser);
+  const setHideModal = useStoreActions(
+    (actions) => actions.modals.setHideModal
+  );
   const setShowRegistrationModal = useStoreActions(
-    actions => actions.modals.setShowRegistrationModal
+    (actions) => actions.modals.setShowRegistrationModal
   );
   const setShowLoginModal = useStoreActions(
-    actions => actions.modals.setShowLoginModal
+    (actions) => actions.modals.setShowLoginModal
   );
   useEffect(() => {
     (function fetchData() {
@@ -28,21 +29,21 @@ const Layout = props => {
           method: "post",
           headers: {
             "content-type": "application/json",
-            authorization: token
-          }
+            authorization: token,
+          },
         })
-          .then(res => res.json())
-          .then(data => {
+          .then((res) => res.json())
+          .then((data) => {
             if (data && data.id) {
               fetch(`http://localhost:4000/api/user/${data.id}`, {
                 method: "get",
                 headers: {
                   "content-type": "application/json",
-                  authorization: token
-                }
+                  authorization: token,
+                },
               })
-                .then(response => response.json())
-                .then(user => {
+                .then((response) => response.json())
+                .then((user) => {
                   if (user && user.email) {
                     setUser(user.email);
                   }
