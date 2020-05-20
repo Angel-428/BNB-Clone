@@ -132,9 +132,6 @@
     justify-content: center;
   }
   /* show when clicking menu */
-  .nav-container .menu-wrap .toggler {
-    visibility: visible;
-  }
   .nav-container .menu-wrap .toggler:checked ~ .menu {
     visibility: visible;
   }
