@@ -188,6 +188,12 @@
     padding: 1em 0.5em;
     margin-left: 4em;
   }
+  .nav-container a img {
+    display: block;
+    margin: -0.5em 18em;
+    width: 3em;
+    height: 4em;
+  }
   h2 {
     padding-bottom: 10px;
   }

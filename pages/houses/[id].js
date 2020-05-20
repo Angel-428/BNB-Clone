@@ -2,7 +2,8 @@
 import Head from "next/head";
 import Layout from "../../components/Layout";
 import DateRangePicker from "../../components/DateRangePicker";
-import { useStoreActions, useStoreState, useStore } from "easy-peasy";
+import { useStoreActions, useStoreState } from "easy-peasy";
+import Router from "next/router";
 import React, { useState } from "react";
 import fetch from "isomorphic-unfetch";
 import axios from "axios";
@@ -52,7 +53,6 @@ const canBook = async (houseId, startDate, endDate, userEmail) => {
 };
 const getBookedDates = async (id) => {
   try {
-    let datesArray = [];
     const response = await axios.post(
       "http://localhost:4000/api/house/booked",
       {
@@ -164,10 +164,10 @@ const House = (props) => {
                         endDate,
                         reserved: true,
                         user,
-                        headers: {
-                          "content-type": "application/json",
-                          authorization: token,
-                        },
+                      },
+                      headers: {
+                        "content-type": "application/json",
+                        authorization: token,
                       },
                     });
 
@@ -177,6 +177,7 @@ const House = (props) => {
                     }
                     console.log(response.data);
                     alert("Booking Successfull");
+                    Router.push("/bookings");
                     return;
                   } catch (error) {
                     console.error(error);

@@ -4,14 +4,14 @@ import Head from "next/head";
 import { useStoreActions, useStoreState, useStore, action } from "easy-peasy";
 import { actions, useEffect, useState } from "react";
 
-const Bookings = props => {
-  const user = useStoreState(state => state.user.user);
+const Bookings = (props) => {
+  const user = useStoreState((state) => state.user.user);
   const setHouseBooked = useStoreActions(
-    actions => actions.user.setHouseBooked
+    (actions) => actions.user.setHouseBooked
   );
-  const setUser = useStoreActions(actions => actions.user.setUser);
+  const setUser = useStoreActions((actions) => actions.user.setUser);
   const [name, setName] = useState("");
-  const data = useStoreState(state => state.user.houseBooked);
+  const data = useStoreState((state) => state.user.houseBooked);
 
   // console.log("setHouseBooked", setHouseBooked);
   const fetchingDataOnMount = () => {
@@ -21,22 +21,21 @@ const Bookings = props => {
         method: "post",
         headers: {
           "content-type": "application/json",
-          authorization: token
-        }
+          authorization: token,
+        },
       })
-        .then(res => res.json())
-        .then(data => {
-
+        .then((res) => res.json())
+        .then((data) => {
           if (data && data.id) {
             fetch(`http://localhost:4000/api/house/bookings/list/${data.id}`, {
               method: "get",
               headers: {
                 "content-type": "application/json",
-                authorization: token
-              }
+                authorization: token,
+              },
             })
-              .then(response => response.json())
-              .then(res => {
+              .then((response) => response.json())
+              .then((res) => {
                 setHouseBooked(res);
                 setUser();
               });
@@ -84,14 +83,14 @@ const Bookings = props => {
           <style jsx>{`
             .bookings {
               display: grid;
-              grid-template-columns: 100%;
+              grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
               grid-gap: 40px;
             }
-
             .booking {
               display: grid;
-              grid-template-columns: 30% 70%;
+              grid-template-columns: 100%;
               grid-gap: 40px;
+              margin-top: 60px;
             }
 
             .booking img {
