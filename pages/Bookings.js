@@ -13,7 +13,7 @@ const Bookings = (props) => {
   const fetchingDataOnMount = () => {
     const token = window.sessionStorage.getItem("token");
     if (token) {
-      fetch("http://localhost:4000/api/login", {
+      fetch("https://polar-refuge-69571.herokuapp.com/api/login", {
         method: "post",
         headers: {
           "content-type": "application/json",
@@ -23,15 +23,19 @@ const Bookings = (props) => {
         .then((res) => res.json())
         .then((data) => {
           if (data && data.id) {
-            fetch(`http://localhost:4000/api/house/bookings/list/${data.id}`, {
-              method: "get",
-              headers: {
-                "content-type": "application/json",
-                authorization: token,
-              },
-            })
+            fetch(
+              `https://polar-refuge-69571.herokuapp.com/api/house/bookings/list/${data.id}`,
+              {
+                method: "get",
+                headers: {
+                  "content-type": "application/json",
+                  authorization: token,
+                },
+              }
+            )
               .then((response) => response.json())
               .then((res) => {
+                console.log("res", res);
                 setHouseBooked(res);
                 setUser();
               });
@@ -42,7 +46,7 @@ const Bookings = (props) => {
   useEffect(() => {
     fetchingDataOnMount();
   }, []);
-
+  console.log("houseBoked", data);
   return (
     <Layout
       content={

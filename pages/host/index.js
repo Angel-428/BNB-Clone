@@ -1,7 +1,7 @@
 import axios from "axios";
 import Head from "next/head";
 import Link from "next/link";
-import { actions, useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useStoreActions, useStoreState } from "easy-peasy";
 
 import Layout from "../../components/Layout";
@@ -17,7 +17,7 @@ const Host = (props) => {
   const fetchingDataOnMount = () => {
     const token = window.sessionStorage.getItem("token");
     if (token) {
-      fetch("http://localhost:4000/api/login", {
+      fetch("https://polar-refuge-69571.herokuapp.com/api/login", {
         method: "post",
         headers: {
           "content-type": "application/json",
@@ -27,13 +27,16 @@ const Host = (props) => {
         .then((res) => res.json())
         .then((data) => {
           if (data && data.id) {
-            fetch(`http://localhost:4000/api/house/host/list/${data.id}`, {
-              method: "get",
-              headers: {
-                "content-type": "application/json",
-                authorization: token,
-              },
-            })
+            fetch(
+              `https://polar-refuge-69571.herokuapp.com/api/house/host/list/${data.id}`,
+              {
+                method: "get",
+                headers: {
+                  "content-type": "application/json",
+                  authorization: token,
+                },
+              }
+            )
               .then((response) => response.json())
               .then((res) => {
                 setDataBook(res.bookings);

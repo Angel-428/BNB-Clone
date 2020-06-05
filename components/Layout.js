@@ -25,7 +25,7 @@ const Layout = (props) => {
     (function fetchData() {
       const token = window.sessionStorage.getItem("token");
       if (token) {
-        fetch("http://localhost:4000/api/login", {
+        fetch("https://polar-refuge-69571.herokuapp.com/api/login", {
           method: "post",
           headers: {
             "content-type": "application/json",
@@ -35,13 +35,16 @@ const Layout = (props) => {
           .then((res) => res.json())
           .then((data) => {
             if (data && data.id) {
-              fetch(`http://localhost:4000/api/user/${data.id}`, {
-                method: "get",
-                headers: {
-                  "content-type": "application/json",
-                  authorization: token,
-                },
-              })
+              fetch(
+                `https://polar-refuge-69571.herokuapp.com/api/user/${data.id}`,
+                {
+                  method: "get",
+                  headers: {
+                    "content-type": "application/json",
+                    authorization: token,
+                  },
+                }
+              )
                 .then((response) => response.json())
                 .then((user) => {
                   if (user && user.email) {

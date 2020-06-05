@@ -20,15 +20,18 @@ export default (props) => {
               const saveAuthTokenInSession = (token) => {
                 window.sessionStorage.setItem("token", token);
               };
-              const res = await axios.post("http://localhost:4000/api/login", {
-                email,
-                password,
-              });
+              const res = await axios.post(
+                "https://polar-refuge-69571.herokuapp.com/api/login",
+                {
+                  email,
+                  password,
+                }
+              );
 
               if (res.status === 200 && res.data.userId) {
                 saveAuthTokenInSession(res.data.token);
                 const response = await axios.get(
-                  `http://localhost:4000/api/user/${res.data.userId}`,
+                  `https://polar-refuge-69571.herokuapp.com/api/user/${res.data.userId}`,
                   {
                     headers: {
                       "Content-Type": "application/json",

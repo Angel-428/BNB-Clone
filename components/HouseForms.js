@@ -54,7 +54,7 @@ const HouseForms = (props) => {
           try {
             const response = await axios({
               method: "post",
-              url: `http://localhost:4000/api/house/host/${
+              url: `https://polar-refuge-69571.herokuapp.com/api/house/host/${
                 props.edit ? "edit" : "new"
               }`,
               headers: {
@@ -138,7 +138,7 @@ const HouseForms = (props) => {
                 formData.append("file", files);
                 const response = await axios({
                   method: "post",
-                  url: `http://localhost:4000/api/house/upload`,
+                  url: `https://polar-refuge-69571.herokuapp.com/api/house/upload`,
                   data: formData,
                   headers: {
                     "Content-Type": "multipart/form-data",

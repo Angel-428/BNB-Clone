@@ -21,7 +21,7 @@ export default (props) => {
             try {
               ev.preventDefault();
               const register = await axios.post(
-                "http://localhost:4000/api/user/register",
+                "https://polar-refuge-69571.herokuapp.com/api/user/register",
                 {
                   name,
                   lastName,

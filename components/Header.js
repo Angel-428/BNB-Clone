@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Head from "next/head";
 import { useStoreActions, useStoreState } from "easy-peasy";
-import Sidebar from "../pages/host/Sidebar";
+
 import Router from "next/router";
 
 const Header = () => {

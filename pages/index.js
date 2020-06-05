@@ -30,7 +30,7 @@ const Index = (props) => {
 };
 
 Index.getInitialProps = async () => {
-  const res = await fetch(`http://localhost:4000/api/house`);
+  const res = await fetch(`https://polar-refuge-69571.herokuapp.com/api/house`);
   const houses = await res.json();
   return {
     houses,

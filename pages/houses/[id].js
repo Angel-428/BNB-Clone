@@ -26,7 +26,7 @@ const canBook = async (houseId, startDate, endDate, userEmail) => {
 
     const response = await axios({
       method: "post",
-      url: "http://localhost:4000/api/house/check",
+      url: "https://polar-refuge-69571.herokuapp.com/api/house/check",
       data: {
         houseId,
         startDate,
@@ -53,7 +53,7 @@ const canBook = async (houseId, startDate, endDate, userEmail) => {
 const getBookedDates = async (id) => {
   try {
     const response = await axios.post(
-      "http://localhost:4000/api/house/booked",
+      "https://polar-refuge-69571.herokuapp.com/api/house/booked",
       {
         houseId: id,
       }
@@ -156,7 +156,8 @@ const House = (props) => {
                     const token = window.sessionStorage.getItem("token");
                     const response = await axios({
                       method: "post",
-                      url: "http://localhost:4000/api/house/reserve",
+                      url:
+                        "https://polar-refuge-69571.herokuapp.com/api/house/reserve",
                       data: {
                         houseId: props.house.id,
                         startDate,
@@ -174,7 +175,7 @@ const House = (props) => {
                       alert(response.data.message);
                       return;
                     }
-                    console.log(response.data);
+
                     alert("Booking Successfull");
                     Router.push("/bookings");
                     return;
@@ -230,7 +231,9 @@ const House = (props) => {
 House.getInitialProps = async ({ query }) => {
   const { id } = query;
 
-  const res = await fetch(`http://localhost:4000/api/house/${id}`);
+  const res = await fetch(
+    `https://polar-refuge-69571.herokuapp.com/api/house/${id}`
+  );
   const house = await res.json();
   const responseDate = await getBookedDates(id);
 

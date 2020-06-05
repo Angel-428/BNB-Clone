@@ -3,7 +3,7 @@ import Head from "next/head";
 import Layout from "../../components/Layout";
 import HouseForm from "../../components/HouseForms";
 
-const EditHouse = props => {
+const EditHouse = (props) => {
   return (
     <Layout
       content={
@@ -21,9 +21,11 @@ const EditHouse = props => {
 
 EditHouse.getInitialProps = async ({ query }) => {
   const { id } = query;
-  const response = await axios.get(`http://localhost:4000/api/house/${id}`);
+  const response = await axios.get(
+    `https://polar-refuge-69571.herokuapp.com/api/house/${id}`
+  );
   return {
-    house: response.data
+    house: response.data,
   };
 };
 

@@ -4,7 +4,7 @@ import dateFnsFormat from "date-fns/format";
 import dateFnsParse from "date-fns/parse";
 import { DateUtils } from "react-day-picker";
 import React, { useState } from "react";
-import { useStoreActions, useStoreState, useStore } from "easy-peasy";
+import { useStoreState } from "easy-peasy";
 
 const today = new Date();
 const tomorrow = new Date(today);
@@ -34,7 +34,7 @@ const numberOfNightsBetweenDates = (startDate, endDate) => {
 export default ({ datesChange, bookedDates }) => {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
-  const user = useStoreState(state => state.user.user);
+  const user = useStoreState((state) => state.user.user);
 
   return (
     <div className="date-range-picker-container">
@@ -51,12 +51,12 @@ export default ({ datesChange, bookedDates }) => {
               disabled: [
                 bookedDates,
                 {
-                  before: new Date()
-                }
-              ]
-            }
+                  before: new Date(),
+                },
+              ],
+            },
           }}
-          onDayChange={day => {
+          onDayChange={(day) => {
             setStartDate(day);
             const newEndDate = new Date(day);
             if (numberOfNightsBetweenDates(day, endDate) < 1) {
@@ -82,12 +82,12 @@ export default ({ datesChange, bookedDates }) => {
                 bookedDates,
 
                 {
-                  before: startDate
-                }
-              ]
-            }
+                  before: startDate,
+                },
+              ],
+            },
           }}
-          onDayChange={day => {
+          onDayChange={(day) => {
             setEndDate(day);
             datesChange(startDate, day);
           }}
