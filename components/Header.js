@@ -37,7 +37,7 @@ const Header = () => {
                 {user ? (
                   <ul>
                     <li>
-                      <Link href="/bookings">
+                      <Link href="/bookings/bookings">
                         <a>Bookings</a>
                       </Link>
                     </li>

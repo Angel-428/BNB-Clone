@@ -1,7 +1,7 @@
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 import Head from "next/head";
 import { useStoreActions, useStoreState } from "easy-peasy";
-import { actions, useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const Bookings = (props) => {
   const setHouseBooked = useStoreActions(
@@ -35,7 +35,6 @@ const Bookings = (props) => {
             )
               .then((response) => response.json())
               .then((res) => {
-                console.log("res", res);
                 setHouseBooked(res);
                 setUser();
               });
@@ -46,7 +45,7 @@ const Bookings = (props) => {
   useEffect(() => {
     fetchingDataOnMount();
   }, []);
-  console.log("houseBoked", data);
+
   return (
     <Layout
       content={
