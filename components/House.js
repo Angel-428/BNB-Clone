@@ -11,6 +11,14 @@ const House = (props) => {
           <p>{props.rating}</p>
         </a>
       </Link>
+      <style jsx>
+        {`
+          a {
+            text-decoration: none;
+            color: #333;
+          }
+        `}
+      </style>
     </div>
   );
 };
