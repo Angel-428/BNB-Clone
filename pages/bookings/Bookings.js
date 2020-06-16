@@ -35,6 +35,7 @@ const Bookings = (props) => {
             )
               .then((response) => response.json())
               .then((res) => {
+                console.log("res", res);
                 setHouseBooked(res);
                 setUser();
               });

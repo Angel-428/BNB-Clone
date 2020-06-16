@@ -26,6 +26,18 @@
     "/_polyfills": [
       "static/runtime/polyfills.js"
     ],
+    "/bookings/bookings": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/host": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/host/new": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
