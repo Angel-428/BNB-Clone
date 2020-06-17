@@ -39,7 +39,8 @@ const Bookings = (props) => {
                 setUser();
               });
           }
-        });
+        })
+        .catch((err) => console.log("err", err));
     }
   };
   useEffect(() => {
