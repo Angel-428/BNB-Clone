@@ -1,4 +1,4 @@
-import Layout from "../../components/Layout";
+import Layout from "../components/Layout";
 import Head from "next/head";
 import { useStoreActions, useStoreState } from "easy-peasy";
 import { useEffect } from "react";
