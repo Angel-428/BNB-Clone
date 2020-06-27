@@ -9,44 +9,16 @@
     "static/development/_ssgManifest.js"
   ],
   "pages": {
-    "/": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
+    "/": ["static/runtime/webpack.js", "static/runtime/main.js"],
     "/_app": [
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",
       "static/runtime/main.js"
     ],
-    "/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/_polyfills": [
-      "static/runtime/polyfills.js"
-    ],
-<<<<<<< HEAD
-    "/bookings/bookings": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-=======
->>>>>>> b43bc31201a45c3f9bf49dd4e61e3cf3fb746995
-    "/host": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-<<<<<<< HEAD
-    "/host/new": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-=======
->>>>>>> b43bc31201a45c3f9bf49dd4e61e3cf3fb746995
-    "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ]
+    "/_error": ["static/runtime/webpack.js", "static/runtime/main.js"],
+    "/_polyfills": ["static/runtime/polyfills.js"],
+    "/host": ["static/runtime/webpack.js", "static/runtime/main.js"],
+    "/index": ["static/runtime/webpack.js", "static/runtime/main.js"]
   }
 }
